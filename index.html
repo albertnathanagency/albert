@@ -1,0 +1,4108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Albert Nathan Agency: Strategic book marketing for authors ready to be discovered. Book launch campaigns, Amazon marketing, author branding, advertising and more." />
+  <meta name="keywords" content="book marketer, book marketing, book marketing services, book promotion, book launch marketing, author marketing, Amazon book marketing, book advertising, author branding, book marketing agency, book marketing strategist, self-published book marketing" />
+  <meta name="author" content="Albert Nathan" />
+  <meta property="og:title" content="Albert Nathan Agency | Strategic Book Marketing" />
+  <meta property="og:description" content="Turning great books into discoverable brands. Strategic book marketing campaigns for authors worldwide." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="css/js/Albert Nathan.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Albert Nathan Agency | Strategic Book Marketing" />
+  <meta name="twitter:description" content="Strategic book marketing that puts your story in front of the readers who matter." />
+  <title>Albert Nathan Agency | Strategic Book Marketing for Authors</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+  </script>
+
+  <style>
+    /* ============================================================
+       CSS CUSTOM PROPERTIES - BRAND SYSTEM
+    ============================================================ */
+    :root {
+      --gold:           #C9A84C;
+      --gold-light:     #E2C47A;
+      --gold-dark:      #A07830;
+      --gold-pale:      #F5EDD6;
+      --black:          #0A0A0A;
+      --charcoal:       #1A1A1A;
+      --charcoal-mid:   #2C2C2C;
+      --charcoal-light: #3D3D3D;
+      --white:          #FFFFFF;
+      --off-white:      #F9F7F2;
+      --cream:          #F2EDE3;
+      --grey-100:       #F5F5F5;
+      --grey-200:       #E8E8E8;
+      --grey-400:       #ADADAD;
+      --grey-600:       #6B6B6B;
+      --grey-800:       #333333;
+      --text-primary:   #0A0A0A;
+      --text-secondary: #3D3D3D;
+      --text-muted:     #6B6B6B;
+      --border:         rgba(201,168,76,0.25);
+      --border-light:   rgba(201,168,76,0.12);
+      --shadow-sm:      0 2px 12px rgba(0,0,0,0.06);
+      --shadow-md:      0 8px 32px rgba(0,0,0,0.10);
+      --shadow-lg:      0 20px 60px rgba(0,0,0,0.14);
+      --shadow-gold:    0 8px 32px rgba(201,168,76,0.20);
+      --radius-sm:      6px;
+      --radius-md:      12px;
+      --radius-lg:      20px;
+      --radius-xl:      32px;
+      --transition:     all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      --font-heading:   'Playfair Display', Georgia, serif;
+      --font-sub:       'Cormorant Garamond', Georgia, serif;
+      --font-body:      'Inter', -apple-system, sans-serif;
+    }
+
+    /* ============================================================
+       RESET & BASE
+    ============================================================ */
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--text-primary);
+      background: var(--white);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    ul, ol {
+      list-style: none;
+    }
+
+    button {
+      cursor: pointer;
+      border: none;
+      background: none;
+      font-family: inherit;
+    }
+
+    input, textarea, select {
+      font-family: inherit;
+    }
+
+    /* ============================================================
+       TYPOGRAPHY SCALE
+    ============================================================ */
+    .display-xl {
+      font-family: var(--font-heading);
+      font-size: clamp(2.8rem, 6vw, 5.5rem);
+      font-weight: 700;
+      line-height: 1.08;
+      letter-spacing: -0.02em;
+    }
+
+    .display-lg {
+      font-family: var(--font-heading);
+      font-size: clamp(2.2rem, 4.5vw, 4rem);
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+
+    .display-md {
+      font-family: var(--font-heading);
+      font-size: clamp(1.8rem, 3.5vw, 3rem);
+      font-weight: 600;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+    }
+
+    .heading-lg {
+      font-family: var(--font-heading);
+      font-size: clamp(1.4rem, 2.5vw, 2.2rem);
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    .heading-md {
+      font-family: var(--font-heading);
+      font-size: clamp(1.2rem, 2vw, 1.7rem);
+      font-weight: 600;
+      line-height: 1.3;
+    }
+
+    .heading-sm {
+      font-family: var(--font-heading);
+      font-size: clamp(1rem, 1.5vw, 1.3rem);
+      font-weight: 600;
+      line-height: 1.35;
+    }
+
+    .subheading {
+      font-family: var(--font-sub);
+      font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+      font-style: italic;
+      font-weight: 400;
+      color: var(--gold);
+      letter-spacing: 0.01em;
+    }
+
+    .label-tag {
+      font-family: var(--font-body);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .body-lg {
+      font-size: clamp(1rem, 1.4vw, 1.15rem);
+      line-height: 1.75;
+      color: var(--text-secondary);
+    }
+
+    .body-md {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: var(--text-secondary);
+    }
+
+    .body-sm {
+      font-size: 0.875rem;
+      line-height: 1.65;
+      color: var(--text-muted);
+    }
+
+    /* ============================================================
+       LAYOUT UTILITIES
+    ============================================================ */
+    .container {
+      width: 100%;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .container-wide {
+      width: 100%;
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    .container-narrow {
+      width: 100%;
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section {
+      padding: 100px 0;
+    }
+
+    .section-sm {
+      padding: 60px 0;
+    }
+
+    .section-lg {
+      padding: 130px 0;
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    .flex-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .flex-between {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .flex-col {
+      flex-direction: column;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .text-center { text-align: center; }
+    .text-left   { text-align: left; }
+
+    .gold        { color: var(--gold); }
+    .white       { color: var(--white); }
+
+    .mt-4  { margin-top: 4px; }
+    .mt-8  { margin-top: 8px; }
+    .mt-12 { margin-top: 12px; }
+    .mt-16 { margin-top: 16px; }
+    .mt-20 { margin-top: 20px; }
+    .mt-24 { margin-top: 24px; }
+    .mt-32 { margin-top: 32px; }
+    .mt-40 { margin-top: 40px; }
+    .mt-48 { margin-top: 48px; }
+    .mt-64 { margin-top: 64px; }
+
+    /* ============================================================
+       BUTTONS
+    ============================================================ */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 36px;
+      border-radius: var(--radius-sm);
+      font-family: var(--font-body);
+      font-size: 0.92rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .btn::before {
+      content: '';
+      position: absolute;
+      top: 0; left: -100%;
+      width: 100%; height: 100%;
+      background: rgba(255,255,255,0.12);
+      transition: left 0.4s ease;
+    }
+
+    .btn:hover::before { left: 0; }
+
+    .btn-gold {
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+      color: var(--white);
+      box-shadow: 0 4px 20px rgba(201,168,76,0.35);
+    }
+
+    .btn-gold:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(201,168,76,0.45);
+    }
+
+    .btn-outline-gold {
+      background: transparent;
+      color: var(--gold);
+      border: 2px solid var(--gold);
+    }
+
+    .btn-outline-gold:hover {
+      background: var(--gold);
+      color: var(--white);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-gold);
+    }
+
+    .btn-outline-white {
+      background: transparent;
+      color: var(--white);
+      border: 2px solid rgba(255,255,255,0.6);
+    }
+
+    .btn-outline-white:hover {
+      background: rgba(255,255,255,0.1);
+      border-color: var(--white);
+      transform: translateY(-2px);
+    }
+
+    .btn-dark {
+      background: var(--charcoal);
+      color: var(--white);
+      box-shadow: var(--shadow-md);
+    }
+
+    .btn-dark:hover {
+      background: var(--charcoal-light);
+      transform: translateY(-2px);
+    }
+
+    .btn-sm {
+      padding: 12px 24px;
+      font-size: 0.82rem;
+    }
+
+    .btn-lg {
+      padding: 20px 48px;
+      font-size: 1rem;
+    }
+
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: center;
+    }
+
+    /* ============================================================
+       GOLD DIVIDER / ACCENT LINE
+    ============================================================ */
+    .gold-line {
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--gold), var(--gold-light));
+      border-radius: 2px;
+      margin: 16px auto;
+    }
+
+    .gold-line-left {
+      margin: 16px 0;
+    }
+
+    /* ============================================================
+       SECTION HEADER PATTERN
+    ============================================================ */
+    .section-header {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+
+    .section-header .label-tag {
+      display: block;
+      margin-bottom: 12px;
+    }
+
+    .section-header .gold-line {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    /* ============================================================
+       NAVIGATION
+    ============================================================ */
+    #navbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      padding: 0 32px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: transparent;
+      transition: var(--transition);
+    }
+
+    #navbar.scrolled {
+      background: rgba(10,10,10,0.97);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      height: 68px;
+      box-shadow: 0 2px 30px rgba(0,0,0,0.3);
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+
+    .nav-logo img {
+      height: 48px;
+      width: auto;
+      object-fit: contain;
+      transition: var(--transition);
+    }
+
+    #navbar.scrolled .nav-logo img { height: 40px; }
+
+    .nav-logo-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1;
+    }
+
+    .nav-logo-name {
+      font-family: var(--font-heading);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--white);
+      letter-spacing: 0.01em;
+    }
+
+    .nav-logo-sub {
+      font-family: var(--font-body);
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-top: 3px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-family: var(--font-body);
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.82);
+      padding: 8px 12px;
+      border-radius: var(--radius-sm);
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: 4px; left: 12px;
+      width: 0; height: 1.5px;
+      background: var(--gold);
+      transition: width 0.3s ease;
+    }
+
+    .nav-links a:hover { color: var(--white); }
+    .nav-links a:hover::after { width: calc(100% - 24px); }
+
+    .nav-cta {
+      background: linear-gradient(135deg, var(--gold), var(--gold-dark)) !important;
+      color: var(--white) !important;
+      padding: 10px 20px !important;
+      border-radius: var(--radius-sm) !important;
+      font-weight: 600 !important;
+      box-shadow: 0 4px 14px rgba(201,168,76,0.3);
+      border: none !important;
+    }
+
+    .nav-cta:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(201,168,76,0.45) !important;
+    }
+
+    .nav-cta::after { display: none !important; }
+
+    /* Hamburger */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 42px;
+      height: 42px;
+      gap: 6px;
+      cursor: pointer;
+      border-radius: var(--radius-sm);
+      transition: var(--transition);
+    }
+
+    .hamburger:hover { background: rgba(255,255,255,0.08); }
+
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--white);
+      border-radius: 2px;
+      transition: var(--transition);
+    }
+
+    .hamburger.open span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+    .hamburger.open span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* Mobile Nav */
+    .nav-mobile {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(10,10,10,0.98);
+      z-index: 999;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+
+    .nav-mobile.active {
+      display: flex;
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    .nav-mobile a {
+      font-family: var(--font-heading);
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: var(--white);
+      transition: var(--transition);
+      text-align: center;
+    }
+
+    .nav-mobile a:hover { color: var(--gold); }
+
+    .nav-mobile .nav-mobile-cta {
+      margin-top: 20px;
+    }
+
+    /* ============================================================
+       HERO SECTION - LEFT ALIGNED
+    ============================================================ */
+    #hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background: var(--black);
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 60% 20%, rgba(201,168,76,0.10) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 40% at 20% 80%, rgba(201,168,76,0.06) 0%, transparent 55%),
+        linear-gradient(160deg, #0A0A0A 0%, #1A1208 40%, #0A0A0A 100%);
+    }
+
+    .hero-grid-lines {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(201,168,76,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(201,168,76,0.04) 1px, transparent 1px);
+      background-size: 80px 80px;
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding-top: 80px;
+      max-width: 900px;
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 32px;
+      opacity: 0;
+      animation: fadeInUp 0.8s ease 0.2s forwards;
+    }
+
+    .hero-eyebrow-line {
+      width: 40px;
+      height: 1.5px;
+      background: var(--gold);
+    }
+
+    .hero-eyebrow-text {
+      font-family: var(--font-body);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .hero-title {
+      font-family: var(--font-heading);
+      font-size: clamp(3rem, 6.5vw, 6.2rem);
+      font-weight: 800;
+      line-height: 1.04;
+      letter-spacing: -0.025em;
+      color: var(--white);
+      opacity: 0;
+      animation: fadeInUp 0.9s ease 0.4s forwards;
+    }
+
+    .hero-title .gold { color: var(--gold); }
+
+    .hero-title em {
+      font-style: italic;
+      font-weight: 700;
+    }
+
+    .hero-subtitle {
+      font-family: var(--font-body);
+      font-size: clamp(1rem, 1.5vw, 1.2rem);
+      font-weight: 400;
+      line-height: 1.75;
+      color: rgba(255,255,255,0.68);
+      max-width: 650px;
+      margin-top: 24px;
+      opacity: 0;
+      animation: fadeInUp 0.9s ease 0.6s forwards;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 44px;
+      opacity: 0;
+      animation: fadeInUp 0.9s ease 0.8s forwards;
+    }
+
+    .hero-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0;
+      margin-top: 64px;
+      border-top: 1px solid rgba(201,168,76,0.18);
+      padding-top: 40px;
+      opacity: 0;
+      animation: fadeInUp 0.9s ease 1s forwards;
+    }
+
+    .hero-stat {
+      flex: 1;
+      min-width: 140px;
+      padding: 0 32px 0 0;
+      border-right: 1px solid rgba(201,168,76,0.15);
+    }
+
+    .hero-stat:first-child { padding-left: 0; }
+    .hero-stat:last-child { border-right: none; }
+
+    .hero-stat-number {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 3.5vw, 3rem);
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1;
+    }
+
+    .hero-stat-label {
+      font-family: var(--font-body);
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.45);
+      margin-top: 6px;
+    }
+
+    .hero-scroll {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      opacity: 0;
+      animation: fadeIn 1s ease 1.5s forwards;
+      z-index: 2;
+    }
+
+    .hero-scroll span {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.35);
+    }
+
+    .scroll-line {
+      width: 1px;
+      height: 50px;
+      background: linear-gradient(to bottom, var(--gold), transparent);
+      animation: scrollPulse 2s ease infinite;
+    }
+
+    /* ============================================================
+       MARQUEE STRIP
+    ============================================================ */
+    .marquee-strip {
+      background: linear-gradient(135deg, var(--gold-dark), var(--gold));
+      padding: 16px 0;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .marquee-track {
+      display: flex;
+      animation: marquee 30s linear infinite;
+      white-space: nowrap;
+      width: max-content;
+    }
+
+    .marquee-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 20px;
+      padding: 0 32px;
+      font-family: var(--font-body);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--white);
+    }
+
+    .marquee-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.5);
+      flex-shrink: 0;
+    }
+
+    /* ============================================================
+       PROBLEM SECTION
+    ============================================================ */
+    #problem {
+      background: var(--off-white);
+      padding: 110px 0;
+    }
+
+    .problem-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .problem-left .label-tag { display: block; margin-bottom: 16px; }
+
+    .problem-list {
+      margin-top: 36px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .problem-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 18px 20px;
+      background: var(--white);
+      border-radius: var(--radius-md);
+      border-left: 3px solid var(--gold);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+
+    .problem-item:hover {
+      transform: translateX(4px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .problem-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 8px;
+      background: var(--gold-pale);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--gold-dark);
+      font-size: 0.9rem;
+    }
+
+    .problem-item-text strong {
+      display: block;
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 3px;
+    }
+
+    .problem-item-text span {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .problem-right {
+      position: relative;
+    }
+
+    .problem-card-main {
+      background: var(--charcoal);
+      border-radius: var(--radius-lg);
+      padding: 48px 40px;
+      color: var(--white);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .problem-card-main::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 200px; height: 200px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(201,168,76,0.15) 0%, transparent 70%);
+    }
+
+    .problem-card-main .heading-md {
+      color: var(--white);
+      margin-bottom: 20px;
+    }
+
+    .problem-card-main .body-md { color: rgba(255,255,255,0.70); }
+
+    .problem-card-quote {
+      margin-top: 32px;
+      padding-top: 28px;
+      border-top: 1px solid rgba(201,168,76,0.25);
+    }
+
+    .problem-card-quote p {
+      font-family: var(--font-sub);
+      font-size: 1.25rem;
+      font-style: italic;
+      color: var(--gold-light);
+      line-height: 1.6;
+    }
+
+    .problem-card-author {
+      margin-top: 16px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.45);
+    }
+
+    /* ============================================================
+       SOLUTION SECTION
+    ============================================================ */
+    #solution {
+      background: var(--black);
+      padding: 110px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    #solution::before {
+      content: '';
+      position: absolute;
+      top: -100px; right: -100px;
+      width: 600px; height: 600px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(201,168,76,0.07) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .solution-intro {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 72px;
+    }
+
+    .solution-intro .label-tag { margin-bottom: 16px; }
+    .solution-intro .display-md { color: var(--white); margin-bottom: 20px; }
+    .solution-intro .body-lg { color: rgba(255,255,255,0.65); }
+
+    .solution-pillars {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+      background: rgba(201,168,76,0.12);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+
+    .pillar {
+      background: var(--charcoal);
+      padding: 48px 36px;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .pillar:hover { background: var(--charcoal-mid); }
+
+    .pillar:hover .pillar-number { color: var(--gold); }
+
+    .pillar-number {
+      font-family: var(--font-heading);
+      font-size: 4rem;
+      font-weight: 800;
+      color: rgba(201,168,76,0.15);
+      line-height: 1;
+      margin-bottom: 16px;
+      transition: var(--transition);
+    }
+
+    .pillar-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: var(--radius-sm);
+      background: linear-gradient(135deg, var(--gold-dark), var(--gold));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-size: 1.2rem;
+      margin-bottom: 24px;
+    }
+
+    .pillar h3 {
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 14px;
+    }
+
+    .pillar p {
+      font-size: 0.9rem;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.60);
+    }
+
+    /* ============================================================
+       SERVICES SECTION
+    ============================================================ */
+    #services {
+      background: var(--white);
+      padding: 110px 0;
+    }
+
+    .services-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 72px;
+    }
+
+    .services-header .label-tag { margin-bottom: 16px; }
+    .services-header .gold-line { margin: 20px auto; }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .service-card {
+      background: var(--white);
+      border: 1px solid var(--grey-200);
+      border-radius: var(--radius-lg);
+      padding: 40px 32px;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+      cursor: default;
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--gold), var(--gold-light));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.4s ease;
+    }
+
+    .service-card:hover {
+      border-color: var(--gold);
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .service-card:hover::before { transform: scaleX(1); }
+
+    .service-number {
+      font-family: var(--font-body);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 20px;
+    }
+
+    .service-icon-wrap {
+      width: 58px;
+      height: 58px;
+      border-radius: var(--radius-md);
+      background: var(--gold-pale);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold-dark);
+      font-size: 1.4rem;
+      margin-bottom: 24px;
+      transition: var(--transition);
+    }
+
+    .service-card:hover .service-icon-wrap {
+      background: linear-gradient(135deg, var(--gold-dark), var(--gold));
+      color: var(--white);
+    }
+
+    .service-card h3 {
+      font-family: var(--font-heading);
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 14px;
+      line-height: 1.25;
+    }
+
+    .service-card p {
+      font-size: 0.88rem;
+      line-height: 1.7;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+    }
+
+    .service-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 28px;
+    }
+
+    .service-list-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.83rem;
+      color: var(--text-secondary);
+      line-height: 1.45;
+    }
+
+    .service-list-item i {
+      color: var(--gold);
+      font-size: 0.72rem;
+      margin-top: 4px;
+      flex-shrink: 0;
+    }
+
+    .service-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--gold);
+      transition: var(--transition);
+    }
+
+    .service-link:hover { gap: 14px; }
+
+    .services-cta {
+      text-align: center;
+      margin-top: 56px;
+    }
+
+    /* ============================================================
+       VISIBILITY / RESULTS VISUAL SECTION
+    ============================================================ */
+    #visibility {
+      background: var(--off-white);
+      padding: 110px 0;
+    }
+
+    .visibility-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 72px;
+    }
+
+    .visibility-header .label-tag { margin-bottom: 16px; }
+    .visibility-header .gold-line { margin: 20px auto; }
+
+    .visibility-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .visibility-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      border: 1px solid var(--grey-200);
+    }
+
+    .visibility-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--gold);
+    }
+
+    .visibility-img-slot {
+      width: 100%;
+      aspect-ratio: 16/10;
+      background: linear-gradient(135deg, var(--charcoal) 0%, var(--charcoal-mid) 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .visibility-img-slot::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(45deg, rgba(201,168,76,0.08) 0%, transparent 60%);
+    }
+
+    .visibility-img-slot i {
+      font-size: 2rem;
+      color: var(--gold);
+      opacity: 0.7;
+    }
+
+    .visibility-img-slot span {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.4);
+    }
+
+    .visibility-img-slot img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    }
+
+    .visibility-card-body {
+      padding: 24px 28px;
+    }
+
+    .visibility-card-tag {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+
+    .visibility-card-body h4 {
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+    }
+
+    .visibility-card-body p {
+      font-size: 0.83rem;
+      line-height: 1.65;
+      color: var(--text-muted);
+    }
+
+    /* ============================================================
+       METRICS / NUMBERS SECTION
+    ============================================================ */
+    #metrics {
+      background: var(--charcoal);
+      padding: 80px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    #metrics::before {
+      content: '';
+      position: absolute;
+      top: -80px; left: -80px;
+      width: 400px; height: 400px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(201,168,76,0.08) 0%, transparent 70%);
+    }
+
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+    }
+
+    .metric-item {
+      text-align: center;
+      padding: 48px 32px;
+      border-right: 1px solid rgba(201,168,76,0.15);
+      position: relative;
+    }
+
+    .metric-item:last-child { border-right: none; }
+
+    .metric-number {
+      font-family: var(--font-heading);
+      font-size: clamp(2.5rem, 4vw, 3.8rem);
+      font-weight: 800;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+
+    .metric-label {
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.50);
+    }
+
+    .metric-sub {
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.30);
+      margin-top: 6px;
+      line-height: 1.5;
+    }
+
+    /* ============================================================
+       CASE STUDY SECTION
+    ============================================================ */
+    #case-studies {
+      background: var(--white);
+      padding: 110px 0;
+    }
+
+    .case-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 72px;
+    }
+
+    .case-header .label-tag { margin-bottom: 16px; }
+    .case-header .gold-line { margin: 20px auto; }
+
+    .case-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+    }
+
+    .case-card {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      background: var(--white);
+      border: 1px solid var(--grey-200);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+
+    .case-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--border);
+    }
+
+    .case-card-header {
+      background: var(--charcoal);
+      padding: 36px 36px 32px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .case-card-header::before {
+      content: '';
+      position: absolute;
+      top: -40px; right: -40px;
+      width: 150px; height: 150px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(201,168,76,0.12) 0%, transparent 70%);
+    }
+
+    .case-book-cover-slot {
+      width: 80px;
+      height: 120px;
+      border-radius: var(--radius-sm);
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(201,168,76,0.20);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+    }
+
+    .case-book-cover-slot i {
+      font-size: 1.8rem;
+      color: var(--gold);
+      opacity: 0.4;
+    }
+
+    .case-book-cover-slot span {
+      font-size: 0.55rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.25);
+      text-align: center;
+      padding: 4px;
+    }
+
+    .case-book-cover-slot img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: var(--radius-sm);
+    }
+
+    .case-card-header-content {
+      position: relative;
+      z-index: 1;
+      flex: 1;
+    }
+
+    .case-tag {
+      display: inline-block;
+      padding: 4px 12px;
+      background: rgba(201,168,76,0.15);
+      border: 1px solid rgba(201,168,76,0.3);
+      border-radius: 20px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      margin-bottom: 12px;
+    }
+
+    .case-card-header-content h3 {
+      font-family: var(--font-heading);
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 4px;
+    }
+
+    .case-book {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.50);
+      font-style: italic;
+    }
+
+    .case-card-body {
+      padding: 32px 36px 36px;
+    }
+
+    .case-challenge, .case-strategy, .case-result {
+      margin-bottom: 24px;
+    }
+
+    .case-section-label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+
+    .case-challenge p, .case-strategy p {
+      font-size: 0.88rem;
+      line-height: 1.7;
+      color: var(--text-secondary);
+    }
+
+    .case-metrics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .case-metric {
+      background: var(--gold-pale);
+      border-radius: var(--radius-sm);
+      padding: 16px 12px;
+      text-align: center;
+    }
+
+    .case-metric-value {
+      font-family: var(--font-heading);
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--gold-dark);
+      line-height: 1;
+    }
+
+    .case-metric-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-top: 6px;
+      line-height: 1.35;
+    }
+
+    .case-cta {
+      text-align: center;
+      margin-top: 56px;
+    }
+
+    /* ============================================================
+       PROCESS SECTION
+    ============================================================ */
+    #process {
+      background: var(--black);
+      padding: 110px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .process-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 80px;
+    }
+
+    .process-header .label-tag { margin-bottom: 16px; }
+    .process-header .display-md { color: var(--white); margin-bottom: 18px; }
+    .process-header .body-lg { color: rgba(255,255,255,0.60); }
+
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      position: relative;
+      text-align: center;
+    }
+
+    .process-steps::before {
+      content: '';
+      position: absolute;
+      top: 38px; left: 12.5%;
+      width: 75%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(201,168,76,0.3), rgba(201,168,76,0.3), rgba(201,168,76,0.3), transparent);
+    }
+
+    .process-step {
+      padding: 0 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .step-number-wrap {
+      width: 76px;
+      height: 76px;
+      border-radius: 50%;
+      background: var(--charcoal);
+      border: 2px solid rgba(201,168,76,0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 28px;
+      position: relative;
+      z-index: 1;
+      transition: var(--transition);
+    }
+
+    .process-step:hover .step-number-wrap {
+      border-color: var(--gold);
+      background: linear-gradient(135deg, var(--gold-dark), var(--gold));
+    }
+
+    .step-number {
+      font-family: var(--font-heading);
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--gold);
+      transition: var(--transition);
+    }
+
+    .process-step:hover .step-number { color: var(--white); }
+
+    .step-title {
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+
+    .step-desc {
+      font-size: 0.85rem;
+      line-height: 1.65;
+      color: rgba(255,255,255,0.50);
+    }
+
+    .process-steps-row2 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      margin-top: 48px;
+      text-align: center;
+    }
+
+    /* ============================================================
+       PRICING SECTION
+    ============================================================ */
+    #pricing {
+      background: var(--off-white);
+      padding: 110px 0;
+    }
+
+    .pricing-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 72px;
+    }
+
+    .pricing-header .label-tag { margin-bottom: 16px; }
+    .pricing-header .gold-line { margin: 20px auto; }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      align-items: start;
+    }
+
+    .pricing-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 40px 32px;
+      border: 1px solid var(--grey-200);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .pricing-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .pricing-card.featured {
+      background: var(--charcoal);
+      border-color: var(--gold);
+      box-shadow: 0 12px 48px rgba(201,168,76,0.20);
+      transform: scale(1.02);
+    }
+
+    .pricing-card.featured:hover {
+      transform: scale(1.02) translateY(-8px);
+    }
+
+    .pricing-badge {
+      position: absolute;
+      top: -14px; left: 50%; transform: translateX(-50%);
+      background: linear-gradient(135deg, var(--gold-dark), var(--gold));
+      color: var(--white);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 5px 16px;
+      border-radius: 20px;
+      white-space: nowrap;
+    }
+
+    .pricing-tier {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+
+    .pricing-card.featured .pricing-tier { color: var(--gold-light); }
+
+    .pricing-card h3 {
+      font-family: var(--font-heading);
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+    }
+
+    .pricing-card.featured h3 { color: var(--white); }
+
+    .pricing-from {
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+
+    .pricing-card.featured .pricing-from { color: rgba(255,255,255,0.50); }
+
+    .pricing-price {
+      font-family: var(--font-heading);
+      font-size: 2.8rem;
+      font-weight: 800;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .pricing-desc {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+      margin-bottom: 28px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--grey-200);
+    }
+
+    .pricing-card.featured .pricing-desc {
+      color: rgba(255,255,255,0.55);
+      border-bottom-color: rgba(255,255,255,0.12);
+    }
+
+    .pricing-features {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+
+    .pricing-feature {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      line-height: 1.4;
+    }
+
+    .pricing-feature i {
+      color: var(--gold);
+      font-size: 0.8rem;
+      margin-top: 3px;
+      flex-shrink: 0;
+    }
+
+    .pricing-card.featured .pricing-feature { color: rgba(255,255,255,0.70); }
+
+    .pricing-note {
+      text-align: center;
+      margin-top: 48px;
+      padding: 28px 32px;
+      background: var(--white);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-light);
+      max-width: 720px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .pricing-note p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    .pricing-note strong { color: var(--text-primary); }
+
+    /* ============================================================
+       TESTIMONIALS SECTION
+    ============================================================ */
+    #testimonials {
+      background: var(--white);
+      padding: 110px 0;
+    }
+
+    .testimonials-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 72px;
+    }
+
+    .testimonials-header .label-tag { margin-bottom: 16px; }
+    .testimonials-header .gold-line { margin: 20px auto; }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px;
+    }
+
+    .testimonial-card {
+      background: var(--off-white);
+      border-radius: var(--radius-lg);
+      padding: 40px 36px;
+      position: relative;
+      border: 1px solid var(--grey-200);
+      transition: var(--transition);
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--border);
+    }
+
+    .testimonial-card.featured {
+      background: var(--charcoal);
+      border-color: rgba(201,168,76,0.25);
+      grid-column: span 2;
+    }
+
+    .quote-icon {
+      font-family: var(--font-heading);
+      font-size: 5rem;
+      color: var(--gold);
+      opacity: 0.25;
+      line-height: 1;
+      margin-bottom: 8px;
+      font-style: italic;
+    }
+
+    .testimonial-text {
+      font-family: var(--font-sub);
+      font-size: clamp(1rem, 1.5vw, 1.25rem);
+      font-style: italic;
+      line-height: 1.75;
+      color: var(--text-secondary);
+      margin-bottom: 28px;
+    }
+
+    .testimonial-card.featured .testimonial-text {
+      color: rgba(255,255,255,0.80);
+      font-size: clamp(1.05rem, 1.6vw, 1.35rem);
+    }
+
+    .testimonial-meta {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .testimonial-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--gold-pale);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--gold-dark);
+      border: 2px solid var(--border);
+    }
+
+    .testimonial-card.featured .testimonial-avatar {
+      background: rgba(201,168,76,0.15);
+      color: var(--gold-light);
+      border-color: rgba(201,168,76,0.3);
+    }
+
+    .testimonial-meta-info .name {
+      font-family: var(--font-body);
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .testimonial-card.featured .testimonial-meta-info .name { color: var(--white); }
+
+    .testimonial-meta-info .role {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    .testimonial-card.featured .testimonial-meta-info .role { color: rgba(255,255,255,0.45); }
+
+    .testimonial-stars {
+      margin-bottom: 16px;
+      color: var(--gold);
+      font-size: 0.85rem;
+      letter-spacing: 2px;
+    }
+
+    /* ============================================================
+       LEAD MAGNET / FREE TOOLKIT SECTION
+    ============================================================ */
+    #toolkit {
+      background: var(--black);
+      padding: 110px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    #toolkit::before {
+      content: '';
+      position: absolute;
+      bottom: -100px; left: 50%;
+      transform: translateX(-50%);
+      width: 700px; height: 400px;
+      background: radial-gradient(ellipse, rgba(201,168,76,0.08) 0%, transparent 70%);
+    }
+
+    .toolkit-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .toolkit-left .label-tag { margin-bottom: 16px; }
+    .toolkit-left .display-md { color: var(--white); margin-bottom: 20px; }
+    .toolkit-left .body-lg { color: rgba(255,255,255,0.65); margin-bottom: 36px; }
+
+    .toolkit-items {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .toolkit-item {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 16px 20px;
+      background: rgba(255,255,255,0.04);
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(201,168,76,0.15);
+      transition: var(--transition);
+    }
+
+    .toolkit-item:hover {
+      background: rgba(201,168,76,0.08);
+      border-color: rgba(201,168,76,0.3);
+    }
+
+    .toolkit-item-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-sm);
+      background: linear-gradient(135deg, var(--gold-dark), var(--gold));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+
+    .toolkit-item-text strong {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--white);
+    }
+
+    .toolkit-item-text span {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.45);
+    }
+
+    .toolkit-right {
+      background: var(--charcoal);
+      border-radius: var(--radius-xl);
+      padding: 48px 44px;
+      border: 1px solid rgba(201,168,76,0.20);
+      box-shadow: var(--shadow-gold);
+    }
+
+    .toolkit-right h3 {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+
+    .toolkit-right p {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.55);
+      margin-bottom: 28px;
+      line-height: 1.65;
+    }
+
+    .toolkit-form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .toolkit-form input {
+      width: 100%;
+      padding: 16px 20px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: var(--radius-sm);
+      color: var(--white);
+      font-size: 0.92rem;
+      transition: var(--transition);
+      outline: none;
+    }
+
+    .toolkit-form input::placeholder { color: rgba(255,255,255,0.35); }
+
+    .toolkit-form input:focus {
+      border-color: var(--gold);
+      background: rgba(201,168,76,0.06);
+    }
+
+    .toolkit-form .btn { width: 100%; justify-content: center; }
+
+    .toolkit-disclaimer {
+      margin-top: 14px;
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.30);
+      text-align: center;
+      line-height: 1.55;
+    }
+
+    /* ============================================================
+       FAQ SECTION
+    ============================================================ */
+    #faq {
+      background: var(--off-white);
+      padding: 110px 0;
+    }
+
+    .faq-header {
+      text-align: center;
+      max-width: 640px;
+      margin: 0 auto 72px;
+    }
+
+    .faq-header .label-tag { margin-bottom: 16px; }
+    .faq-header .gold-line { margin: 20px auto; }
+
+    .faq-layout {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 80px;
+      align-items: start;
+    }
+
+    .faq-sidebar {
+      position: sticky;
+      top: 100px;
+    }
+
+    .faq-sidebar h3 {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 16px;
+    }
+
+    .faq-sidebar p {
+      font-size: 0.88rem;
+      line-height: 1.7;
+      color: var(--text-muted);
+      margin-bottom: 28px;
+    }
+
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .faq-item {
+      background: var(--white);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--grey-200);
+      overflow: hidden;
+      transition: var(--transition);
+    }
+
+    .faq-item.open {
+      border-color: var(--gold);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .faq-question {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 22px 28px;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .faq-question:hover { background: var(--grey-100); }
+    .faq-item.open .faq-question { background: var(--white); }
+
+    .faq-q-text {
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      line-height: 1.4;
+      flex: 1;
+    }
+
+    .faq-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--grey-100);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--gold);
+      font-size: 0.85rem;
+      transition: var(--transition);
+    }
+
+    .faq-item.open .faq-icon {
+      background: var(--gold);
+      color: var(--white);
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.3s ease;
+    }
+
+    .faq-item.open .faq-answer { max-height: 400px; }
+
+    .faq-answer-inner {
+      padding: 0 28px 24px;
+      font-size: 0.88rem;
+      line-height: 1.75;
+      color: var(--text-muted);
+    }
+
+    /* ============================================================
+       CTA SECTION - FINAL
+    ============================================================ */
+    #cta-final {
+      background: var(--charcoal);
+      padding: 110px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    #cta-final::before {
+      content: '';
+      position: absolute;
+      top: -80px; right: -80px;
+      width: 500px; height: 500px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(201,168,76,0.10) 0%, transparent 70%);
+    }
+
+    #cta-final::after {
+      content: '';
+      position: absolute;
+      bottom: -80px; left: -80px;
+      width: 400px; height: 400px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(201,168,76,0.06) 0%, transparent 70%);
+    }
+
+    .cta-final-inner {
+      text-align: center;
+      max-width: 780px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .cta-final-inner .label-tag { margin-bottom: 20px; }
+    .cta-final-inner .display-lg { color: var(--white); margin-bottom: 24px; }
+    .cta-final-inner .body-lg { color: rgba(255,255,255,0.65); margin-bottom: 48px; }
+
+    .cta-final-inner .btn-group { justify-content: center; }
+
+    .cta-disclaimer {
+      margin-top: 32px;
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.30);
+      line-height: 1.6;
+    }
+
+    /* ============================================================
+       FOOTER
+    ============================================================ */
+    #footer {
+      background: var(--black);
+      padding-top: 80px;
+    }
+
+    .footer-top {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 56px;
+      padding-bottom: 60px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .footer-brand img {
+      height: 52px;
+      width: auto;
+      object-fit: contain;
+      margin-bottom: 20px;
+    }
+
+    .footer-brand p {
+      font-size: 0.88rem;
+      line-height: 1.75;
+      color: rgba(255,255,255,0.45);
+      margin-bottom: 28px;
+      max-width: 300px;
+    }
+
+    .footer-socials {
+      display: flex;
+      gap: 10px;
+    }
+
+    .social-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius-sm);
+      background: rgba(255,255,255,0.06);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,0.50);
+      font-size: 0.9rem;
+      transition: var(--transition);
+      text-decoration: none;
+    }
+
+    .social-btn:hover {
+      background: var(--gold);
+      color: var(--white);
+      transform: translateY(-3px);
+    }
+
+    .footer-col h4 {
+      font-family: var(--font-body);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 20px;
+    }
+
+    .footer-col ul {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-col ul li a {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.45);
+      transition: var(--transition);
+    }
+
+    .footer-col ul li a:hover {
+      color: var(--white);
+      padding-left: 4px;
+    }
+
+    .footer-contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .footer-contact-item i {
+      color: var(--gold);
+      font-size: 0.85rem;
+      margin-top: 3px;
+      flex-shrink: 0;
+    }
+
+    .footer-contact-item span {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.45);
+      line-height: 1.5;
+    }
+
+    .footer-contact-item a {
+      color: rgba(255,255,255,0.45);
+      transition: var(--transition);
+    }
+
+    .footer-contact-item a:hover { color: var(--gold); }
+
+    .footer-bottom {
+      padding: 28px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-bottom p {
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.25);
+    }
+
+    .footer-legal {
+      display: flex;
+      gap: 20px;
+    }
+
+    .footer-legal a {
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.25);
+      transition: var(--transition);
+    }
+
+    .footer-legal a:hover { color: var(--gold); }
+
+    .footer-disclaimer {
+      padding: 20px 0;
+      border-top: 1px solid rgba(255,255,255,0.04);
+      margin-top: 0;
+    }
+
+    .footer-disclaimer p {
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.18);
+      line-height: 1.65;
+      text-align: center;
+    }
+
+    /* ============================================================
+       FLOATING ELEMENTS
+    ============================================================ */
+
+    /* WhatsApp Floating Button */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 32px;
+      right: 32px;
+      z-index: 900;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #25D366;
+      color: var(--white);
+      padding: 14px 22px;
+      border-radius: 60px;
+      box-shadow: 0 8px 28px rgba(37,211,102,0.35);
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: var(--transition);
+      animation: floatIn 0.8s ease 2s both;
+    }
+
+    .whatsapp-float:hover {
+      transform: translateY(-3px) scale(1.03);
+      box-shadow: 0 12px 36px rgba(37,211,102,0.45);
+    }
+
+    .whatsapp-float i { font-size: 1.2rem; }
+
+    /* Cookie Banner */
+    #cookie-banner {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      z-index: 1100;
+      background: var(--charcoal);
+      border-top: 1px solid rgba(201,168,76,0.2);
+      padding: 20px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+      transform: translateY(100%);
+      transition: transform 0.4s ease;
+    }
+
+    #cookie-banner.show { transform: translateY(0); }
+
+    .cookie-text {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.65);
+      line-height: 1.55;
+      flex: 1;
+    }
+
+    .cookie-text a {
+      color: var(--gold);
+      text-decoration: underline;
+    }
+
+    .cookie-btns {
+      display: flex;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+
+    .cookie-accept {
+      padding: 10px 24px;
+      background: var(--gold);
+      color: var(--white);
+      border-radius: var(--radius-sm);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .cookie-accept:hover { background: var(--gold-dark); }
+
+    .cookie-decline {
+      padding: 10px 20px;
+      background: transparent;
+      color: rgba(255,255,255,0.45);
+      border-radius: var(--radius-sm);
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1px solid rgba(255,255,255,0.12);
+      transition: var(--transition);
+    }
+
+    .cookie-decline:hover {
+      color: var(--white);
+      border-color: rgba(255,255,255,0.35);
+    }
+
+    /* ============================================================
+       ANIMATIONS
+    ============================================================ */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
+    @keyframes floatIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes scrollPulse {
+      0%, 100% { opacity: 1; transform: scaleY(1); }
+      50%       { opacity: 0.4; transform: scaleY(0.5); }
+    }
+
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+    .reveal-delay-5 { transition-delay: 0.5s; }
+
+    /* ============================================================
+       RESPONSIVE
+    ============================================================ */
+    @media (max-width: 1100px) {
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+      .pricing-grid  { grid-template-columns: repeat(2, 1fr); }
+      .process-steps { grid-template-columns: repeat(2, 1fr); gap: 48px; }
+      .process-steps::before { display: none; }
+      .process-steps-row2 { grid-template-columns: repeat(2, 1fr); gap: 48px; }
+      .footer-top { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 900px) {
+      .problem-grid { grid-template-columns: 1fr; gap: 48px; }
+      .visibility-grid { grid-template-columns: repeat(2, 1fr); }
+      .case-grid { grid-template-columns: 1fr; }
+      .testimonial-card.featured { grid-column: span 1; }
+      .testimonials-grid { grid-template-columns: 1fr; }
+      .toolkit-inner { grid-template-columns: 1fr; gap: 48px; }
+      .faq-layout { grid-template-columns: 1fr; gap: 40px; }
+      .faq-sidebar { position: static; }
+      .metrics-grid { grid-template-columns: repeat(2, 1fr); }
+      .metric-item { border-right: none; border-bottom: 1px solid rgba(201,168,76,0.15); }
+      .metric-item:nth-child(2) { border-bottom: 1px solid rgba(201,168,76,0.15); }
+      .metric-item:last-child { border-bottom: none; }
+      .solution-pillars { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      .section     { padding: 72px 0; }
+      .section-lg  { padding: 90px 0; }
+      .container   { padding: 0 20px; }
+      .container-wide { padding: 0 20px; }
+
+      #navbar { padding: 0 20px; height: 68px; }
+
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+
+      .hero-stats {
+        flex-direction: column;
+        gap: 24px;
+        border-top: none;
+        padding-top: 32px;
+      }
+
+      .hero-stat {
+        border-right: none;
+        border-bottom: 1px solid rgba(201,168,76,0.12);
+        padding: 0 0 20px;
+      }
+
+      .hero-stat:last-child { border-bottom: none; }
+
+      .services-grid  { grid-template-columns: 1fr; }
+      .visibility-grid { grid-template-columns: 1fr; }
+      .pricing-grid   { grid-template-columns: 1fr; }
+      .pricing-card.featured { transform: none; }
+
+      .footer-top {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+      }
+
+      .footer-legal { justify-content: center; flex-wrap: wrap; }
+
+      .whatsapp-float .wa-label { display: none; }
+      .whatsapp-float { padding: 14px; border-radius: 50%; }
+
+      .case-metrics { grid-template-columns: 1fr; }
+      .case-book-cover-slot { width: 60px; height: 90px; }
+
+      .btn-group { flex-direction: column; align-items: flex-start; }
+      .cta-final-inner .btn-group { align-items: center; }
+    }
+
+    @media (max-width: 480px) {
+      .hero-title { font-size: clamp(2.4rem, 8vw, 3rem); }
+      .process-steps { grid-template-columns: 1fr; }
+      .process-steps-row2 { grid-template-columns: 1fr; }
+      .metrics-grid { grid-template-columns: 1fr; }
+      .case-card-header { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ============================================================
+       COOKIE BANNER
+  ============================================================ -->
+  <div id="cookie-banner" role="dialog" aria-label="Cookie consent">
+    <p class="cookie-text">
+      We use cookies to improve your experience and analyze site performance.
+      Read our <a href="privacy-policy.html">Privacy Policy</a> to learn more.
+    </p>
+    <div class="cookie-btns">
+      <button class="cookie-accept" id="cookieAccept">Accept Cookies</button>
+      <button class="cookie-decline" id="cookieDecline">Decline</button>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo" aria-label="Albert Nathan Agency Home">
+<img src="css/js/Albert Nathan.png" alt="Albert Nathan Agency Logo" onerror="this.src='albert nathan.png'; this.onerror='';" />      <div class="nav-logo-text">
+        <span class="nav-logo-name">Albert Nathan</span>
+        <span class="nav-logo-sub">Book Marketing Agency</span>
+      </div>
+    </a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="case-studies.html">Case Studies</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="process.html">Process</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="book-a-call.html" class="nav-cta">Start Project</a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Navigation -->
+  <div class="nav-mobile" id="navMobile" role="dialog" aria-label="Mobile navigation">
+    <a href="index.html"        onclick="closeMobileNav()">Home</a>
+    <a href="about.html"        onclick="closeMobileNav()">About</a>
+    <a href="services.html"     onclick="closeMobileNav()">Services</a>
+    <a href="case-studies.html" onclick="closeMobileNav()">Case Studies</a>
+    <a href="pricing.html"      onclick="closeMobileNav()">Pricing</a>
+    <a href="testimonials.html" onclick="closeMobileNav()">Testimonials</a>
+    <a href="process.html"      onclick="closeMobileNav()">Process</a>
+    <a href="faq.html"          onclick="closeMobileNav()">FAQ</a>
+    <a href="contact.html"      onclick="closeMobileNav()">Contact</a>
+    <div class="nav-mobile-cta">
+      <a href="book-a-call.html" class="btn btn-gold" onclick="closeMobileNav()">
+        <i class="fas fa-arrow-right"></i> Start Your Project
+      </a>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       HERO SECTION - LEFT ALIGNED
+  ============================================================ -->
+  <section id="hero" aria-label="Hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid-lines"></div>
+
+    <div class="container">
+      <div class="hero-content">
+
+        <div class="hero-eyebrow">
+          <span class="hero-eyebrow-line"></span>
+          <span class="hero-eyebrow-text">Strategic Book Marketing Worldwide</span>
+        </div>
+
+        <h1 class="hero-title">
+          Turning Great Books<br />
+          Into <em class="gold">Discoverable</em><br />
+          Brands.
+        </h1>
+
+        <p class="hero-subtitle">
+          Strategic book marketing campaigns designed to increase visibility,
+          connect your story with the readers it was written for, and build
+          a brand that outlasts a single release.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="book-a-call.html" class="btn btn-gold btn-lg">
+            <i class="fas fa-arrow-right"></i>
+            Start Your Book Marketing Project
+          </a>
+          <a href="services.html" class="btn btn-outline-white">
+            Explore Our Approach
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-number">10+</div>
+            <div class="hero-stat-label">Years of Experience</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number">200+</div>
+            <div class="hero-stat-label">Authors Supported</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number">350+</div>
+            <div class="hero-stat-label">Books Promoted</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number">500+</div>
+            <div class="hero-stat-label">Campaigns Delivered</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       MARQUEE STRIP
+  ============================================================ -->
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-track">
+      <span class="marquee-item"><span class="marquee-dot"></span> Book Launch Campaigns</span>
+      <span class="marquee-item"><span class="marquee-dot"></span> Amazon Marketing</span>
+      <span class="marquee-item"><span class="marquee-dot"></span> Author Branding</span>
+      <span class="marquee-item"><span class="marquee-dot"></span> Reader Outreach</span>
+      <span class="marquee-item"><span class="marquee-dot"></span> Paid Advertising</span>
+      <span class="marquee-item"><span class="marquee-dot"></span> Social Media Growth</span>
+      <span class="marquee-item"><span class="marquee-dot"></span> SEO and Discoverability</span>
+      <span class="marquee-item"><span class="marquee-dot"></span> Influencer Outreach</span>
+      <span class="marquee-item"><span class="marquee-dot"></span> Email Marketing</span>
+      <span class="marquee-item"><span class="marquee-dot"></span> Goodreads Promotion</span>
+      <span class="marquee-item"><span class="marquee-dot"></span> TikTok Marketing</span>
+      <span class="marquee-item"><span class="marquee-dot"></span> Campaign Strategy</span>
+      <span class="marquee-item"><span class="marquee-dot"></span> Book Launch Campaigns</span>
+      <span class="marquee-item"><span class="marquee-dot"></span> Amazon Marketing</span>
+      <span class="marquee-item"><span class="marquee-dot"></span> Author Branding</span>
+      <span class="marquee-item"><span class="marquee-dot"></span> Reader Outreach</span>
+      <span class="marquee-item"><span class="marquee-dot"></span> Paid Advertising</span>
+      <span class="marquee-item"><span class="marquee-dot"></span> Social Media Growth</span>
+      <span class="marquee-item"><span class="marquee-dot"></span> SEO and Discoverability</span>
+      <span class="marquee-item"><span class="marquee-dot"></span> Influencer Outreach</span>
+      <span class="marquee-item"><span class="marquee-dot"></span> Email Marketing</span>
+      <span class="marquee-item"><span class="marquee-dot"></span> Goodreads Promotion</span>
+      <span class="marquee-item"><span class="marquee-dot"></span> TikTok Marketing</span>
+      <span class="marquee-item"><span class="marquee-dot"></span> Campaign Strategy</span>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       THE PROBLEM SECTION
+  ============================================================ -->
+  <section id="problem" aria-labelledby="problem-heading">
+    <div class="container">
+      <div class="problem-grid">
+
+        <div class="problem-left reveal">
+          <span class="label-tag">The Challenge Every Author Faces</span>
+          <h2 id="problem-heading" class="display-md">
+            Great Books Don't Always Find Their Readers
+          </h2>
+          <div class="gold-line gold-line-left"></div>
+          <p class="body-lg mt-16">
+            You have invested everything into writing your book. The words are there.
+            The story is real. But without the right marketing infrastructure behind it,
+            even the most powerful books remain invisible in an overcrowded market.
+          </p>
+
+          <div class="problem-list mt-32">
+            <div class="problem-item">
+              <div class="problem-icon"><i class="fas fa-eye-slash"></i></div>
+              <div class="problem-item-text">
+                <strong>Poor Visibility</strong>
+                <span>Your book exists but readers cannot find it among millions of titles</span>
+              </div>
+            </div>
+            <div class="problem-item">
+              <div class="problem-icon"><i class="fas fa-chart-line"></i></div>
+              <div class="problem-item-text">
+                <strong>Weak Discoverability</strong>
+                <span>No Amazon presence, no search ranking, no pathway to organic discovery</span>
+              </div>
+            </div>
+            <div class="problem-item">
+              <div class="problem-icon"><i class="fas fa-users-slash"></i></div>
+              <div class="problem-item-text">
+                <strong>Limited Audience Reach</strong>
+                <span>Marketing that does not reach the specific readers who would love your book</span>
+              </div>
+            </div>
+            <div class="problem-item">
+              <div class="problem-icon"><i class="fas fa-bullseye"></i></div>
+              <div class="problem-item-text">
+                <strong>Unfocused Campaigns</strong>
+                <span>Random promotional activity with no strategy and no measurable results</span>
+              </div>
+            </div>
+            <div class="problem-item">
+              <div class="problem-icon"><i class="fas fa-identity-card"></i></div>
+              <div class="problem-item-text">
+                <strong>No Author Brand</strong>
+                <span>Publishing without a professional brand that builds trust with readers</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="problem-right reveal reveal-delay-2">
+          <div class="problem-card-main">
+            <h3 class="heading-md">The market has never been more competitive.</h3>
+            <p class="body-md mt-16">
+              Over four million books are published every year. Readers are overwhelmed
+              with choice. The authors who succeed are not always the best writers.
+              They are the most strategically marketed ones.
+            </p>
+            <p class="body-md mt-16">
+              Visibility is not accidental. Discovery is engineered.
+              A successful book marketing campaign requires deep knowledge of
+              publishing platforms, reader psychology, advertising systems,
+              author positioning, and multi-channel execution.
+            </p>
+            <div class="problem-card-quote">
+              <p>"The difference between a book that sells and a book that does not is almost always the marketing, not the writing."</p>
+              <div class="problem-card-author">- Albert Nathan, Founder</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SOLUTION / PILLARS SECTION
+  ============================================================ -->
+  <section id="solution" aria-labelledby="solution-heading">
+    <div class="container">
+
+      <div class="solution-intro reveal">
+        <span class="label-tag">The Albert Nathan Approach</span>
+        <h2 id="solution-heading" class="display-md mt-12">
+          Strategic Marketing Built Around Your Book
+        </h2>
+        <p class="body-lg mt-20">
+          Every campaign we build is tailored to the individual book, author,
+          audience, and objective. There are no templates. No cookie-cutter packages.
+          Just coordinated, multi-channel marketing strategy that puts your book in
+          front of the readers who matter.
+        </p>
+      </div>
+
+      <div class="solution-pillars reveal reveal-delay-1">
+        <div class="pillar">
+          <div class="pillar-number">01</div>
+          <div class="pillar-icon"><i class="fas fa-search"></i></div>
+          <h3>Discover and Audit</h3>
+          <p>We assess your book, your positioning, your audience, and your current marketing presence to understand where the opportunities lie.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-number">02</div>
+          <div class="pillar-icon"><i class="fas fa-map"></i></div>
+          <h3>Strategy and Planning</h3>
+          <p>A tailored campaign strategy is built around your specific book, genre, target readers, budget, and marketing goals.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-number">03</div>
+          <div class="pillar-icon"><i class="fas fa-rocket"></i></div>
+          <h3>Execute and Launch</h3>
+          <p>The campaign is executed across the channels that are most effective for your book, from Amazon to social, advertising to outreach.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-number">04</div>
+          <div class="pillar-icon"><i class="fas fa-chart-bar"></i></div>
+          <h3>Measure and Optimize</h3>
+          <p>Performance is monitored. Data is analyzed. Campaigns are adjusted to maximize results across every active marketing channel.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-number">05</div>
+          <div class="pillar-icon"><i class="fas fa-file-alt"></i></div>
+          <h3>Report and Review</h3>
+          <p>You receive clear, transparent reporting on what was done, what performed, and what the campaign achieved for your book.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-number">06</div>
+          <div class="pillar-icon"><i class="fas fa-layer-group"></i></div>
+          <h3>Scale and Sustain</h3>
+          <p>Successful campaigns are expanded. New channels are added. Your book's visibility and audience continue to grow beyond the initial campaign.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SERVICES SECTION
+  ============================================================ -->
+  <section id="services" aria-labelledby="services-heading">
+    <div class="container">
+
+      <div class="services-header reveal">
+        <span class="label-tag">What We Do</span>
+        <h2 id="services-heading" class="display-md mt-12">
+          A Complete Book Marketing Ecosystem
+        </h2>
+        <div class="gold-line"></div>
+        <p class="body-lg mt-12">
+          From book launch strategy to long-term author brand building,
+          every service is designed to increase your book's reach,
+          visibility, and commercial performance.
+        </p>
+      </div>
+
+      <div class="services-grid">
+
+        <!-- Service 1 -->
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-number">01 Launch</div>
+          <div class="service-icon-wrap"><i class="fas fa-rocket"></i></div>
+          <h3>Book Launch and Promotion Campaigns</h3>
+          <p>Comprehensive pre-launch, launch day, and post-launch campaigns engineered to maximize your book's opening-week visibility and reader acquisition.</p>
+          <div class="service-list">
+            <div class="service-list-item"><i class="fas fa-circle"></i> Pre-launch momentum building</div>
+            <div class="service-list-item"><i class="fas fa-circle"></i> Launch day campaign execution</div>
+            <div class="service-list-item"><i class="fas fa-circle"></i> Post-launch sustainability strategy</div>
+            <div class="service-list-item"><i class="fas fa-circle"></i> Reader community activation</div>
+          </div>
+          <a href="services.html" class="service-link">
+            Learn More <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-number">02 Amazon</div>
+          <div class="service-icon-wrap"><i class="fab fa-amazon"></i></div>
+          <h3>Amazon and Book Discovery Marketing</h3>
+          <p>Strategic Amazon optimization, ranking campaigns, and Amazon Ads management to improve your book's discoverability on the world's largest book marketplace.</p>
+          <div class="service-list">
+            <div class="service-list-item"><i class="fas fa-circle"></i> Amazon listing optimization</div>
+            <div class="service-list-item"><i class="fas fa-circle"></i> Amazon Ads management</div>
+            <div class="service-list-item"><i class="fas fa-circle"></i> Goodreads promotion</div>
+            <div class="service-list-item"><i class="fas fa-circle"></i> Ranking and bestseller strategy</div>
+          </div>
+          <a href="services.html" class="service-link">
+            Learn More <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card reveal reveal-delay-3">
+          <div class="service-number">03 Brand</div>
+          <div class="service-icon-wrap"><i class="fas fa-user-circle"></i></div>
+          <h3>Author Brand and Digital Presence</h3>
+          <p>Building the professional author identity, digital presence, and content strategy that positions you as a credible, recognizable name in your genre.</p>
+          <div class="service-list">
+            <div class="service-list-item"><i class="fas fa-circle"></i> Author brand strategy</div>
+            <div class="service-list-item"><i class="fas fa-circle"></i> Author website development</div>
+            <div class="service-list-item"><i class="fas fa-circle"></i> Content marketing strategy</div>
+            <div class="service-list-item"><i class="fas fa-circle"></i> SEO and organic discoverability</div>
+          </div>
+          <a href="services.html" class="service-link">
+            Learn More <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-number">04 Audience</div>
+          <div class="service-icon-wrap"><i class="fas fa-users"></i></div>
+          <h3>Audience and Reader Growth</h3>
+          <p>Targeted outreach campaigns that connect your book directly with the reader communities, influencers, bloggers, and platforms where your audience lives.</p>
+          <div class="service-list">
+            <div class="service-list-item"><i class="fas fa-circle"></i> Reader outreach campaigns</div>
+            <div class="service-list-item"><i class="fas fa-circle"></i> Influencer and blogger outreach</div>
+            <div class="service-list-item"><i class="fas fa-circle"></i> Book reviewer engagement</div>
+            <div class="service-list-item"><i class="fas fa-circle"></i> Email marketing campaigns</div>
+          </div>
+          <a href="services.html" class="service-link">
+            Learn More <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-number">05 Advertising</div>
+          <div class="service-icon-wrap"><i class="fas fa-ad"></i></div>
+          <h3>Paid Advertising Campaigns</h3>
+          <p>Data-driven paid advertising campaigns across Amazon, Facebook, Instagram, and TikTok that put your book in front of targeted, relevant reader audiences.</p>
+          <div class="service-list">
+            <div class="service-list-item"><i class="fas fa-circle"></i> Amazon Ads strategy and management</div>
+            <div class="service-list-item"><i class="fas fa-circle"></i> Facebook and Instagram Ads</div>
+            <div class="service-list-item"><i class="fas fa-circle"></i> TikTok advertising campaigns</div>
+            <div class="service-list-item"><i class="fas fa-circle"></i> Ad creative and campaign optimization</div>
+          </div>
+          <a href="services.html" class="service-link">
+            Learn More <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-card reveal reveal-delay-3">
+          <div class="service-number">06 Strategy</div>
+          <div class="service-icon-wrap"><i class="fas fa-chess"></i></div>
+          <h3>Strategy, Consulting and Custom Campaigns</h3>
+          <p>For authors and publishers who need expert marketing consulting, custom multi-channel campaigns, or ongoing strategic marketing support.</p>
+          <div class="service-list">
+            <div class="service-list-item"><i class="fas fa-circle"></i> Book marketing consulting</div>
+            <div class="service-list-item"><i class="fas fa-circle"></i> Marketing audit and review</div>
+            <div class="service-list-item"><i class="fas fa-circle"></i> Custom campaign development</div>
+            <div class="service-list-item"><i class="fas fa-circle"></i> Ongoing marketing support</div>
+          </div>
+          <a href="services.html" class="service-link">
+            Learn More <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="services-cta reveal mt-48">
+        <a href="services.html" class="btn btn-dark">
+          View All Services <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       VISIBILITY / RESULTS VISUAL SECTION
+  ============================================================ -->
+  <section id="visibility" aria-labelledby="visibility-heading">
+    <div class="container">
+
+      <div class="visibility-header reveal">
+        <span class="label-tag">Real Campaign Results</span>
+        <h2 id="visibility-heading" class="display-md mt-12">
+          What Strategic Book Marketing Looks Like
+        </h2>
+        <div class="gold-line"></div>
+        <p class="body-lg mt-12">
+          Real campaigns. Real outcomes. These are the types of results
+          that Albert Nathan Agency campaigns have produced for authors
+          across genres and publishing paths.
+        </p>
+      </div>
+
+      <div class="visibility-grid">
+
+        <!-- Result Card 1 -->
+        <div class="visibility-card reveal reveal-delay-1">
+          <div class="visibility-img-slot">
+            <img src="Amazon discoverability.png" alt="Amazon visibility campaign result" />
+          </div>
+          <div class="visibility-card-body">
+            <div class="visibility-card-tag">Amazon Visibility</div>
+            <h4>Top-Category Ranking Achievement</h4>
+            <p>Strategic Amazon optimization and targeted ad campaigns driving a book into top-category visibility.</p>
+          </div>
+        </div>
+
+        <!-- Result Card 2 -->
+        <div class="visibility-card reveal reveal-delay-2">
+          <div class="visibility-img-slot">
+            <img src="Amazon Ads.png" alt="Advertising performance result" />
+          </div>
+          <div class="visibility-card-body">
+            <div class="visibility-card-tag">Advertising Performance</div>
+            <h4>High-ROI Paid Advertising Results</h4>
+            <p>Facebook, Instagram, and Amazon Ads campaigns delivering measurable click-through and reader acquisition.</p>
+          </div>
+        </div>
+
+        <!-- Result Card 3 -->
+        <div class="visibility-card reveal reveal-delay-3">
+          <div class="visibility-img-slot">
+            <img src="Amazon strategy.png" alt="Reader reach result" />
+          </div>
+          <div class="visibility-card-body">
+            <div class="visibility-card-tag">Reader Reach</div>
+            <h4>Audience Growth and Reader Acquisition</h4>
+            <p>Outreach and social campaigns building an engaged reader community around an author's work.</p>
+          </div>
+        </div>
+
+        <!-- Result Card 4 -->
+        <div class="visibility-card reveal reveal-delay-1">
+          <div class="visibility-img-slot">
+            <img src="Social media.png" alt="Social media growth result" />
+          </div>
+          <div class="visibility-card-body">
+            <div class="visibility-card-tag">Social Growth</div>
+            <h4>Author Platform and Social Media Growth</h4>
+            <p>Multi-platform social campaigns building an author brand and follower base across key channels.</p>
+          </div>
+        </div>
+
+        <!-- Result Card 5 -->
+        <div class="visibility-card reveal reveal-delay-2">
+          <div class="visibility-img-slot">
+            <img src="kdp.png" alt="Book ranking result" />
+          </div>
+          <div class="visibility-card-body">
+            <div class="visibility-card-tag">Book Rankings</div>
+            <h4>Bestseller Category Positioning</h4>
+            <p>Strategic ranking campaigns achieving bestseller status across Amazon categories and subcategories.</p>
+          </div>
+        </div>
+
+        <!-- Result Card 6 -->
+        <div class="visibility-card reveal reveal-delay-3">
+          <div class="visibility-img-slot">
+            <img src="Amazon ranking.png" alt="Campaign analytics dashboard" />
+          </div>
+          <div class="visibility-card-body">
+            <div class="visibility-card-tag">Campaign Analytics</div>
+            <h4>Full-Funnel Campaign Performance</h4>
+            <p>End-to-end campaign analytics showing reach, engagement, click-through, and conversion performance.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       METRICS STRIP
+  ============================================================ -->
+  <section id="metrics" aria-label="Agency statistics">
+    <div class="container">
+      <div class="metrics-grid">
+
+        <div class="metric-item reveal">
+          <div class="metric-number">10+</div>
+          <div class="metric-label">Years Experience</div>
+          <div class="metric-sub">Dedicated to book marketing</div>
+        </div>
+
+        <div class="metric-item reveal reveal-delay-2">
+          <div class="metric-number">200+</div>
+          <div class="metric-label">Authors Supported</div>
+          <div class="metric-sub">Across all genres and publishing paths</div>
+        </div>
+
+        <div class="metric-item reveal reveal-delay-3">
+          <div class="metric-number">350+</div>
+          <div class="metric-label">Books Promoted</div>
+          <div class="metric-sub">Fiction, nonfiction and specialist titles</div>
+        </div>
+
+        <div class="metric-item reveal reveal-delay-4">
+          <div class="metric-number">15+</div>
+          <div class="metric-label">Countries Reached</div>
+          <div class="metric-sub">Worldwide campaign delivery</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CASE STUDIES SECTION
+  ============================================================ -->
+  <section id="case-studies" aria-labelledby="case-heading">
+    <div class="container">
+
+      <div class="case-header reveal">
+        <span class="label-tag">Campaign Stories</span>
+        <h2 id="case-heading" class="display-md mt-12">
+          Results We Have Built for Authors
+        </h2>
+        <div class="gold-line"></div>
+        <p class="body-lg mt-12">
+          Real campaigns, real challenges, real outcomes.
+          These are the stories behind the strategy.
+        </p>
+      </div>
+
+      <div class="case-grid">
+
+        <!-- Case Study 1 - Kate Cullen -->
+        <div class="case-card reveal reveal-delay-1">
+          <div class="case-card-header">
+            <div class="case-book-cover-slot">
+              <img src="Game on boys.png" alt="Game On Boys! The PlayStation Play-offs book cover" />
+            </div>
+            <div class="case-card-header-content">
+              <span class="case-tag">Children's Fiction</span>
+              <h3>Kate Cullen</h3>
+              <div class="case-book">Game On Boys! The PlayStation Play-offs</div>
+            </div>
+          </div>
+          <div class="case-card-body">
+            <div class="case-challenge">
+              <div class="case-section-label">The Challenge</div>
+              <p>Kate had a published children's fiction title with strong creative foundations but limited online visibility and no coordinated marketing strategy. The book was struggling to reach its core audience of young gaming-enthusiast readers and their parents.</p>
+            </div>
+            <div class="case-strategy">
+              <div class="case-section-label">The Strategy</div>
+              <p>Albert Nathan Agency implemented a multi-channel campaign combining Amazon listing optimization, targeted Amazon Ads, family and gaming influencer outreach, and a social media awareness campaign. All focused on reaching parents of children aged 8 to 13 who engaged with gaming content.</p>
+            </div>
+            <div class="case-result">
+              <div class="case-section-label">Campaign Results</div>
+              <div class="case-metrics">
+                <div class="case-metric">
+                  <div class="case-metric-value">47%</div>
+                  <div class="case-metric-label">Visibility Increase</div>
+                </div>
+                <div class="case-metric">
+                  <div class="case-metric-value">28+</div>
+                  <div class="case-metric-label">Reader Reviews</div>
+                </div>
+                <div class="case-metric">
+                  <div class="case-metric-value">#12</div>
+                  <div class="case-metric-label">Category Rank</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case Study 2 - Diana Setterfield -->
+        <div class="case-card reveal reveal-delay-2">
+          <div class="case-card-header">
+            <div class="case-book-cover-slot">
+              <img src="Once upon.png" alt="Once Upon a River book cover" />
+            </div>
+            <div class="case-card-header-content">
+              <span class="case-tag">Literary Fiction</span>
+              <h3>Diana Setterfield</h3>
+              <div class="case-book">Once Upon a River: A Novel</div>
+            </div>
+          </div>
+          <div class="case-card-body">
+            <div class="case-challenge">
+              <div class="case-section-label">The Challenge</div>
+              <p>With a highly anticipated literary fiction title, Diana needed a strategic marketing campaign that would build pre-release momentum, engage existing fans, and break the book into new reader audiences beyond her established base.</p>
+            </div>
+            <div class="case-strategy">
+              <div class="case-section-label">The Strategy</div>
+              <p>Albert Nathan Agency built a comprehensive pre-launch and launch campaign combining Goodreads promotion, literary influencer and book blogger outreach, targeted Facebook and Instagram Ads directed at literary fiction readers, and a coordinated social media campaign that built audience anticipation for the release.</p>
+            </div>
+            <div class="case-result">
+              <div class="case-section-label">Campaign Results</div>
+              <div class="case-metrics">
+                <div class="case-metric">
+                  <div class="case-metric-value">12k</div>
+                  <div class="case-metric-label">Campaign Reach</div>
+                </div>
+                <div class="case-metric">
+                  <div class="case-metric-value">340+</div>
+                  <div class="case-metric-label">Goodreads Adds</div>
+                </div>
+                <div class="case-metric">
+                  <div class="case-metric-value">32%</div>
+                  <div class="case-metric-label">Sales Uplift</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="case-cta reveal">
+        <a href="case-studies.html" class="btn btn-outline-gold">
+          View All Case Studies <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROCESS SECTION
+  ============================================================ -->
+  <section id="process" aria-labelledby="process-heading">
+    <div class="container">
+
+      <div class="process-header reveal">
+        <span class="label-tag">How It Works</span>
+        <h2 id="process-heading" class="display-md">
+          From Enquiry to Campaign Results
+        </h2>
+        <p class="body-lg mt-20">
+          A clear, transparent process from the moment you contact Albert Nathan Agency
+          to the delivery of a campaign that works for your book.
+        </p>
+      </div>
+
+      <div class="process-steps reveal">
+        <div class="process-step">
+          <div class="step-number-wrap"><span class="step-number">01</span></div>
+          <div class="step-title">Enquire</div>
+          <div class="step-desc">Submit your book details and marketing objectives. Tell us about your book, your goals, and your timeline.</div>
+        </div>
+        <div class="process-step">
+          <div class="step-number-wrap"><span class="step-number">02</span></div>
+          <div class="step-title">Review and Audit</div>
+          <div class="step-desc">We assess your book, audience, current positioning, and marketing gaps to identify the strongest opportunities.</div>
+        </div>
+        <div class="process-step">
+          <div class="step-number-wrap"><span class="step-number">03</span></div>
+          <div class="step-title">Strategy</div>
+          <div class="step-desc">A tailored marketing strategy is developed, specific to your book, genre, audience, budget, and objectives.</div>
+        </div>
+        <div class="process-step">
+          <div class="step-number-wrap"><span class="step-number">04</span></div>
+          <div class="step-title">Proposal</div>
+          <div class="step-desc">You receive a clear campaign proposal outlining the strategy, recommended services, timeline, and investment.</div>
+        </div>
+      </div>
+
+      <div class="process-steps-row2 reveal reveal-delay-2">
+        <div class="process-step">
+          <div class="step-number-wrap"><span class="step-number">05</span></div>
+          <div class="step-title">Campaign Launch</div>
+          <div class="step-desc">Once approved, your campaign begins. Execution starts across agreed channels on the confirmed schedule.</div>
+        </div>
+        <div class="process-step">
+          <div class="step-number-wrap"><span class="step-number">06</span></div>
+          <div class="step-title">Monitor and Optimize</div>
+          <div class="step-desc">Campaign performance is monitored continuously. Ads and strategies are adjusted for maximum effectiveness.</div>
+        </div>
+        <div class="process-step">
+          <div class="step-number-wrap"><span class="step-number">07</span></div>
+          <div class="step-title">Reporting</div>
+          <div class="step-desc">You receive transparent campaign reporting covering what was executed, what performed, and the outcomes achieved.</div>
+        </div>
+        <div class="process-step">
+          <div class="step-number-wrap"><span class="step-number">08</span></div>
+          <div class="step-title">Scale</div>
+          <div class="step-desc">Successful strategies are extended. New channels are explored. Your book's visibility continues to build.</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PRICING SECTION
+  ============================================================ -->
+  <section id="pricing" aria-labelledby="pricing-heading">
+    <div class="container">
+
+      <div class="pricing-header reveal">
+        <span class="label-tag">Investment</span>
+        <h2 id="pricing-heading" class="display-md mt-12">
+          Campaign Investment Levels
+        </h2>
+        <div class="gold-line"></div>
+        <p class="body-lg mt-12">
+          Every campaign is customized. These investment levels provide a guide to
+          the scope and scale of what is possible within each range.
+        </p>
+      </div>
+
+      <div class="pricing-grid">
+
+        <!-- Tier 1 -->
+        <div class="pricing-card reveal reveal-delay-1">
+          <div class="pricing-tier">Essential</div>
+          <h3>Essential Campaign</h3>
+          <div class="pricing-from">Starting from</div>
+          <div class="pricing-price">$500</div>
+          <p class="pricing-desc">Targeted promotional campaigns for authors with a specific, focused marketing need and a defined audience.</p>
+          <div class="pricing-features">
+            <div class="pricing-feature"><i class="fas fa-check"></i> Single-channel campaign focus</div>
+            <div class="pricing-feature"><i class="fas fa-check"></i> Amazon or social promotion</div>
+            <div class="pricing-feature"><i class="fas fa-check"></i> Reader outreach campaign</div>
+            <div class="pricing-feature"><i class="fas fa-check"></i> Campaign performance report</div>
+            <div class="pricing-feature"><i class="fas fa-check"></i> Direct author communication</div>
+          </div>
+          <a href="contact.html" class="btn btn-outline-gold" style="width:100%; justify-content:center;">
+            Start Enquiry <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- Tier 2 -->
+        <div class="pricing-card featured reveal reveal-delay-2">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-tier">Growth</div>
+          <h3>Growth Campaign</h3>
+          <div class="pricing-from">Starting from</div>
+          <div class="pricing-price">$2,500</div>
+          <p class="pricing-desc">A broader, multi-channel marketing strategy for authors ready to invest in serious audience growth and book visibility.</p>
+          <div class="pricing-features">
+            <div class="pricing-feature"><i class="fas fa-check"></i> Multi-channel campaign strategy</div>
+            <div class="pricing-feature"><i class="fas fa-check"></i> Amazon Ads and social advertising</div>
+            <div class="pricing-feature"><i class="fas fa-check"></i> Influencer and blogger outreach</div>
+            <div class="pricing-feature"><i class="fas fa-check"></i> Author branding consultation</div>
+            <div class="pricing-feature"><i class="fas fa-check"></i> Email marketing integration</div>
+            <div class="pricing-feature"><i class="fas fa-check"></i> Detailed campaign reporting</div>
+          </div>
+          <a href="contact.html" class="btn btn-gold" style="width:100%; justify-content:center;">
+            Start Enquiry <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- Tier 3 -->
+        <div class="pricing-card reveal reveal-delay-3">
+          <div class="pricing-tier">Full-Service</div>
+          <h3>Full-Service Campaign</h3>
+          <div class="pricing-from">Starting from</div>
+          <div class="pricing-price">$5,000</div>
+          <p class="pricing-desc">Comprehensive multi-channel campaigns for authors committed to maximizing their book's market performance.</p>
+          <div class="pricing-features">
+            <div class="pricing-feature"><i class="fas fa-check"></i> Comprehensive campaign strategy</div>
+            <div class="pricing-feature"><i class="fas fa-check"></i> All advertising channels</div>
+            <div class="pricing-feature"><i class="fas fa-check"></i> Full author brand development</div>
+            <div class="pricing-feature"><i class="fas fa-check"></i> Launch and post-launch campaign</div>
+            <div class="pricing-feature"><i class="fas fa-check"></i> PR and media outreach</div>
+            <div class="pricing-feature"><i class="fas fa-check"></i> Weekly reporting and optimization</div>
+          </div>
+          <a href="contact.html" class="btn btn-outline-gold" style="width:100%; justify-content:center;">
+            Start Enquiry <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- Tier 4 -->
+        <div class="pricing-card reveal reveal-delay-4">
+          <div class="pricing-tier">Custom</div>
+          <h3>Custom Campaign</h3>
+          <div class="pricing-from">Investment from</div>
+          <div class="pricing-price">$20k+</div>
+          <p class="pricing-desc">Bespoke, large-scale campaigns for publishers, established authors, and multi-title marketing programs.</p>
+          <div class="pricing-features">
+            <div class="pricing-feature"><i class="fas fa-check"></i> Fully bespoke campaign design</div>
+            <div class="pricing-feature"><i class="fas fa-check"></i> Publisher and multi-title support</div>
+            <div class="pricing-feature"><i class="fas fa-check"></i> Large-scale advertising budgets</div>
+            <div class="pricing-feature"><i class="fas fa-check"></i> Long-term marketing programs</div>
+            <div class="pricing-feature"><i class="fas fa-check"></i> Full campaign management</div>
+            <div class="pricing-feature"><i class="fas fa-check"></i> Priority access and reporting</div>
+          </div>
+          <a href="contact.html" class="btn btn-outline-gold" style="width:100%; justify-content:center;">
+            Request Custom Quote <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="pricing-note reveal mt-48">
+        <p>
+          <strong>Important:</strong> These are starting investment levels only.
+          The final campaign investment is determined after a full review of your
+          book, audience, marketing goals, timeline, and campaign requirements.
+          Custom proposals are provided for every project.
+          All campaigns are available to authors, publishers, and publishing professionals worldwide.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TESTIMONIALS SECTION
+  ============================================================ -->
+  <section id="testimonials" aria-labelledby="testimonials-heading">
+    <div class="container">
+
+      <div class="testimonials-header reveal">
+        <span class="label-tag">Author Experiences</span>
+        <h2 id="testimonials-heading" class="display-md mt-12">
+          What Authors Say
+        </h2>
+        <div class="gold-line"></div>
+        <p class="body-lg mt-12">
+          The measure of any book marketing agency is the experience of the
+          authors who have worked with it.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+
+        <!-- Featured Testimonial - Kate Cullen -->
+        <div class="testimonial-card featured reveal">
+          <div class="quote-icon">"</div>
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">
+            "Albert Nathan completely transformed the visibility of my children's book. Within weeks of the campaign launching, my book was reaching families who had never heard of it before. The Amazon ranking improvement alone was remarkable, but what I value most is knowing my book is now in the hands of young readers who genuinely love it. Albert's strategic approach and personal attention made all the difference."
+          </p>
+          <div class="testimonial-meta">
+            <div class="testimonial-avatar">KC</div>
+            <div class="testimonial-meta-info">
+              <div class="name">Kate Cullen</div>
+              <div class="role">Author, Game On Boys! The PlayStation Play-offs</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 - Diana Setterfield -->
+        <div class="testimonial-card reveal reveal-delay-1">
+          <div class="quote-icon">"</div>
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">
+            "I was nervous about marketing a literary fiction title in such a crowded space. Albert Nathan understood the nuance required for this genre and built a campaign that respected the book's literary qualities while still reaching new readers. The pre-launch momentum we built on Goodreads and through influencer outreach was exceptional. I could not have asked for a better partner."
+          </p>
+          <div class="testimonial-meta">
+            <div class="testimonial-avatar">DS</div>
+            <div class="testimonial-meta-info">
+              <div class="name">Diana Setterfield</div>
+              <div class="role">Author, Once Upon a River: A Novel</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Testimonial Slot -->
+        <div class="testimonial-card reveal reveal-delay-2">
+          <div class="quote-icon">"</div>
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">
+            "Working with Albert Nathan Agency was the best decision I made for my book. The strategy was tailored specifically to my genre and audience, and the results spoke for themselves. My book went from being invisible to having real, sustained visibility on Amazon and beyond. I highly recommend Albert to any author serious about their book's success."
+          </p>
+          <div class="testimonial-meta">
+            <div class="testimonial-avatar">-</div>
+            <div class="testimonial-meta-info">
+              <div class="name">[Author Name]</div>
+              <div class="role">[Author Description / Book Title]</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-48 reveal">
+        <a href="testimonials.html" class="btn btn-outline-gold">
+          Read More Author Experiences <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FREE TOOLKIT / LEAD MAGNET
+  ============================================================ -->
+  <section id="toolkit" aria-labelledby="toolkit-heading">
+    <div class="container">
+      <div class="toolkit-inner">
+
+        <div class="toolkit-left reveal">
+          <span class="label-tag">Free Author Resource</span>
+          <h2 id="toolkit-heading" class="display-md mt-12">
+            The Indie Author's Amazon Visibility Audit
+          </h2>
+          <p class="body-lg mt-20">
+            A step-by-step framework for finding out exactly why your book is not ranking, and what to fix first. This is the same audit process I walk clients through before we ever talk about strategy or pricing.
+          </p>
+
+          <div class="toolkit-items mt-32">
+            <div class="toolkit-item">
+              <div class="toolkit-item-icon"><i class="fas fa-folder-tree"></i></div>
+              <div class="toolkit-item-text">
+                <strong>Four-Part Audit Framework</strong>
+                <span>Categories, keywords, metadata, and description. All covered in detail.</span>
+              </div>
+            </div>
+            <div class="toolkit-item">
+              <div class="toolkit-item-icon"><i class="fas fa-check-double"></i></div>
+              <div class="toolkit-item-text">
+                <strong>Actionable Checklists</strong>
+                <span>Each section comes with a practical checklist you can work through with your Amazon listing open.</span>
+              </div>
+            </div>
+            <div class="toolkit-item">
+              <div class="toolkit-item-icon"><i class="fas fa-chart-simple"></i></div>
+              <div class="toolkit-item-text">
+                <strong>Scoring System</strong>
+                <span>Score your results and identify exactly where to focus your efforts first.</span>
+              </div>
+            </div>
+            <div class="toolkit-item">
+              <div class="toolkit-item-icon"><i class="fas fa-lightbulb"></i></div>
+              <div class="toolkit-item-text">
+                <strong>Five Common Mistakes</strong>
+                <span>Learn what most authors get wrong and how to avoid these costly errors.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="toolkit-right reveal reveal-delay-2">
+          <h3>Get the Free Audit Framework</h3>
+          <p>Enter your name and email below. Your Amazon Visibility Audit will be sent to you immediately.</p>
+
+          <form class="toolkit-form" action="https://formspree.io/f/xwleewrd" method="POST">
+            <input type="text"  name="name"  placeholder="Your Full Name"    required autocomplete="name" />
+            <input type="email" name="email" placeholder="Your Email Address" required autocomplete="email" />
+            <input type="hidden" name="_subject" value="Free Audit Request - Albert Nathan Agency" />
+            <input type="hidden" name="_next" value="thank-you.html" />
+            <button type="submit" class="btn btn-gold">
+              <i class="fas fa-download"></i> Send Me the Free Audit
+            </button>
+          </form>
+          <p class="toolkit-disclaimer">
+            Your email is kept private. We do not send spam or unsolicited marketing.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FAQ SECTION
+  ============================================================ -->
+  <section id="faq" aria-labelledby="faq-heading">
+    <div class="container">
+
+      <div class="faq-header reveal">
+        <span class="label-tag">Common Questions</span>
+        <h2 id="faq-heading" class="display-md mt-12">
+          Frequently Asked Questions
+        </h2>
+        <div class="gold-line"></div>
+      </div>
+
+      <div class="faq-layout">
+
+        <div class="faq-sidebar reveal">
+          <h3>Have a question we have not answered?</h3>
+          <p>Reach out directly and Albert Nathan will personally respond to your query before you commit to anything.</p>
+          <a href="contact.html" class="btn btn-gold btn-sm">
+            Ask a Question <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="faq-list reveal reveal-delay-1">
+
+          <div class="faq-item">
+            <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+              <span class="faq-q-text">How much does book marketing cost?</span>
+              <div class="faq-icon"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                Book marketing investment with Albert Nathan Agency starts at $500 and scales based on campaign scope, the channels used, your marketing objectives, and your timeline. Every campaign receives a custom proposal with a clear breakdown of investment and deliverables. There are no hidden fees.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+              <span class="faq-q-text">Do you guarantee book sales?</span>
+              <div class="faq-icon"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                No. Book sales are influenced by many factors including book quality, cover design, pricing, reader demand, competition, timing, and market conditions. Many of these fall outside the scope of marketing. What we guarantee is strategic, professional execution of the agreed campaign. Marketing results vary and no specific outcome can be promised.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+              <span class="faq-q-text">How quickly can I see marketing results?</span>
+              <div class="faq-icon"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                Some marketing channels produce early results within days. Paid advertising, for example, can drive traffic quickly. Other channels such as SEO, organic audience building, and outreach campaigns take longer to develop. A realistic timeline for sustained marketing results is typically 4 to 12 weeks depending on the campaign scope and starting position.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+              <span class="faq-q-text">Do you work with debut authors?</span>
+              <div class="faq-icon"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                Yes. Debut authors are welcome. In fact, building a strong marketing foundation from the very first book is one of the most valuable investments an author can make in their writing career. We work with authors at every stage, from first-time publishing to established multi-title authors.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+              <span class="faq-q-text">Do you work with self-published and traditionally published authors?</span>
+              <div class="faq-icon"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                Yes to both. Whether your book is independently published, traditionally published, or published through a hybrid model, Albert Nathan Agency can build and execute a marketing campaign around it. We also work with publishers directly.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+              <span class="faq-q-text">Do you market books internationally?</span>
+              <div class="faq-icon"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                Yes. Albert Nathan Agency works with authors and publishers worldwide. Campaigns are delivered internationally with audience targeting focused on the markets that are most relevant to your book and genre.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+              <span class="faq-q-text">What genres do you work with?</span>
+              <div class="faq-icon"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                All genres. Fiction, nonfiction, children's, thriller, romance, literary fiction, fantasy, science fiction, self-help, business, memoir, biography, and specialist titles. Marketing strategy is adapted to the specific genre, audience, and publishing platform.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+              <span class="faq-q-text">What is the minimum marketing budget?</span>
+              <div class="faq-icon"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                The minimum campaign investment with Albert Nathan Agency is $500. This covers targeted, focused campaigns. For broader multi-channel campaigns, the recommended minimum is $2,500+. Budget requirements are discussed during the initial enquiry process.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+              <span class="faq-q-text">How long should I market my book?</span>
+              <div class="faq-icon"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                There is no single answer. A book launch campaign typically runs for 4 to 12 weeks with the core intensity around the release window. However, sustained marketing over 6 to 12 months consistently outperforms one-time campaigns. The most successful authors treat marketing as an ongoing activity, not a single event.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+              <span class="faq-q-text">What happens after I submit an enquiry?</span>
+              <div class="faq-icon"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                Your enquiry is personally reviewed by Albert Nathan. You will receive a response within 24 to 48 hours. If your project is a good fit, we will discuss your book, marketing objectives, and campaign options. A tailored proposal is then prepared for your review.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" role="button" tabindex="0" aria-expanded="false">
+              <span class="faq-q-text">Can I combine multiple services?</span>
+              <div class="faq-icon"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                Yes, and we recommend it. The most effective book marketing campaigns combine multiple coordinated channels. Advertising, outreach, social media, Amazon optimization, and author branding working together. Multi-channel campaigns consistently outperform single-service promotion.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FINAL CTA SECTION
+  ============================================================ -->
+  <section id="cta-final" aria-labelledby="cta-heading">
+    <div class="container">
+      <div class="cta-final-inner reveal">
+        <span class="label-tag">Ready to Begin?</span>
+        <h2 id="cta-heading" class="display-lg mt-20">
+          Your Book Deserves to Be Found.
+        </h2>
+        <p class="body-lg mt-24">
+          Every day without a strategic marketing campaign is a day your book
+          is not reaching the readers it was written for. Let's build the campaign
+          that changes that.
+        </p>
+        <div class="btn-group mt-40">
+          <a href="book-a-call.html" class="btn btn-gold btn-lg">
+            <i class="fas fa-arrow-right"></i>
+            Start Your Book Marketing Project
+          </a>
+          <a href="contact.html" class="btn btn-outline-white">
+            Send an Enquiry
+          </a>
+        </div>
+        <p class="cta-disclaimer mt-32">
+          Marketing results vary. No specific sales or ranking outcome is guaranteed.
+          Campaigns are executed professionally and transparently.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer id="footer" role="contentinfo">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <img src="css/js/Albert Nathan.png" alt="Albert Nathan Agency" />
+          <p>
+            Strategic book marketing for authors ready to be discovered.
+            Turning great books into discoverable brands worldwide.
+          </p>
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/albertnathanagency/" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61592884918168" target="_blank" rel="noopener" class="social-btn" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://x.com/albertnathan001" target="_blank" rel="noopener" class="social-btn" aria-label="X / Twitter">
+              <i class="fab fa-x-twitter"></i>
+            </a>
+            <a href="https://tiktok.com/@claire.caldwell22" target="_blank" rel="noopener" class="social-btn" aria-label="TikTok">
+              <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://wa.me/WHATSAPP_NUMBER_HERE" target="_blank" rel="noopener" class="social-btn" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Navigation Column -->
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="process.html">Process</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Services Column -->
+        <div class="footer-col">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="services.html">Book Launch Campaigns</a></li>
+            <li><a href="services.html">Amazon Marketing</a></li>
+            <li><a href="services.html">Author Branding</a></li>
+            <li><a href="services.html">Paid Advertising</a></li>
+            <li><a href="services.html">Reader Outreach</a></li>
+            <li><a href="services.html">Social Media Marketing</a></li>
+            <li><a href="services.html">Strategy and Consulting</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Column -->
+        <div class="footer-col">
+          <h4>Get In Touch</h4>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <span><a href="mailto:albertnathan@bookpromotionuk.com">albertnathan@bookpromotionuk.com</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fab fa-whatsapp"></i>
+            <span><a href="https://wa.me/WHATSAPP_NUMBER_HERE">Chat on WhatsApp</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-globe"></i>
+            <span>Available Worldwide, All Days</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Based in USA, Texas<br />Serving authors globally</span>
+          </div>
+          <div class="mt-24">
+            <a href="book-a-call.html" class="btn btn-gold btn-sm">
+              Start a Project <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>© 2025 Albert Nathan Agency. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms.html">Terms and Conditions</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+
+      <!-- Disclaimer -->
+      <div class="footer-disclaimer">
+        <p>
+          Marketing results vary based on factors including book quality, market demand, audience size, budget, timing, competitive environment, and campaign execution.
+          Albert Nathan Agency does not guarantee specific book sales, revenue, Amazon rankings, or any other quantifiable outcome.
+          Testimonials, where displayed, represent individual experiences and are not a guarantee of future results.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       FLOATING WHATSAPP BUTTON
+  ============================================================ -->
+  <a href="https://wa.me/WHATSAPP_NUMBER_HERE?text=Hi%20Albert%2C%20I%27d%20like%20to%20discuss%20marketing%20for%20my%20book."
+     class="whatsapp-float"
+     target="_blank"
+     rel="noopener"
+     aria-label="Chat with Albert Nathan on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="wa-label">Chat About Your Book</span>
+  </a>
+
+  <!-- ============================================================
+       JAVASCRIPT
+  ============================================================ -->
+  <script>
+    /* ============================================================
+       NAVBAR - SCROLL BEHAVIOUR
+    ============================================================ */
+    const navbar = document.getElementById('navbar');
+
+    function handleScroll() {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
+
+    /* ============================================================
+       MOBILE NAVIGATION
+    ============================================================ */
+    const hamburger  = document.getElementById('hamburger');
+    const navMobile  = document.getElementById('navMobile');
+
+    function openMobileNav() {
+      hamburger.classList.add('open');
+      navMobile.classList.add('active');
+      hamburger.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMobileNav() {
+      hamburger.classList.remove('open');
+      navMobile.classList.remove('active');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+
+    hamburger.addEventListener('click', () => {
+      if (navMobile.classList.contains('active')) {
+        closeMobileNav();
+      } else {
+        openMobileNav();
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navMobile.classList.contains('active')) {
+        closeMobileNav();
+      }
+    });
+
+    /* ============================================================
+       SCROLL REVEAL ANIMATION
+    ============================================================ */
+    const revealElements = document.querySelectorAll('.reveal');
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.12,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    /* ============================================================
+       FAQ ACCORDION
+    ============================================================ */
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+
+      function toggleFaq() {
+        const isOpen = item.classList.contains('open');
+
+        faqItems.forEach(other => {
+          other.classList.remove('open');
+          other.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+
+        if (!isOpen) {
+          item.classList.add('open');
+          question.setAttribute('aria-expanded', 'true');
+        }
+      }
+
+      question.addEventListener('click', toggleFaq);
+
+      question.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          toggleFaq();
+        }
+      });
+    });
+
+    /* ============================================================
+       COOKIE CONSENT
+    ============================================================ */
+    const cookieBanner  = document.getElementById('cookie-banner');
+    const cookieAccept  = document.getElementById('cookieAccept');
+    const cookieDecline = document.getElementById('cookieDecline');
+
+    function checkCookieConsent() {
+      const consent = localStorage.getItem('ana_cookie_consent');
+      if (!consent) {
+        setTimeout(() => cookieBanner.classList.add('show'), 1200);
+      }
+    }
+
+    cookieAccept.addEventListener('click', () => {
+      localStorage.setItem('ana_cookie_consent', 'accepted');
+      cookieBanner.classList.remove('show');
+    });
+
+    cookieDecline.addEventListener('click', () => {
+      localStorage.setItem('ana_cookie_consent', 'declined');
+      cookieBanner.classList.remove('show');
+    });
+
+    checkCookieConsent();
+
+    /* ============================================================
+       SMOOTH SCROLL FOR INTERNAL ANCHORS
+    ============================================================ */
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    /* ============================================================
+       COUNTER ANIMATION FOR METRICS
+    ============================================================ */
+    function animateCounter(el, target, duration, suffix) {
+      let start = 0;
+      const step = target / (duration / 16);
+      const timer = setInterval(() => {
+        start += step;
+        if (start >= target) {
+          start = target;
+          clearInterval(timer);
+        }
+        el.textContent = Math.floor(start) + suffix;
+      }, 16);
+    }
+
+    const metricsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const numbers = entry.target.querySelectorAll('.metric-number');
+          numbers.forEach(num => {
+            const text = num.textContent.trim();
+            const match = text.match(/^(\d+)(.*)$/);
+            if (match) {
+              const value  = parseInt(match[1]);
+              const suffix = match[2];
+              animateCounter(num, value, 1800, suffix);
+            }
+          });
+          metricsObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.4 });
+
+    const metricsSection = document.getElementById('metrics');
+    if (metricsSection) metricsObserver.observe(metricsSection);
+  </script>
+
+</body>
+</html>

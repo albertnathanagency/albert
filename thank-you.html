@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Thank you for contacting Albert Nathan Agency. Your book marketing enquiry has been received. You will hear back within 24 to 48 hours." />
+  <meta name="keywords" content="thank you, enquiry received, book marketing enquiry, Albert Nathan Agency" />
+  <meta name="author" content="Albert Nathan" />
+  <meta property="og:title" content="Thank You | Albert Nathan Agency" />
+  <meta property="og:description" content="Your enquiry has been received. Albert Nathan will respond personally within 24 to 48 hours." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="css/js/Albert Nathan.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Thank You | Albert Nathan Agency" />
+  <meta name="twitter:description" content="Your book marketing enquiry has been received. We will be in touch shortly." />
+  <title>Thank You | Albert Nathan Agency</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+  </script>
+
+  <style>
+    :root {
+      --gold: #C9A84C;
+      --gold-light: #E2C47A;
+      --gold-dark: #A07830;
+      --gold-pale: #F5EDD6;
+      --black: #0A0A0A;
+      --charcoal: #1A1A1A;
+      --charcoal-mid: #2C2C2C;
+      --charcoal-light: #3D3D3D;
+      --white: #FFFFFF;
+      --off-white: #F9F7F2;
+      --grey-100: #F5F5F5;
+      --grey-200: #E8E8E8;
+      --grey-400: #ADADAD;
+      --text-primary: #0A0A0A;
+      --text-secondary: #3D3D3D;
+      --text-muted: #6B6B6B;
+      --border: rgba(201,168,76,0.25);
+      --border-light: rgba(201,168,76,0.12);
+      --shadow-sm: 0 2px 12px rgba(0,0,0,0.06);
+      --shadow-md: 0 8px 32px rgba(0,0,0,0.10);
+      --shadow-lg: 0 20px 60px rgba(0,0,0,0.14);
+      --shadow-gold: 0 8px 32px rgba(201,168,76,0.20);
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --radius-lg: 20px;
+      --radius-xl: 32px;
+      --transition: all 0.35s cubic-bezier(0.4,0,0.2,1);
+      --font-heading: 'Playfair Display', Georgia, serif;
+      --font-sub: 'Cormorant Garamond', Georgia, serif;
+      --font-body: 'Inter', -apple-system, sans-serif;
+    }
+
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior:smooth; font-size:16px; -webkit-text-size-adjust:100%; }
+    body { font-family:var(--font-body); color:var(--text-primary); background:var(--white); line-height:1.6; overflow-x:hidden; }
+    img { max-width:100%; height:auto; display:block; }
+    a { color:inherit; text-decoration:none; }
+    ul { list-style:none; }
+    button { cursor:pointer; border:none; background:none; font-family:inherit; }
+
+    .display-lg { font-family:var(--font-heading); font-size:clamp(2.2rem,4.5vw,4rem); font-weight:700; line-height:1.1; letter-spacing:-0.02em; }
+    .display-md { font-family:var(--font-heading); font-size:clamp(1.8rem,3.5vw,3rem); font-weight:600; line-height:1.15; letter-spacing:-0.01em; }
+    .label-tag { font-family:var(--font-body); font-size:0.72rem; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:var(--gold); }
+    .body-lg { font-size:clamp(1rem,1.4vw,1.15rem); line-height:1.75; color:var(--text-secondary); }
+    .body-md { font-size:1rem; line-height:1.7; color:var(--text-secondary); }
+    .gold { color:var(--gold); }
+    .white { color:var(--white); }
+    .text-center { text-align:center; }
+
+    .mt-8 { margin-top:8px; } .mt-12 { margin-top:12px; } .mt-16 { margin-top:16px; }
+    .mt-20 { margin-top:20px; } .mt-24 { margin-top:24px; } .mt-32 { margin-top:32px; }
+    .mt-40 { margin-top:40px; } .mt-48 { margin-top:48px; } .mt-64 { margin-top:64px; }
+
+    .container { width:100%; max-width:1240px; margin:0 auto; padding:0 24px; }
+    .container-narrow { width:100%; max-width:820px; margin:0 auto; padding:0 24px; }
+
+    .btn {
+      display:inline-flex; align-items:center; gap:10px;
+      padding:16px 36px; border-radius:var(--radius-sm);
+      font-family:var(--font-body); font-size:0.92rem;
+      font-weight:600; letter-spacing:0.04em; text-transform:uppercase;
+      transition:var(--transition); position:relative; overflow:hidden; white-space:nowrap;
+    }
+    .btn::before { content:''; position:absolute; top:0; left:-100%; width:100%; height:100%; background:rgba(255,255,255,0.12); transition:left 0.4s ease; }
+    .btn:hover::before { left:0; }
+
+    .btn-gold { background:linear-gradient(135deg,var(--gold) 0%,var(--gold-dark) 100%); color:var(--white); box-shadow:0 4px 20px rgba(201,168,76,0.35); }
+    .btn-gold:hover { transform:translateY(-2px); box-shadow:0 8px 30px rgba(201,168,76,0.45); }
+
+    .btn-outline-gold { background:transparent; color:var(--gold); border:2px solid var(--gold); }
+    .btn-outline-gold:hover { background:var(--gold); color:var(--white); transform:translateY(-2px); }
+
+    .btn-outline-white { background:transparent; color:var(--white); border:2px solid rgba(255,255,255,0.6); }
+    .btn-outline-white:hover { background:rgba(255,255,255,0.1); border-color:var(--white); transform:translateY(-2px); }
+
+    .btn-sm { padding:12px 24px; font-size:0.82rem; }
+    .btn-lg { padding:20px 48px; font-size:1rem; }
+    .btn-group { display:flex; flex-wrap:wrap; gap:16px; align-items:center; }
+
+    .gold-line { width:60px; height:3px; background:linear-gradient(90deg,var(--gold),var(--gold-light)); border-radius:2px; margin:16px auto; }
+
+    #navbar {
+      position:fixed; top:0; left:0; right:0; z-index:1000;
+      padding:0 32px; height:80px;
+      display:flex; align-items:center; justify-content:space-between;
+      background:transparent; transition:var(--transition);
+    }
+    #navbar.scrolled {
+      background:rgba(10,10,10,0.97);
+      backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px);
+      height:68px; box-shadow:0 2px 30px rgba(0,0,0,0.3);
+    }
+
+    .nav-logo { display:flex; align-items:center; gap:14px; flex-shrink:0; }
+    .nav-logo img { height:48px; width:auto; object-fit:contain; transition:var(--transition); }
+    #navbar.scrolled .nav-logo img { height:40px; }
+
+    .nav-logo-text { display:flex; flex-direction:column; line-height:1; }
+    .nav-logo-name { font-family:var(--font-heading); font-size:1.15rem; font-weight:700; color:var(--white); letter-spacing:0.01em; }
+    .nav-logo-sub { font-size:0.65rem; font-weight:500; letter-spacing:0.15em; text-transform:uppercase; color:var(--gold); margin-top:3px; }
+
+    .nav-links { display:flex; align-items:center; gap:8px; list-style:none; }
+    .nav-links a {
+      font-size:0.82rem; font-weight:500; letter-spacing:0.06em; text-transform:uppercase;
+      color:rgba(255,255,255,0.82); padding:8px 12px; border-radius:var(--radius-sm);
+      transition:var(--transition); position:relative;
+    }
+    .nav-links a::after { content:''; position:absolute; bottom:4px; left:12px; width:0; height:1.5px; background:var(--gold); transition:width 0.3s ease; }
+    .nav-links a:hover { color:var(--white); }
+    .nav-links a:hover::after { width:calc(100% - 24px); }
+
+    .nav-cta { background:linear-gradient(135deg,var(--gold),var(--gold-dark)) !important; color:var(--white) !important; padding:10px 20px !important; border-radius:var(--radius-sm) !important; font-weight:600 !important; box-shadow:0 4px 14px rgba(201,168,76,0.3); border:none !important; }
+    .nav-cta:hover { transform:translateY(-1px); box-shadow:0 6px 20px rgba(201,168,76,0.45) !important; }
+    .nav-cta::after { display:none !important; }
+
+    .hamburger { display:none; flex-direction:column; justify-content:center; align-items:center; width:42px; height:42px; gap:6px; cursor:pointer; border-radius:var(--radius-sm); transition:var(--transition); }
+    .hamburger:hover { background:rgba(255,255,255,0.08); }
+    .hamburger span { display:block; width:24px; height:2px; background:var(--white); border-radius:2px; transition:var(--transition); }
+    .hamburger.open span:nth-child(1) { transform:translateY(8px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity:0; transform:scaleX(0); }
+    .hamburger.open span:nth-child(3) { transform:translateY(-8px) rotate(-45deg); }
+
+    .nav-mobile { display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(10,10,10,0.98); z-index:999; flex-direction:column; align-items:center; justify-content:center; gap:12px; opacity:0; pointer-events:none; transition:opacity 0.3s ease; }
+    .nav-mobile.active { display:flex; opacity:1; pointer-events:all; }
+    .nav-mobile a { font-family:var(--font-heading); font-size:1.8rem; font-weight:600; color:var(--white); transition:var(--transition); text-align:center; }
+    .nav-mobile a:hover { color:var(--gold); }
+    .nav-mobile .nav-mobile-cta { margin-top:20px; }
+
+    /* Thank You Hero - CENTERED */
+    #ty-hero {
+      position:relative; min-height:70vh;
+      display:flex; align-items:center;
+      background:var(--black); overflow:hidden;
+    }
+    .ty-hero-bg {
+      position:absolute; inset:0;
+      background:
+        radial-gradient(ellipse 70% 55% at 60% 25%, rgba(201,168,76,0.09) 0%, transparent 60%),
+        radial-gradient(ellipse 40% 40% at 10% 80%, rgba(201,168,76,0.05) 0%, transparent 55%),
+        linear-gradient(160deg,#0A0A0A 0%,#120E02 50%,#0A0A0A 100%);
+    }
+    .ty-hero-grid {
+      position:absolute; inset:0;
+      background-image:linear-gradient(rgba(201,168,76,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(201,168,76,0.04) 1px,transparent 1px);
+      background-size:80px 80px; pointer-events:none;
+    }
+    .ty-hero-inner {
+      position:relative; z-index:2;
+      max-width:760px;
+      padding-top:80px;
+      text-align:center;
+      margin:0 auto;
+    }
+
+    .ty-check {
+      width:90px;
+      height:90px;
+      border-radius:50%;
+      background:linear-gradient(135deg,var(--gold-dark),var(--gold));
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:var(--white);
+      font-size:2.8rem;
+      margin:0 auto 32px;
+      opacity:0;
+      animation:fadeInUp 0.8s ease 0.2s forwards;
+      box-shadow:0 8px 32px rgba(201,168,76,0.3);
+    }
+
+    .ty-hero-title {
+      font-family:var(--font-heading);
+      font-size:clamp(2.8rem,5.5vw,5rem);
+      font-weight:800;
+      line-height:1.06;
+      letter-spacing:-0.025em;
+      color:var(--white);
+      opacity:0;
+      animation:fadeInUp 0.9s ease 0.4s forwards;
+    }
+    .ty-hero-title .gold { color:var(--gold); }
+
+    .ty-hero-sub {
+      font-size:clamp(1rem,1.4vw,1.2rem);
+      line-height:1.8;
+      color:rgba(255,255,255,0.65);
+      margin-top:24px;
+      opacity:0;
+      animation:fadeInUp 0.9s ease 0.6s forwards;
+    }
+
+    .ty-hero-cta {
+      display:flex;
+      flex-wrap:wrap;
+      gap:16px;
+      margin-top:44px;
+      justify-content:center;
+      opacity:0;
+      animation:fadeInUp 0.9s ease 0.8s forwards;
+    }
+
+    /* What Happens Next - CENTERED HEADER */
+    #ty-next {
+      background:var(--off-white);
+      padding:80px 0 100px;
+    }
+    .ty-next-header { text-align:center; max-width:680px; margin:0 auto 56px; }
+    .ty-next-header .label-tag { margin-bottom:16px; }
+    .ty-next-header .gold-line { margin:20px auto; }
+
+    .ty-next-grid {
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:24px;
+    }
+    .ty-next-card {
+      background:var(--white);
+      border-radius:var(--radius-lg);
+      padding:40px 32px;
+      border:1px solid var(--grey-200);
+      text-align:center;
+      transition:var(--transition);
+    }
+    .ty-next-card:hover {
+      border-color:var(--gold);
+      transform:translateY(-4px);
+      box-shadow:var(--shadow-md);
+    }
+    .ty-next-number {
+      font-family:var(--font-heading);
+      font-size:3rem;
+      font-weight:800;
+      color:var(--gold);
+      opacity:0.2;
+      line-height:1;
+      margin-bottom:16px;
+    }
+    .ty-next-card h4 {
+      font-family:var(--font-heading);
+      font-size:1.1rem;
+      font-weight:600;
+      color:var(--text-primary);
+      margin-bottom:12px;
+    }
+    .ty-next-card p {
+      font-size:0.86rem;
+      line-height:1.7;
+      color:var(--text-muted);
+    }
+
+    /* While You Wait - CENTERED HEADER */
+    #ty-wait {
+      background:var(--white);
+      padding:80px 0 100px;
+    }
+    .ty-wait-header { text-align:center; max-width:680px; margin:0 auto 56px; }
+    .ty-wait-header .label-tag { margin-bottom:16px; }
+    .ty-wait-header .gold-line { margin:20px auto; }
+
+    .ty-wait-grid {
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:24px;
+    }
+    .ty-wait-card {
+      background:var(--off-white);
+      border-radius:var(--radius-lg);
+      padding:32px 28px;
+      border:1px solid var(--grey-200);
+      display:flex;
+      align-items:flex-start;
+      gap:18px;
+      transition:var(--transition);
+      text-decoration:none;
+    }
+    .ty-wait-card:hover {
+      border-color:var(--gold);
+      transform:translateX(4px);
+      box-shadow:var(--shadow-md);
+    }
+    .ty-wait-icon {
+      width:48px;
+      height:48px;
+      border-radius:var(--radius-sm);
+      background:var(--gold-pale);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:var(--gold-dark);
+      font-size:1.1rem;
+      flex-shrink:0;
+    }
+    .ty-wait-card h4 {
+      font-family:var(--font-heading);
+      font-size:1.05rem;
+      font-weight:600;
+      color:var(--text-primary);
+      margin-bottom:4px;
+    }
+    .ty-wait-card p {
+      font-size:0.84rem;
+      line-height:1.6;
+      color:var(--text-muted);
+    }
+
+    /* Footer */
+    #footer { background:var(--black); padding-top:80px; }
+    .footer-top { display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:56px; padding-bottom:60px; border-bottom:1px solid rgba(255,255,255,0.06); }
+    .footer-brand img { height:52px; width:auto; object-fit:contain; margin-bottom:20px; }
+    .footer-brand p { font-size:0.88rem; line-height:1.75; color:rgba(255,255,255,0.45); margin-bottom:28px; max-width:300px; }
+    .footer-socials { display:flex; gap:10px; }
+    .social-btn { width:40px; height:40px; border-radius:var(--radius-sm); background:rgba(255,255,255,0.06); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,0.50); font-size:0.9rem; transition:var(--transition); text-decoration:none; }
+    .social-btn:hover { background:var(--gold); color:var(--white); transform:translateY(-3px); }
+    .footer-col h4 { font-size:0.72rem; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:var(--gold); margin-bottom:20px; }
+    .footer-col ul { display:flex; flex-direction:column; gap:10px; }
+    .footer-col ul li a { font-size:0.88rem; color:rgba(255,255,255,0.45); transition:var(--transition); }
+    .footer-col ul li a:hover { color:var(--white); padding-left:4px; }
+    .footer-contact-item { display:flex; align-items:flex-start; gap:12px; margin-bottom:14px; }
+    .footer-contact-item i { color:var(--gold); font-size:0.85rem; margin-top:3px; flex-shrink:0; }
+    .footer-contact-item span { font-size:0.85rem; color:rgba(255,255,255,0.45); line-height:1.5; }
+    .footer-contact-item a { color:rgba(255,255,255,0.45); transition:var(--transition); }
+    .footer-contact-item a:hover { color:var(--gold); }
+    .footer-bottom { padding:28px 0; display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap; }
+    .footer-bottom p { font-size:0.78rem; color:rgba(255,255,255,0.25); }
+    .footer-legal { display:flex; gap:20px; }
+    .footer-legal a { font-size:0.78rem; color:rgba(255,255,255,0.25); transition:var(--transition); }
+    .footer-legal a:hover { color:var(--gold); }
+    .footer-disclaimer { padding:20px 0; border-top:1px solid rgba(255,255,255,0.04); }
+    .footer-disclaimer p { font-size:0.72rem; color:rgba(255,255,255,0.18); line-height:1.65; text-align:center; }
+
+    .whatsapp-float { position:fixed; bottom:32px; right:32px; z-index:900; display:flex; align-items:center; gap:12px; background:#25D366; color:var(--white); padding:14px 22px; border-radius:60px; box-shadow:0 8px 28px rgba(37,211,102,0.35); text-decoration:none; font-size:0.85rem; font-weight:600; transition:var(--transition); animation:floatIn 0.8s ease 2s both; }
+    .whatsapp-float:hover { transform:translateY(-3px) scale(1.03); }
+    .whatsapp-float i { font-size:1.2rem; }
+
+    #cookie-banner { position:fixed; bottom:0; left:0; right:0; z-index:1100; background:var(--charcoal); border-top:1px solid rgba(201,168,76,0.2); padding:20px 32px; display:flex; align-items:center; justify-content:space-between; gap:24px; flex-wrap:wrap; transform:translateY(100%); transition:transform 0.4s ease; }
+    #cookie-banner.show { transform:translateY(0); }
+    .cookie-text { font-size:0.85rem; color:rgba(255,255,255,0.65); line-height:1.55; flex:1; }
+    .cookie-text a { color:var(--gold); text-decoration:underline; }
+    .cookie-btns { display:flex; gap:12px; flex-shrink:0; }
+    .cookie-accept { padding:10px 24px; background:var(--gold); color:var(--white); border-radius:var(--radius-sm); font-size:0.82rem; font-weight:700; letter-spacing:0.06em; cursor:pointer; transition:var(--transition); border:none; }
+    .cookie-accept:hover { background:var(--gold-dark); }
+    .cookie-decline { padding:10px 20px; background:transparent; color:rgba(255,255,255,0.45); border-radius:var(--radius-sm); font-size:0.82rem; font-weight:600; cursor:pointer; border:1px solid rgba(255,255,255,0.12); transition:var(--transition); }
+    .cookie-decline:hover { color:var(--white); border-color:rgba(255,255,255,0.35); }
+
+    @keyframes fadeInUp { from { opacity:0; transform:translateY(30px); } to { opacity:1; transform:translateY(0); } }
+    @keyframes floatIn { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
+
+    .reveal { opacity:0; transform:translateY(28px); transition:opacity 0.7s ease,transform 0.7s ease; }
+    .reveal.visible { opacity:1; transform:translateY(0); }
+    .reveal-delay-1 { transition-delay:0.1s; }
+    .reveal-delay-2 { transition-delay:0.2s; }
+    .reveal-delay-3 { transition-delay:0.3s; }
+
+    @media (max-width:1100px) {
+      .ty-next-grid { grid-template-columns:repeat(3,1fr); }
+      .footer-top { grid-template-columns:1fr 1fr; }
+    }
+    @media (max-width:900px) {
+      .ty-next-grid { grid-template-columns:repeat(2,1fr); }
+    }
+    @media (max-width:768px) {
+      .container { padding:0 20px; }
+      #navbar { padding:0 20px; height:68px; }
+      .nav-links { display:none; }
+      .hamburger { display:flex; }
+      .ty-next-grid { grid-template-columns:1fr; }
+      .ty-wait-grid { grid-template-columns:1fr; }
+      .footer-top { grid-template-columns:1fr; gap:40px; }
+      .footer-bottom { flex-direction:column; text-align:center; gap:12px; }
+      .footer-legal { justify-content:center; flex-wrap:wrap; }
+      .whatsapp-float .wa-label { display:none; }
+      .whatsapp-float { padding:14px; border-radius:50%; }
+      .btn-group { flex-direction:column; align-items:center; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- COOKIE BANNER -->
+  <div id="cookie-banner" role="dialog" aria-label="Cookie consent">
+    <p class="cookie-text">We use cookies to improve your experience and analyze site performance. Read our <a href="privacy-policy.html">Privacy Policy</a> to learn more.</p>
+    <div class="cookie-btns">
+      <button class="cookie-accept" id="cookieAccept">Accept Cookies</button>
+      <button class="cookie-decline" id="cookieDecline">Decline</button>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo" aria-label="Albert Nathan Agency Home">
+      <img src="css/js/Albert Nathan.png" alt="Albert Nathan Agency Logo" />
+      <div class="nav-logo-text">
+        <span class="nav-logo-name">Albert Nathan</span>
+        <span class="nav-logo-sub">Book Marketing Agency</span>
+      </div>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="case-studies.html">Case Studies</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="process.html">Process</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="book-a-call.html" class="nav-cta">Start Project</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Navigation -->
+  <div class="nav-mobile" id="navMobile" role="dialog" aria-label="Mobile navigation">
+    <a href="index.html" onclick="closeMobileNav()">Home</a>
+    <a href="about.html" onclick="closeMobileNav()">About</a>
+    <a href="services.html" onclick="closeMobileNav()">Services</a>
+    <a href="case-studies.html" onclick="closeMobileNav()">Case Studies</a>
+    <a href="pricing.html" onclick="closeMobileNav()">Pricing</a>
+    <a href="testimonials.html" onclick="closeMobileNav()">Testimonials</a>
+    <a href="process.html" onclick="closeMobileNav()">Process</a>
+    <a href="faq.html" onclick="closeMobileNav()">FAQ</a>
+    <a href="contact.html" onclick="closeMobileNav()">Contact</a>
+    <div class="nav-mobile-cta">
+      <a href="book-a-call.html" class="btn btn-gold" onclick="closeMobileNav()">
+        <i class="fas fa-arrow-right"></i> Start Your Project
+      </a>
+    </div>
+  </div>
+
+  <!-- THANK YOU HERO - CENTERED -->
+  <section id="ty-hero" aria-label="Thank you">
+    <div class="ty-hero-bg"></div>
+    <div class="ty-hero-grid"></div>
+    <div class="container">
+      <div class="ty-hero-inner">
+
+        <div class="ty-check">
+          <i class="fas fa-check"></i>
+        </div>
+
+        <h1 class="ty-hero-title">
+          Thank You for<br />
+          <span class="gold">Reaching Out.</span>
+        </h1>
+
+        <p class="ty-hero-sub">
+          Your enquiry has been received. Albert Nathan will personally review your book
+          and respond within 24 to 48 hours with a clear assessment and recommended next steps.
+        </p>
+
+        <div class="ty-hero-cta">
+          <a href="index.html" class="btn btn-gold btn-lg">
+            <i class="fas fa-arrow-right"></i> Return to Home
+          </a>
+          <a href="about.html" class="btn btn-outline-white">
+            Learn More About Albert Nathan
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT HAPPENS NEXT - CENTERED HEADER -->
+  <section id="ty-next" aria-labelledby="next-heading">
+    <div class="container">
+
+      <div class="ty-next-header reveal">
+        <span class="label-tag">What Happens Next</span>
+        <h2 id="next-heading" class="display-md mt-12">Your Enquiry Process</h2>
+        <div class="gold-line"></div>
+        <p class="body-lg mt-8">Here is what you can expect after submitting your enquiry to Albert Nathan Agency.</p>
+      </div>
+
+      <div class="ty-next-grid">
+
+        <div class="ty-next-card reveal reveal-delay-1">
+          <div class="ty-next-number">01</div>
+          <h4>Enquiry Received</h4>
+          <p>Your project details have been submitted and are now with Albert Nathan for personal review.</p>
+        </div>
+
+        <div class="ty-next-card reveal reveal-delay-2">
+          <div class="ty-next-number">02</div>
+          <h4>Book Review</h4>
+          <p>Albert Nathan personally reviews your book, current marketing position, and objectives to identify opportunities and the right strategy.</p>
+        </div>
+
+        <div class="ty-next-card reveal reveal-delay-3">
+          <div class="ty-next-number">03</div>
+          <h4>Personal Response</h4>
+          <p>You will hear back directly from Albert Nathan within 24 to 48 hours with a clear assessment and recommended next steps.</p>
+        </div>
+
+        <div class="ty-next-card reveal reveal-delay-1">
+          <div class="ty-next-number">04</div>
+          <h4>Strategy Discussion</h4>
+          <p>If your project is a good fit, we will discuss your campaign options, answer your questions, and explore what is possible.</p>
+        </div>
+
+        <div class="ty-next-card reveal reveal-delay-2">
+          <div class="ty-next-number">05</div>
+          <h4>Custom Proposal</h4>
+          <p>You receive a tailored proposal with a clear strategy, services, timeline, and investment breakdown. Before any commitment.</p>
+        </div>
+
+        <div class="ty-next-card reveal reveal-delay-3">
+          <div class="ty-next-number">06</div>
+          <h4>Campaign Begins</h4>
+          <p>Once approved, your campaign launches on the agreed schedule. Albert Nathan personally manages every element of execution.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHILE YOU WAIT - CENTERED HEADER -->
+  <section id="ty-wait" aria-labelledby="wait-heading">
+    <div class="container">
+
+      <div class="ty-wait-header reveal">
+        <span class="label-tag">While You Wait</span>
+        <h2 id="wait-heading" class="display-md mt-12">Explore These Resources</h2>
+        <div class="gold-line"></div>
+        <p class="body-lg mt-8">While you wait for your personal response, explore these pages to learn more about how Albert Nathan Agency works.</p>
+      </div>
+
+      <div class="ty-wait-grid">
+
+        <a href="about.html" class="ty-wait-card reveal reveal-delay-1">
+          <div class="ty-wait-icon"><i class="fas fa-user"></i></div>
+          <div>
+            <h4>About Albert Nathan</h4>
+            <p>Learn about the strategist behind the campaigns. A decade of experience and a solo agency built on purpose.</p>
+          </div>
+        </a>
+
+        <a href="services.html" class="ty-wait-card reveal reveal-delay-2">
+          <div class="ty-wait-icon"><i class="fas fa-gears"></i></div>
+          <div>
+            <h4>Our Services</h4>
+            <p>Explore the complete range of book marketing services. From launch campaigns to ongoing strategy.</p>
+          </div>
+        </a>
+
+        <a href="case-studies.html" class="ty-wait-card reveal reveal-delay-1">
+          <div class="ty-wait-icon"><i class="fas fa-folder-open"></i></div>
+          <div>
+            <h4>Case Studies</h4>
+            <p>Read real campaign stories. The challenges, the strategies, and the outcomes for real authors.</p>
+          </div>
+        </a>
+
+        <a href="testimonials.html" class="ty-wait-card reveal reveal-delay-2">
+          <div class="ty-wait-icon"><i class="fas fa-comment"></i></div>
+          <div>
+            <h4>Author Testimonials</h4>
+            <p>Hear from authors who have worked with Albert Nathan Agency on their book marketing campaigns.</p>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="css/js/Albert Nathan.png" alt="Albert Nathan Agency" />
+          <p>Strategic book marketing for authors ready to be discovered. Turning great books into discoverable brands worldwide.</p>
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/albertnathanagency/" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61592884918168" target="_blank" rel="noopener" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/albertnathan001" target="_blank" rel="noopener" class="social-btn" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://tiktok.com/@claire.caldwell22" target="_blank" rel="noopener" class="social-btn" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://wa.me/WHATSAPP_NUMBER_HERE" target="_blank" rel="noopener" class="social-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="process.html">Process</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="services.html">Book Launch Campaigns</a></li>
+            <li><a href="services.html">Amazon Marketing</a></li>
+            <li><a href="services.html">Author Branding</a></li>
+            <li><a href="services.html">Paid Advertising</a></li>
+            <li><a href="services.html">Reader Outreach</a></li>
+            <li><a href="services.html">Strategy and Consulting</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get In Touch</h4>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <span><a href="mailto:albertnathan@bookpromotionuk.com">albertnathan@bookpromotionuk.com</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fab fa-whatsapp"></i>
+            <span><a href="https://wa.me/WHATSAPP_NUMBER_HERE">Chat on WhatsApp</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-globe"></i>
+            <span>Available Worldwide, All Days</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Based in USA, Texas<br />Serving authors globally</span>
+          </div>
+          <div class="mt-24">
+            <a href="book-a-call.html" class="btn btn-gold btn-sm">Start a Project <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Albert Nathan Agency. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms.html">Terms and Conditions</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="footer-disclaimer">
+        <p>Marketing results vary based on factors including book quality, market demand, audience size, budget, timing, competitive environment, and campaign execution. Albert Nathan Agency does not guarantee specific book sales, revenue, Amazon rankings, or any other quantifiable outcome.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/WHATSAPP_NUMBER_HERE?text=Hi%20Albert%2C%20I%27d%20like%20to%20discuss%20marketing%20for%20my%20book."
+     class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="wa-label">Chat About Your Book</span>
+  </a>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    /* Navbar Scroll */
+    const navbar = document.getElementById('navbar');
+    function handleScroll() { navbar.classList.toggle('scrolled', window.scrollY > 50); }
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
+
+    /* Mobile Nav */
+    const hamburger = document.getElementById('hamburger');
+    const navMobile = document.getElementById('navMobile');
+    function openMobileNav() {
+      hamburger.classList.add('open');
+      navMobile.classList.add('active');
+      hamburger.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMobileNav() {
+      hamburger.classList.remove('open');
+      navMobile.classList.remove('active');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+    hamburger.addEventListener('click', () => {
+      navMobile.classList.contains('active') ? closeMobileNav() : openMobileNav();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navMobile.classList.contains('active')) closeMobileNav();
+    });
+
+    /* Scroll Reveal */
+    const revealEls = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.10, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach(el => revealObserver.observe(el));
+
+    /* Cookie Consent */
+    const cookieBanner = document.getElementById('cookie-banner');
+    const cookieAccept = document.getElementById('cookieAccept');
+    const cookieDecline = document.getElementById('cookieDecline');
+    if (!localStorage.getItem('ana_cookie_consent')) {
+      setTimeout(() => cookieBanner.classList.add('show'), 1200);
+    }
+    cookieAccept.addEventListener('click', () => {
+      localStorage.setItem('ana_cookie_consent', 'accepted');
+      cookieBanner.classList.remove('show');
+    });
+    cookieDecline.addEventListener('click', () => {
+      localStorage.setItem('ana_cookie_consent', 'declined');
+      cookieBanner.classList.remove('show');
+    });
+  </script>
+
+</body>
+</html>

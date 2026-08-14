@@ -1,0 +1,2152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Book marketing services by Albert Nathan Agency - book launch campaigns, Amazon marketing, author branding, paid advertising, reader outreach, social media, SEO and more. Worldwide." />
+  <meta name="keywords" content="book marketing services, book launch campaign, Amazon book marketing, author branding, book advertising, reader outreach, influencer outreach, book SEO, TikTok book marketing, Goodreads promotion, book marketing agency" />
+  <meta name="author" content="Albert Nathan" />
+  <meta property="og:title" content="Book Marketing Services | Albert Nathan Agency" />
+  <meta property="og:description" content="A complete book marketing ecosystem - from launch campaigns to Amazon advertising, author branding to reader outreach. Campaigns built for authors worldwide." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="css/js/Albert Nathan.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Book Marketing Services | Albert Nathan Agency" />
+  <meta name="twitter:description" content="Strategic book marketing services for authors and publishers worldwide. Every campaign custom-built." />
+  <title>Book Marketing Services | Albert Nathan Agency</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+  </script>
+
+  <style>
+    /* ============================================================
+       CSS CUSTOM PROPERTIES
+    ============================================================ */
+    :root {
+      --gold:           #C9A84C;
+      --gold-light:     #E2C47A;
+      --gold-dark:      #A07830;
+      --gold-pale:      #F5EDD6;
+      --black:          #0A0A0A;
+      --charcoal:       #1A1A1A;
+      --charcoal-mid:   #2C2C2C;
+      --charcoal-light: #3D3D3D;
+      --white:          #FFFFFF;
+      --off-white:      #F9F7F2;
+      --cream:          #F2EDE3;
+      --grey-100:       #F5F5F5;
+      --grey-200:       #E8E8E8;
+      --grey-400:       #ADADAD;
+      --grey-600:       #6B6B6B;
+      --text-primary:   #0A0A0A;
+      --text-secondary: #3D3D3D;
+      --text-muted:     #6B6B6B;
+      --border:         rgba(201,168,76,0.25);
+      --border-light:   rgba(201,168,76,0.12);
+      --shadow-sm:      0 2px 12px rgba(0,0,0,0.06);
+      --shadow-md:      0 8px 32px rgba(0,0,0,0.10);
+      --shadow-lg:      0 20px 60px rgba(0,0,0,0.14);
+      --shadow-gold:    0 8px 32px rgba(201,168,76,0.20);
+      --radius-sm:      6px;
+      --radius-md:      12px;
+      --radius-lg:      20px;
+      --radius-xl:      32px;
+      --transition:     all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      --font-heading:   'Playfair Display', Georgia, serif;
+      --font-sub:       'Cormorant Garamond', Georgia, serif;
+      --font-body:      'Inter', -apple-system, sans-serif;
+    }
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; font-size: 16px; -webkit-text-size-adjust: 100%; }
+    body { font-family: var(--font-body); color: var(--text-primary); background: var(--white); line-height: 1.6; overflow-x: hidden; }
+    img  { max-width: 100%; height: auto; display: block; }
+    a    { color: inherit; text-decoration: none; }
+    ul   { list-style: none; }
+    button { cursor: pointer; border: none; background: none; font-family: inherit; }
+
+    /* ============================================================
+       TYPOGRAPHY
+    ============================================================ */
+    .display-lg  { font-family: var(--font-heading); font-size: clamp(2.2rem, 4.5vw, 4rem);   font-weight: 700; line-height: 1.1;  letter-spacing: -0.02em; }
+    .display-md  { font-family: var(--font-heading); font-size: clamp(1.8rem, 3.5vw, 3rem);   font-weight: 600; line-height: 1.15; letter-spacing: -0.01em; }
+    .heading-lg  { font-family: var(--font-heading); font-size: clamp(1.4rem, 2.5vw, 2.2rem); font-weight: 600; line-height: 1.2; }
+    .heading-md  { font-family: var(--font-heading); font-size: clamp(1.2rem, 2vw, 1.7rem);   font-weight: 600; line-height: 1.3; }
+    .heading-sm  { font-family: var(--font-heading); font-size: clamp(1rem, 1.5vw, 1.3rem);   font-weight: 600; line-height: 1.35; }
+    .label-tag   { font-family: var(--font-body); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); }
+    .body-lg     { font-size: clamp(1rem, 1.4vw, 1.15rem); line-height: 1.75; color: var(--text-secondary); }
+    .body-md     { font-size: 1rem; line-height: 1.7; color: var(--text-secondary); }
+    .body-sm     { font-size: 0.875rem; line-height: 1.65; color: var(--text-muted); }
+    .gold        { color: var(--gold); }
+    .white       { color: var(--white); }
+
+    /* ============================================================
+       LAYOUT
+    ============================================================ */
+    .container        { width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 24px; }
+    .container-narrow { width: 100%; max-width: 820px;  margin: 0 auto; padding: 0 24px; }
+    .section          { padding: 100px 0; }
+
+    .mt-8  { margin-top: 8px; }   .mt-12 { margin-top: 12px; }
+    .mt-16 { margin-top: 16px; }  .mt-20 { margin-top: 20px; }
+    .mt-24 { margin-top: 24px; }  .mt-32 { margin-top: 32px; }
+    .mt-40 { margin-top: 40px; }  .mt-48 { margin-top: 48px; }
+    .mt-64 { margin-top: 64px; }
+
+    .text-center { text-align: center; }
+
+    /* ============================================================
+       BUTTONS
+    ============================================================ */
+    .btn {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 16px 36px; border-radius: var(--radius-sm);
+      font-family: var(--font-body); font-size: 0.92rem;
+      font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase;
+      transition: var(--transition); position: relative; overflow: hidden; white-space: nowrap;
+    }
+    .btn::before { content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: rgba(255,255,255,0.12); transition: left 0.4s ease; }
+    .btn:hover::before { left: 0; }
+
+    .btn-gold        { background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%); color: var(--white); box-shadow: 0 4px 20px rgba(201,168,76,0.35); }
+    .btn-gold:hover  { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(201,168,76,0.45); }
+
+    .btn-outline-gold       { background: transparent; color: var(--gold); border: 2px solid var(--gold); }
+    .btn-outline-gold:hover { background: var(--gold); color: var(--white); transform: translateY(-2px); box-shadow: var(--shadow-gold); }
+
+    .btn-outline-white       { background: transparent; color: var(--white); border: 2px solid rgba(255,255,255,0.6); }
+    .btn-outline-white:hover { background: rgba(255,255,255,0.1); border-color: var(--white); transform: translateY(-2px); }
+
+    .btn-dark       { background: var(--charcoal); color: var(--white); box-shadow: var(--shadow-md); }
+    .btn-dark:hover { background: var(--charcoal-light); transform: translateY(-2px); }
+
+    .btn-sm  { padding: 12px 24px; font-size: 0.82rem; }
+    .btn-lg  { padding: 20px 48px; font-size: 1rem; }
+    .btn-group { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; }
+
+    /* ============================================================
+       GOLD LINE
+    ============================================================ */
+    .gold-line      { width: 60px; height: 3px; background: linear-gradient(90deg, var(--gold), var(--gold-light)); border-radius: 2px; margin: 16px auto; }
+    .gold-line-left { margin: 16px 0; }
+
+    /* ============================================================
+       NAVIGATION
+    ============================================================ */
+    #navbar {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      padding: 0 32px; height: 80px;
+      display: flex; align-items: center; justify-content: space-between;
+      background: transparent; transition: var(--transition);
+    }
+    #navbar.scrolled {
+      background: rgba(10,10,10,0.97);
+      backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+      height: 68px; box-shadow: 0 2px 30px rgba(0,0,0,0.3);
+    }
+    .nav-logo { display: flex; align-items: center; gap: 14px; flex-shrink: 0; }
+    .nav-logo img { height: 48px; width: auto; object-fit: contain; transition: var(--transition); }
+    #navbar.scrolled .nav-logo img { height: 40px; }
+    .nav-logo-text { display: flex; flex-direction: column; line-height: 1; }
+    .nav-logo-name { font-family: var(--font-heading); font-size: 1.15rem; font-weight: 700; color: var(--white); letter-spacing: 0.01em; }
+    .nav-logo-sub  { font-family: var(--font-body); font-size: 0.65rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-top: 3px; }
+
+    .nav-links { display: flex; align-items: center; gap: 8px; list-style: none; }
+    .nav-links a {
+      font-size: 0.82rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase;
+      color: rgba(255,255,255,0.82); padding: 8px 12px; border-radius: var(--radius-sm);
+      transition: var(--transition); position: relative;
+    }
+    .nav-links a::after { content: ''; position: absolute; bottom: 4px; left: 12px; width: 0; height: 1.5px; background: var(--gold); transition: width 0.3s ease; }
+    .nav-links a:hover { color: var(--white); }
+    .nav-links a:hover::after, .nav-links a.active::after { width: calc(100% - 24px); }
+    .nav-links a.active { color: var(--white); }
+
+    .nav-cta { background: linear-gradient(135deg, var(--gold), var(--gold-dark)) !important; color: var(--white) !important; padding: 10px 20px !important; border-radius: var(--radius-sm) !important; font-weight: 600 !important; box-shadow: 0 4px 14px rgba(201,168,76,0.3); border: none !important; }
+    .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(201,168,76,0.45) !important; }
+    .nav-cta::after { display: none !important; }
+
+    .hamburger { display: none; flex-direction: column; justify-content: center; align-items: center; width: 42px; height: 42px; gap: 6px; cursor: pointer; border-radius: var(--radius-sm); transition: var(--transition); }
+    .hamburger:hover { background: rgba(255,255,255,0.08); }
+    .hamburger span { display: block; width: 24px; height: 2px; background: var(--white); border-radius: 2px; transition: var(--transition); }
+    .hamburger.open span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+    .hamburger.open span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+    .nav-mobile { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(10,10,10,0.98); z-index: 999; flex-direction: column; align-items: center; justify-content: center; gap: 12px; opacity: 0; pointer-events: none; transition: opacity 0.3s ease; }
+    .nav-mobile.active { display: flex; opacity: 1; pointer-events: all; }
+    .nav-mobile a { font-family: var(--font-heading); font-size: 1.8rem; font-weight: 600; color: var(--white); transition: var(--transition); text-align: center; }
+    .nav-mobile a:hover { color: var(--gold); }
+    .nav-mobile .nav-mobile-cta { margin-top: 20px; }
+
+    /* ============================================================
+       PAGE HERO - LEFT ALIGNED WITH IMAGE SLOT
+    ============================================================ */
+    #services-hero {
+      position: relative; min-height: 65vh;
+      display: flex; align-items: center;
+      background: var(--black); overflow: hidden;
+    }
+    .services-hero-bg {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 70% 55% at 55% 25%, rgba(201,168,76,0.09) 0%, transparent 60%),
+        radial-gradient(ellipse 40% 40% at 15% 75%, rgba(201,168,76,0.05) 0%, transparent 55%),
+        linear-gradient(160deg, #0A0A0A 0%, #120E02 50%, #0A0A0A 100%);
+    }
+    .services-hero-grid {
+      position: absolute; inset: 0;
+      background-image: linear-gradient(rgba(201,168,76,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(201,168,76,0.04) 1px, transparent 1px);
+      background-size: 80px 80px; pointer-events: none;
+    }
+    .services-hero-inner {
+      position: relative; z-index: 2;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      padding-top: 80px;
+    }
+
+    .services-hero-left {
+      text-align: left;
+    }
+
+    .hero-eyebrow {
+      display: inline-flex; align-items: center; gap: 12px; margin-bottom: 28px;
+      opacity: 0; animation: fadeInUp 0.8s ease 0.2s forwards;
+    }
+    .hero-eyebrow-line { width: 40px; height: 1.5px; background: var(--gold); }
+    .hero-eyebrow-text { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); }
+
+    .services-hero-title {
+      font-family: var(--font-heading);
+      font-size: clamp(2.8rem, 5.5vw, 5rem);
+      font-weight: 800; line-height: 1.06; letter-spacing: -0.025em; color: var(--white);
+      opacity: 0; animation: fadeInUp 0.9s ease 0.4s forwards;
+    }
+    .services-hero-title .gold { color: var(--gold); }
+
+    .services-hero-sub {
+      font-size: clamp(1rem, 1.4vw, 1.15rem); line-height: 1.75;
+      color: rgba(255,255,255,0.65); max-width: 560px; margin-top: 24px;
+      opacity: 0; animation: fadeInUp 0.9s ease 0.6s forwards;
+    }
+    .services-hero-cta {
+      display: flex; flex-wrap: wrap; gap: 16px; margin-top: 40px;
+      opacity: 0; animation: fadeInUp 0.9s ease 0.8s forwards;
+    }
+
+    /* Hero Image Slot - WITH ACTUAL IMAGE */
+    .services-hero-right {
+      display: flex; justify-content: center; align-items: center;
+      opacity: 0; animation: fadeInUp 0.9s ease 0.5s forwards;
+    }
+    .hero-image-slot {
+      width: 100%;
+      max-width: 480px;
+      aspect-ratio: 4/3;
+      border-radius: var(--radius-lg);
+      background: linear-gradient(135deg, var(--charcoal) 0%, var(--charcoal-mid) 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      border: 1px solid rgba(201,168,76,0.20);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-image-slot::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(45deg, rgba(201,168,76,0.06) 0%, transparent 60%);
+    }
+    .hero-image-slot img {
+      position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+      border-radius: var(--radius-lg);
+    }
+
+    /* ============================================================
+       SERVICE CATEGORY TABS / ANCHORS
+    ============================================================ */
+    #service-nav {
+      background: var(--white);
+      border-bottom: 1px solid var(--grey-200);
+      position: sticky; top: 68px; z-index: 500;
+      box-shadow: var(--shadow-sm);
+    }
+    .service-nav-inner {
+      display: flex; gap: 0; overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .service-nav-inner::-webkit-scrollbar { display: none; }
+
+    .service-tab {
+      display: flex; align-items: center; gap: 10px;
+      padding: 18px 24px;
+      font-size: 0.80rem; font-weight: 600;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      color: var(--text-muted); white-space: nowrap;
+      border-bottom: 2px solid transparent;
+      transition: var(--transition); cursor: pointer;
+      text-decoration: none;
+    }
+    .service-tab:hover  { color: var(--gold); }
+    .service-tab.active { color: var(--gold); border-bottom-color: var(--gold); }
+    .service-tab i { font-size: 0.85rem; }
+
+    /* ============================================================
+       SERVICES OVERVIEW INTRO
+    ============================================================ */
+    #services-intro {
+      background: var(--off-white);
+      padding: 80px 0;
+    }
+    .intro-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
+    }
+    .intro-left .label-tag { display: block; margin-bottom: 16px; }
+    .intro-left .gold-line-left { margin: 20px 0; }
+    .intro-left .body-lg { margin-top: 0; }
+
+    .intro-points { margin-top: 32px; display: flex; flex-direction: column; gap: 14px; }
+    .intro-point {
+      display: flex; align-items: flex-start; gap: 14px;
+      font-size: 0.92rem; color: var(--text-secondary); line-height: 1.55;
+    }
+    .intro-point i { color: var(--gold); font-size: 0.85rem; margin-top: 3px; flex-shrink: 0; }
+
+    .intro-right {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+    }
+    .intro-stat {
+      background: var(--white); border-radius: var(--radius-md);
+      padding: 28px 24px; border: 1px solid var(--grey-200);
+      box-shadow: var(--shadow-sm); text-align: center;
+      transition: var(--transition);
+    }
+    .intro-stat:hover { border-color: var(--gold); transform: translateY(-3px); box-shadow: var(--shadow-md); }
+    .intro-stat-value { font-family: var(--font-heading); font-size: 2.2rem; font-weight: 800; color: var(--gold); line-height: 1; }
+    .intro-stat-label { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); margin-top: 8px; }
+
+    /* ============================================================
+       SERVICE CATEGORY SECTIONS
+    ============================================================ */
+
+    /* --- Category Header --- */
+    .cat-header {
+      padding: 80px 0 0;
+    }
+    .cat-header-inner {
+      display: flex; align-items: flex-start;
+      gap: 40px; padding-bottom: 56px;
+      border-bottom: 1px solid var(--grey-200);
+    }
+    .cat-number {
+      font-family: var(--font-heading);
+      font-size: 5rem; font-weight: 800;
+      color: var(--gold); opacity: 0.15;
+      line-height: 1; flex-shrink: 0;
+      transition: var(--transition);
+    }
+    .cat-header-inner:hover .cat-number { opacity: 0.6; }
+
+    .cat-header-text .label-tag { display: block; margin-bottom: 12px; }
+    .cat-header-text h2 { font-family: var(--font-heading); font-size: clamp(1.8rem, 3vw, 2.8rem); font-weight: 700; color: var(--text-primary); margin-bottom: 16px; line-height: 1.15; }
+    .cat-header-text p  { font-size: clamp(0.95rem, 1.2vw, 1.05rem); line-height: 1.8; color: var(--text-muted); max-width: 680px; }
+
+    .cat-icon {
+      width: 72px; height: 72px; border-radius: var(--radius-md);
+      background: linear-gradient(135deg, var(--gold-dark), var(--gold));
+      display: flex; align-items: center; justify-content: center;
+      color: var(--white); font-size: 1.6rem; flex-shrink: 0;
+      margin-left: auto;
+    }
+
+    /* --- Service Detail Cards --- */
+    .service-detail-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 24px; padding: 48px 0 80px;
+    }
+
+    .svc-card {
+      background: var(--white); border-radius: var(--radius-lg);
+      padding: 36px 28px; border: 1px solid var(--grey-200);
+      box-shadow: var(--shadow-sm); transition: var(--transition);
+      display: flex; flex-direction: column;
+    }
+    .svc-card:hover { border-color: var(--gold); transform: translateY(-5px); box-shadow: var(--shadow-lg); }
+
+    .svc-card-icon {
+      width: 50px; height: 50px; border-radius: var(--radius-sm);
+      background: var(--gold-pale); display: flex; align-items: center;
+      justify-content: center; color: var(--gold-dark); font-size: 1.2rem;
+      margin-bottom: 20px; transition: var(--transition);
+    }
+    .svc-card:hover .svc-card-icon { background: linear-gradient(135deg, var(--gold-dark), var(--gold)); color: var(--white); }
+
+    .svc-card h3 {
+      font-family: var(--font-heading); font-size: 1.15rem; font-weight: 600;
+      color: var(--text-primary); margin-bottom: 12px; line-height: 1.25;
+    }
+    .svc-card > p {
+      font-size: 0.87rem; line-height: 1.72; color: var(--text-muted); margin-bottom: 20px; flex: 1;
+    }
+
+    .svc-includes-label {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--gold); margin-bottom: 12px;
+    }
+    .svc-includes { display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px; }
+    .svc-include-item {
+      display: flex; align-items: flex-start; gap: 10px;
+      font-size: 0.83rem; color: var(--text-secondary); line-height: 1.45;
+    }
+    .svc-include-item i { color: var(--gold); font-size: 0.72rem; margin-top: 4px; flex-shrink: 0; }
+
+    .svc-meta {
+      display: flex; flex-direction: column; gap: 8px;
+      padding-top: 20px; border-top: 1px solid var(--grey-200);
+    }
+    .svc-meta-item {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 0.80rem; color: var(--text-muted);
+    }
+    .svc-meta-item i { color: var(--gold); font-size: 0.75rem; width: 14px; text-align: center; }
+    .svc-meta-item strong { color: var(--text-primary); font-weight: 600; }
+
+    /* --- Alternating Section Backgrounds --- */
+    .cat-bg-white  { background: var(--white); }
+    .cat-bg-off    { background: var(--off-white); }
+    .cat-bg-dark   { background: var(--charcoal); }
+
+    /* Dark background overrides for service cards inside dark sections */
+    .cat-bg-dark .cat-header-text h2 { color: var(--white); }
+    .cat-bg-dark .cat-header-text p  { color: rgba(255,255,255,0.60); }
+    .cat-bg-dark .cat-header-inner   { border-bottom-color: rgba(255,255,255,0.08); }
+    .cat-bg-dark .cat-number         { color: var(--gold); opacity: 0.12; }
+    .cat-bg-dark .cat-header-inner:hover .cat-number { opacity: 0.5; }
+
+    .cat-bg-dark .svc-card {
+      background: rgba(255,255,255,0.04);
+      border-color: rgba(201,168,76,0.12);
+    }
+    .cat-bg-dark .svc-card:hover { border-color: rgba(201,168,76,0.35); background: rgba(255,255,255,0.06); }
+    .cat-bg-dark .svc-card h3   { color: var(--white); }
+    .cat-bg-dark .svc-card > p  { color: rgba(255,255,255,0.55); }
+    .cat-bg-dark .svc-include-item  { color: rgba(255,255,255,0.65); }
+    .cat-bg-dark .svc-meta          { border-top-color: rgba(255,255,255,0.08); }
+    .cat-bg-dark .svc-meta-item     { color: rgba(255,255,255,0.40); }
+    .cat-bg-dark .svc-meta-item strong { color: rgba(255,255,255,0.80); }
+    .cat-bg-dark .svc-card-icon     { background: rgba(201,168,76,0.12); color: var(--gold-light); }
+    .cat-bg-dark .svc-card:hover .svc-card-icon { background: linear-gradient(135deg, var(--gold-dark), var(--gold)); color: var(--white); }
+
+    /* ============================================================
+       PROCESS STRIP
+    ============================================================ */
+    #services-process {
+      background: var(--black);
+      padding: 90px 0;
+    }
+    .sp-header { text-align: center; max-width: 680px; margin: 0 auto 64px; }
+    .sp-header .label-tag { margin-bottom: 16px; }
+    .sp-header .display-md { color: var(--white); margin-bottom: 18px; }
+    .sp-header .body-lg { color: rgba(255,255,255,0.60); }
+
+    .sp-steps {
+      display: grid; grid-template-columns: repeat(5, 1fr); gap: 0;
+      position: relative;
+    }
+    .sp-steps::before {
+      content: ''; position: absolute;
+      top: 36px; left: 10%; width: 80%; height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(201,168,76,0.3), rgba(201,168,76,0.3), rgba(201,168,76,0.3), transparent);
+    }
+    .sp-step { text-align: center; padding: 0 12px; position: relative; }
+    .sp-step-num {
+      width: 72px; height: 72px; border-radius: 50%;
+      background: var(--charcoal); border: 2px solid rgba(201,168,76,0.25);
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 20px; font-family: var(--font-heading);
+      font-size: 1.3rem; font-weight: 700; color: var(--gold);
+      position: relative; z-index: 1; transition: var(--transition);
+    }
+    .sp-step:hover .sp-step-num { background: linear-gradient(135deg, var(--gold-dark), var(--gold)); color: var(--white); border-color: transparent; }
+    .sp-step-title { font-family: var(--font-heading); font-size: 0.98rem; font-weight: 600; color: var(--white); margin-bottom: 8px; }
+    .sp-step-desc  { font-size: 0.80rem; line-height: 1.6; color: rgba(255,255,255,0.45); }
+
+    /* ============================================================
+       WHO WE SERVE
+    ============================================================ */
+    #who-we-serve {
+      background: var(--off-white);
+      padding: 100px 0;
+    }
+    .wws-header { text-align: center; max-width: 680px; margin: 0 auto 64px; }
+    .wws-header .label-tag { margin-bottom: 16px; }
+    .wws-header .gold-line  { margin: 20px auto; }
+
+    .wws-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+    }
+    .wws-card {
+      background: var(--white); border-radius: var(--radius-lg);
+      padding: 40px 32px; border: 1px solid var(--grey-200);
+      box-shadow: var(--shadow-sm); text-align: center; transition: var(--transition);
+    }
+    .wws-card:hover { border-color: var(--gold); transform: translateY(-5px); box-shadow: var(--shadow-md); }
+
+    .wws-icon {
+      width: 64px; height: 64px; border-radius: 50%;
+      background: var(--gold-pale); display: flex; align-items: center;
+      justify-content: center; color: var(--gold-dark); font-size: 1.4rem;
+      margin: 0 auto 20px; transition: var(--transition);
+    }
+    .wws-card:hover .wws-icon { background: linear-gradient(135deg, var(--gold-dark), var(--gold)); color: var(--white); }
+
+    .wws-card h3 { font-family: var(--font-heading); font-size: 1.2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 12px; }
+    .wws-card p  { font-size: 0.87rem; line-height: 1.72; color: var(--text-muted); margin-bottom: 20px; }
+
+    .wws-tags { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+    .wws-tag {
+      padding: 5px 12px; background: var(--gold-pale); border-radius: 20px;
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.05em;
+      text-transform: uppercase; color: var(--gold-dark);
+    }
+
+    /* ============================================================
+       CUSTOM CAMPAIGN CTA BAND
+    ============================================================ */
+    #custom-band {
+      background: linear-gradient(135deg, var(--charcoal) 0%, var(--charcoal-mid) 100%);
+      padding: 80px 0;
+      position: relative; overflow: hidden;
+    }
+    #custom-band::before {
+      content: ''; position: absolute; top: -80px; right: -80px;
+      width: 400px; height: 400px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(201,168,76,0.10) 0%, transparent 70%);
+    }
+    .custom-band-inner {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 80px; align-items: center; position: relative; z-index: 1;
+    }
+    .custom-band-left .label-tag { display: block; margin-bottom: 16px; }
+    .custom-band-left .display-md { color: var(--white); margin-bottom: 20px; }
+    .custom-band-left .body-lg { color: rgba(255,255,255,0.65); }
+
+    .custom-band-right {
+      display: flex; flex-direction: column; gap: 20px;
+    }
+    .custom-feature {
+      display: flex; align-items: flex-start; gap: 16px;
+      padding: 20px 22px; background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(201,168,76,0.15); border-radius: var(--radius-md);
+      transition: var(--transition);
+    }
+    .custom-feature:hover { background: rgba(201,168,76,0.08); border-color: rgba(201,168,76,0.30); }
+    .custom-feature-icon {
+      width: 44px; height: 44px; border-radius: var(--radius-sm);
+      background: linear-gradient(135deg, var(--gold-dark), var(--gold));
+      display: flex; align-items: center; justify-content: center;
+      color: var(--white); font-size: 0.95rem; flex-shrink: 0;
+    }
+    .custom-feature-text strong { display: block; font-size: 0.9rem; font-weight: 600; color: var(--white); margin-bottom: 4px; }
+    .custom-feature-text span   { font-size: 0.82rem; color: rgba(255,255,255,0.45); line-height: 1.5; }
+    .custom-band-cta { margin-top: 32px; }
+
+    /* ============================================================
+       FINAL CTA
+    ============================================================ */
+    #services-cta {
+      background: var(--black); padding: 110px 0;
+      position: relative; overflow: hidden;
+    }
+    #services-cta::before {
+      content: ''; position: absolute; top: -80px; right: -80px;
+      width: 500px; height: 500px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(201,168,76,0.09) 0%, transparent 70%);
+    }
+    .services-cta-inner {
+      text-align: center; max-width: 760px; margin: 0 auto;
+      position: relative; z-index: 1;
+    }
+    .services-cta-inner .label-tag  { margin-bottom: 20px; }
+    .services-cta-inner .display-lg { color: var(--white); margin-bottom: 24px; }
+    .services-cta-inner .body-lg    { color: rgba(255,255,255,0.65); margin-bottom: 48px; }
+    .services-cta-inner .btn-group  { justify-content: center; }
+
+    .cta-disclaimer { margin-top: 32px; font-size: 0.78rem; color: rgba(255,255,255,0.28); line-height: 1.6; }
+
+    /* ============================================================
+       FOOTER
+    ============================================================ */
+    #footer { background: var(--black); padding-top: 80px; }
+    .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 56px; padding-bottom: 60px; border-bottom: 1px solid rgba(255,255,255,0.06); }
+    .footer-brand img { height: 52px; width: auto; object-fit: contain; margin-bottom: 20px; }
+    .footer-brand p { font-size: 0.88rem; line-height: 1.75; color: rgba(255,255,255,0.45); margin-bottom: 28px; max-width: 300px; }
+    .footer-socials { display: flex; gap: 10px; }
+    .social-btn { width: 40px; height: 40px; border-radius: var(--radius-sm); background: rgba(255,255,255,0.06); display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.50); font-size: 0.9rem; transition: var(--transition); text-decoration: none; }
+    .social-btn:hover { background: var(--gold); color: var(--white); transform: translateY(-3px); }
+    .footer-col h4 { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; }
+    .footer-col ul { display: flex; flex-direction: column; gap: 10px; }
+    .footer-col ul li a { font-size: 0.88rem; color: rgba(255,255,255,0.45); transition: var(--transition); }
+    .footer-col ul li a:hover { color: var(--white); padding-left: 4px; }
+    .footer-contact-item { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 14px; }
+    .footer-contact-item i { color: var(--gold); font-size: 0.85rem; margin-top: 3px; flex-shrink: 0; }
+    .footer-contact-item span { font-size: 0.85rem; color: rgba(255,255,255,0.45); line-height: 1.5; }
+    .footer-contact-item a { color: rgba(255,255,255,0.45); transition: var(--transition); }
+    .footer-contact-item a:hover { color: var(--gold); }
+    .footer-bottom { padding: 28px 0; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .footer-bottom p { font-size: 0.78rem; color: rgba(255,255,255,0.25); }
+    .footer-legal { display: flex; gap: 20px; }
+    .footer-legal a { font-size: 0.78rem; color: rgba(255,255,255,0.25); transition: var(--transition); }
+    .footer-legal a:hover { color: var(--gold); }
+    .footer-disclaimer { padding: 20px 0; border-top: 1px solid rgba(255,255,255,0.04); }
+    .footer-disclaimer p { font-size: 0.72rem; color: rgba(255,255,255,0.18); line-height: 1.65; text-align: center; }
+
+    /* ============================================================
+       FLOATING ELEMENTS
+    ============================================================ */
+    .whatsapp-float { position: fixed; bottom: 32px; right: 32px; z-index: 900; display: flex; align-items: center; gap: 12px; background: #25D366; color: var(--white); padding: 14px 22px; border-radius: 60px; box-shadow: 0 8px 28px rgba(37,211,102,0.35); text-decoration: none; font-size: 0.85rem; font-weight: 600; transition: var(--transition); animation: floatIn 0.8s ease 2s both; }
+    .whatsapp-float:hover { transform: translateY(-3px) scale(1.03); box-shadow: 0 12px 36px rgba(37,211,102,0.45); }
+    .whatsapp-float i { font-size: 1.2rem; }
+
+    #cookie-banner { position: fixed; bottom: 0; left: 0; right: 0; z-index: 1100; background: var(--charcoal); border-top: 1px solid rgba(201,168,76,0.2); padding: 20px 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; transform: translateY(100%); transition: transform 0.4s ease; }
+    #cookie-banner.show { transform: translateY(0); }
+    .cookie-text { font-size: 0.85rem; color: rgba(255,255,255,0.65); line-height: 1.55; flex: 1; }
+    .cookie-text a { color: var(--gold); text-decoration: underline; }
+    .cookie-btns  { display: flex; gap: 12px; flex-shrink: 0; }
+    .cookie-accept  { padding: 10px 24px; background: var(--gold); color: var(--white); border-radius: var(--radius-sm); font-size: 0.82rem; font-weight: 700; letter-spacing: 0.06em; cursor: pointer; transition: var(--transition); border: none; }
+    .cookie-accept:hover { background: var(--gold-dark); }
+    .cookie-decline { padding: 10px 20px; background: transparent; color: rgba(255,255,255,0.45); border-radius: var(--radius-sm); font-size: 0.82rem; font-weight: 600; cursor: pointer; border: 1px solid rgba(255,255,255,0.12); transition: var(--transition); }
+    .cookie-decline:hover { color: var(--white); border-color: rgba(255,255,255,0.35); }
+
+    /* ============================================================
+       ANIMATIONS
+    ============================================================ */
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes floatIn  { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+
+    /* ============================================================
+       RESPONSIVE
+    ============================================================ */
+    @media (max-width: 1100px) {
+      .service-detail-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-top { grid-template-columns: 1fr 1fr; }
+      .sp-steps { grid-template-columns: repeat(3, 1fr); gap: 40px; }
+      .sp-steps::before { display: none; }
+    }
+    @media (max-width: 900px) {
+      .services-hero-inner { grid-template-columns: 1fr; gap: 48px; }
+      .services-hero-right { order: -1; }
+      .hero-image-slot { max-width: 100%; }
+      .intro-grid { grid-template-columns: 1fr; gap: 48px; }
+      .intro-right { grid-template-columns: repeat(2, 1fr); }
+      .wws-grid { grid-template-columns: repeat(2, 1fr); }
+      .custom-band-inner { grid-template-columns: 1fr; gap: 48px; }
+      .cat-header-inner { flex-wrap: wrap; }
+      .cat-icon { margin-left: 0; }
+    }
+    @media (max-width: 768px) {
+      .section { padding: 72px 0; }
+      .container { padding: 0 20px; }
+      #navbar { padding: 0 20px; height: 68px; }
+      #service-nav { top: 68px; }
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .service-detail-grid { grid-template-columns: 1fr; }
+      .sp-steps { grid-template-columns: 1fr; gap: 32px; }
+      .wws-grid { grid-template-columns: 1fr; }
+      .intro-right { grid-template-columns: 1fr 1fr; }
+      .footer-top { grid-template-columns: 1fr; gap: 40px; }
+      .footer-bottom { flex-direction: column; text-align: center; gap: 12px; }
+      .footer-legal { justify-content: center; flex-wrap: wrap; }
+      .whatsapp-float .wa-label { display: none; }
+      .whatsapp-float { padding: 14px; border-radius: 50%; }
+      .btn-group { flex-direction: column; align-items: flex-start; }
+      .services-cta-inner .btn-group { align-items: center; }
+    }
+    @media (max-width: 480px) {
+      .intro-right { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ============================================================
+       COOKIE BANNER
+  ============================================================ -->
+  <div id="cookie-banner" role="dialog" aria-label="Cookie consent">
+    <p class="cookie-text">We use cookies to improve your experience and analyze site performance. Read our <a href="privacy-policy.html">Privacy Policy</a> to learn more.</p>
+    <div class="cookie-btns">
+      <button class="cookie-accept" id="cookieAccept">Accept Cookies</button>
+      <button class="cookie-decline" id="cookieDecline">Decline</button>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo" aria-label="Albert Nathan Agency Home">
+      <img src="Albert Nathan.png" alt="Albert Nathan Agency Logo" />
+      <div class="nav-logo-text">
+        <span class="nav-logo-name">Albert Nathan</span>
+        <span class="nav-logo-sub">Book Marketing Agency</span>
+      </div>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="case-studies.html">Case Studies</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="process.html">Process</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="book-a-call.html" class="nav-cta">Start Project</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Navigation -->
+  <div class="nav-mobile" id="navMobile" role="dialog" aria-label="Mobile navigation">
+    <a href="index.html"        onclick="closeMobileNav()">Home</a>
+    <a href="about.html"        onclick="closeMobileNav()">About</a>
+    <a href="services.html"     onclick="closeMobileNav()">Services</a>
+    <a href="case-studies.html" onclick="closeMobileNav()">Case Studies</a>
+    <a href="pricing.html"      onclick="closeMobileNav()">Pricing</a>
+    <a href="testimonials.html" onclick="closeMobileNav()">Testimonials</a>
+    <a href="process.html"      onclick="closeMobileNav()">Process</a>
+    <a href="faq.html"          onclick="closeMobileNav()">FAQ</a>
+    <a href="contact.html"      onclick="closeMobileNav()">Contact</a>
+    <div class="nav-mobile-cta">
+      <a href="book-a-call.html" class="btn btn-gold" onclick="closeMobileNav()">
+        <i class="fas fa-arrow-right"></i> Start Your Project
+      </a>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       PAGE HERO - LEFT ALIGNED WITH IMAGE SLOT
+  ============================================================ -->
+  <section id="services-hero" aria-label="Services overview">
+    <div class="services-hero-bg"></div>
+    <div class="services-hero-grid"></div>
+    <div class="container">
+      <div class="services-hero-inner">
+
+        <div class="services-hero-left">
+          <div class="hero-eyebrow">
+            <span class="hero-eyebrow-line"></span>
+            <span class="hero-eyebrow-text">Complete Book Marketing Ecosystem</span>
+          </div>
+          <h1 class="services-hero-title">
+            Every Service<br />Your Book<br />
+            <span class="gold">Could Need.</span>
+          </h1>
+          <p class="services-hero-sub">
+            From the moment a manuscript becomes a published book to the sustained
+            marketing campaigns that keep it visible for years. Albert Nathan Agency
+            provides the complete range of strategic book marketing services,
+            custom-built for every author and every title.
+          </p>
+          <div class="services-hero-cta">
+            <a href="book-a-call.html" class="btn btn-gold btn-lg">
+              <i class="fas fa-arrow-right"></i> Start Your Project
+            </a>
+            <a href="#service-01" class="btn btn-outline-white">
+              Explore Services
+            </a>
+          </div>
+        </div>
+
+        <div class="services-hero-right">
+          <div class="hero-image-slot">
+            <img src="Plan strategy.png" alt="Book marketing services visual" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       STICKY SERVICE CATEGORY NAV
+  ============================================================ -->
+  <div id="service-nav" role="navigation" aria-label="Service categories">
+    <div class="container">
+      <div class="service-nav-inner">
+        <a href="#service-01" class="service-tab active" data-section="service-01">
+          <i class="fas fa-rocket"></i> Launch and Promotion
+        </a>
+        <a href="#service-02" class="service-tab" data-section="service-02">
+          <i class="fab fa-amazon"></i> Amazon and Discovery
+        </a>
+        <a href="#service-03" class="service-tab" data-section="service-03">
+          <i class="fas fa-user-circle"></i> Author Brand
+        </a>
+        <a href="#service-04" class="service-tab" data-section="service-04">
+          <i class="fas fa-users"></i> Audience Growth
+        </a>
+        <a href="#service-05" class="service-tab" data-section="service-05">
+          <i class="fas fa-ad"></i> Paid Advertising
+        </a>
+        <a href="#service-06" class="service-tab" data-section="service-06">
+          <i class="fas fa-chess"></i> Strategy and Consulting
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       INTRO
+  ============================================================ -->
+  <section id="services-intro" aria-label="Services introduction">
+    <div class="container">
+      <div class="intro-grid">
+        <div class="intro-left reveal">
+          <span class="label-tag">Why a Full-Service Approach Works</span>
+          <h2 class="display-md mt-12">
+            Book marketing works best when every channel is coordinated.
+          </h2>
+          <div class="gold-line gold-line-left"></div>
+          <p class="body-lg">
+            Single-channel promotion produces isolated results. A coordinated,
+            multi-channel marketing campaign, where Amazon visibility, advertising,
+            social presence, reader outreach, and author branding all work together,
+            produces compounding visibility that builds over time.
+          </p>
+          <p class="body-lg mt-20">
+            Albert Nathan Agency offers the complete range of services needed
+            to market a book effectively and the strategic expertise to know
+            which combination is right for your specific book, genre, audience,
+            and objective.
+          </p>
+          <div class="intro-points mt-32">
+            <div class="intro-point"><i class="fas fa-check-circle"></i><span>Every service is available individually or as part of a coordinated campaign</span></div>
+            <div class="intro-point"><i class="fas fa-check-circle"></i><span>All campaigns are custom-built, no templates or generic packages</span></div>
+            <div class="intro-point"><i class="fas fa-check-circle"></i><span>Services are available to authors and publishers worldwide</span></div>
+            <div class="intro-point"><i class="fas fa-check-circle"></i><span>Campaigns cover all genres, all publishing paths, all experience levels</span></div>
+          </div>
+        </div>
+
+        <div class="intro-right reveal reveal-delay-2">
+          <div class="intro-stat">
+            <div class="intro-stat-value">10+</div>
+            <div class="intro-stat-label">Years Experience</div>
+          </div>
+          <div class="intro-stat">
+            <div class="intro-stat-value">200+</div>
+            <div class="intro-stat-label">Authors Supported</div>
+          </div>
+          <div class="intro-stat">
+            <div class="intro-stat-value">350+</div>
+            <div class="intro-stat-label">Books Promoted</div>
+          </div>
+          <div class="intro-stat">
+            <div class="intro-stat-value">All</div>
+            <div class="intro-stat-label">Genres Accepted</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SERVICE CATEGORY 01 - BOOK LAUNCH AND PROMOTION
+  ============================================================ -->
+  <section id="service-01" class="cat-bg-white" aria-labelledby="cat01-heading">
+    <div class="container">
+
+      <div class="cat-header reveal">
+        <div class="cat-header-inner">
+          <div class="cat-number">01</div>
+          <div class="cat-header-text">
+            <span class="label-tag">Category One</span>
+            <h2 id="cat01-heading">Book Launch and Promotion Campaigns</h2>
+            <p>
+              A book launch is one of the most important marketing events in an author's career.
+              The weeks before, during, and after publication are the window of maximum opportunity.
+              And without a coordinated campaign behind them, that window closes quickly.
+              Albert Nathan Agency builds launch campaigns that maximize visibility,
+              momentum, and reader acquisition across the full launch arc.
+            </p>
+          </div>
+          <div class="cat-icon"><i class="fas fa-rocket"></i></div>
+        </div>
+      </div>
+
+      <div class="service-detail-grid">
+
+        <!-- Card 1 -->
+        <div class="svc-card reveal reveal-delay-1">
+          <div class="svc-card-icon"><i class="fas fa-calendar-star"></i></div>
+          <h3>Pre-Launch Campaign</h3>
+          <p>Build anticipation and audience awareness before your book is published. The pre-launch window is critical. Readers who know your book is coming are far more likely to buy on release day.</p>
+          <div class="svc-includes-label">What's Included</div>
+          <div class="svc-includes">
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Pre-launch marketing strategy</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Advance reader copy (ARC) outreach</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Social media anticipation campaign</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Influencer and blogger seeding</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Email list pre-launch sequence</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Goodreads pre-launch activity</div>
+          </div>
+          <div class="svc-meta">
+            <div class="svc-meta-item"><i class="fas fa-clock"></i><span><strong>Timeline:</strong> 4-12 weeks before release</span></div>
+            <div class="svc-meta-item"><i class="fas fa-user"></i><span><strong>Best for:</strong> All authors approaching publication</span></div>
+            <div class="svc-meta-item"><i class="fas fa-rotate"></i><span><strong>Type:</strong> One-time campaign</span></div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="svc-card reveal reveal-delay-2">
+          <div class="svc-card-icon"><i class="fas fa-burst"></i></div>
+          <h3>Launch Day Campaign</h3>
+          <p>The release day of a book should be the peak of its marketing intensity, not the beginning of it. A coordinated launch day campaign drives maximum visibility, reviews, and sales on the day that matters most.</p>
+          <div class="svc-includes-label">What's Included</div>
+          <div class="svc-includes">
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Launch day advertising activation</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Social media launch push</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Reader community activation</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Amazon launch optimization</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Review generation campaign</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Real-time performance monitoring</div>
+          </div>
+          <div class="svc-meta">
+            <div class="svc-meta-item"><i class="fas fa-clock"></i><span><strong>Timeline:</strong> Release week execution</span></div>
+            <div class="svc-meta-item"><i class="fas fa-user"></i><span><strong>Best for:</strong> Authors with planned release dates</span></div>
+            <div class="svc-meta-item"><i class="fas fa-rotate"></i><span><strong>Type:</strong> One-time campaign</span></div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="svc-card reveal reveal-delay-3">
+          <div class="svc-card-icon"><i class="fas fa-chart-line"></i></div>
+          <h3>Post-Launch Momentum Campaign</h3>
+          <p>Most book marketing stops the week after launch. The most successful campaigns do not. They use the initial release momentum to sustain visibility, capture new readers, and build long-term discoverability.</p>
+          <div class="svc-includes-label">What's Included</div>
+          <div class="svc-includes">
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Post-launch advertising continuation</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Ongoing review outreach</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Social proof amplification</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Reader community engagement</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Amazon ranking maintenance</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Monthly performance reporting</div>
+          </div>
+          <div class="svc-meta">
+            <div class="svc-meta-item"><i class="fas fa-clock"></i><span><strong>Timeline:</strong> 4-12 weeks post-launch</span></div>
+            <div class="svc-meta-item"><i class="fas fa-user"></i><span><strong>Best for:</strong> Authors who want sustained sales</span></div>
+            <div class="svc-meta-item"><i class="fas fa-rotate"></i><span><strong>Type:</strong> Ongoing campaign</span></div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="svc-card reveal reveal-delay-1">
+          <div class="svc-card-icon"><i class="fas fa-bullhorn"></i></div>
+          <h3>Book Promotion Campaigns</h3>
+          <p>Standalone book promotion campaigns for already-published titles that need a visibility boost, a sales spike, or a renewed marketing push to reach new readers.</p>
+          <div class="svc-includes-label">What's Included</div>
+          <div class="svc-includes">
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Promotional campaign strategy</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Multi-platform promotion execution</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Targeted advertising campaign</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Reader outreach</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Social media promotion</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Campaign performance report</div>
+          </div>
+          <div class="svc-meta">
+            <div class="svc-meta-item"><i class="fas fa-clock"></i><span><strong>Timeline:</strong> 2-8 weeks</span></div>
+            <div class="svc-meta-item"><i class="fas fa-user"></i><span><strong>Best for:</strong> Authors with existing published titles</span></div>
+            <div class="svc-meta-item"><i class="fas fa-rotate"></i><span><strong>Type:</strong> One-time or recurring</span></div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="svc-card reveal reveal-delay-2">
+          <div class="svc-card-icon"><i class="fas fa-star"></i></div>
+          <h3>Book Review Campaign</h3>
+          <p>Reviews are one of the most powerful drivers of book sales and Amazon visibility. A coordinated review campaign builds the social proof that new readers need before they commit to buying.</p>
+          <div class="svc-includes-label">What's Included</div>
+          <div class="svc-includes">
+            <div class="svc-include-item"><i class="fas fa-circle"></i> ARC reader identification and outreach</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Book blogger and reviewer outreach</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Amazon review strategy</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Goodreads review campaign</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> NetGalley campaign support</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Review tracking and reporting</div>
+          </div>
+          <div class="svc-meta">
+            <div class="svc-meta-item"><i class="fas fa-clock"></i><span><strong>Timeline:</strong> 4-8 weeks</span></div>
+            <div class="svc-meta-item"><i class="fas fa-user"></i><span><strong>Best for:</strong> Authors needing social proof</span></div>
+            <div class="svc-meta-item"><i class="fas fa-rotate"></i><span><strong>Type:</strong> One-time campaign</span></div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="svc-card reveal reveal-delay-3">
+          <div class="svc-card-icon"><i class="fas fa-map-location-dot"></i></div>
+          <h3>Book Launch Strategy Session</h3>
+          <p>A comprehensive strategic planning service for authors who want a full launch roadmap. Covering every channel, every timeline, and every element needed to maximize their book's launch performance.</p>
+          <div class="svc-includes-label">What's Included</div>
+          <div class="svc-includes">
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Full book market analysis</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Audience identification and targeting</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Channel selection and strategy</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Launch timeline development</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Budget allocation guidance</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Written launch strategy document</div>
+          </div>
+          <div class="svc-meta">
+            <div class="svc-meta-item"><i class="fas fa-clock"></i><span><strong>Timeline:</strong> 1-2 weeks</span></div>
+            <div class="svc-meta-item"><i class="fas fa-user"></i><span><strong>Best for:</strong> Authors planning ahead</span></div>
+            <div class="svc-meta-item"><i class="fas fa-rotate"></i><span><strong>Type:</strong> One-time strategy service</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SERVICE CATEGORY 02 - AMAZON AND BOOK DISCOVERY
+  ============================================================ -->
+  <section id="service-02" class="cat-bg-off" aria-labelledby="cat02-heading">
+    <div class="container">
+
+      <div class="cat-header reveal">
+        <div class="cat-header-inner">
+          <div class="cat-number">02</div>
+          <div class="cat-header-text">
+            <span class="label-tag">Category Two</span>
+            <h2 id="cat02-heading">Amazon and Book Discovery Marketing</h2>
+            <p>
+              Amazon is the world's largest book marketplace. The majority of book sales happen
+              there, and the majority of readers discover new books through its search and
+              recommendation systems. Without a strong Amazon presence, your book is invisible
+              to the platform's hundreds of millions of active shoppers. Albert Nathan Agency
+              builds and manages Amazon marketing strategies that improve ranking, visibility,
+              and sales performance.
+            </p>
+          </div>
+          <div class="cat-icon"><i class="fab fa-amazon"></i></div>
+        </div>
+      </div>
+
+      <div class="service-detail-grid">
+
+        <div class="svc-card reveal reveal-delay-1">
+          <div class="svc-card-icon"><i class="fas fa-magnifying-glass"></i></div>
+          <h3>Amazon Listing Optimization</h3>
+          <p>Your Amazon book listing is a sales page. A poorly optimized listing loses readers at the point of discovery. We optimize every element to maximize conversion from browser to buyer.</p>
+          <div class="svc-includes-label">What's Included</div>
+          <div class="svc-includes">
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Book title and subtitle optimization</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Book description copywriting</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Keyword research and implementation</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Category selection strategy</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Author page optimization</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> A+ Content guidance (KDP)</div>
+          </div>
+          <div class="svc-meta">
+            <div class="svc-meta-item"><i class="fas fa-clock"></i><span><strong>Timeline:</strong> 1-2 weeks</span></div>
+            <div class="svc-meta-item"><i class="fas fa-user"></i><span><strong>Best for:</strong> All Amazon-listed authors</span></div>
+            <div class="svc-meta-item"><i class="fas fa-rotate"></i><span><strong>Type:</strong> One-time service</span></div>
+          </div>
+        </div>
+
+        <div class="svc-card reveal reveal-delay-2">
+          <div class="svc-card-icon"><i class="fab fa-amazon"></i></div>
+          <h3>Amazon Ads Management</h3>
+          <p>Amazon Ads are one of the most effective book marketing tools available. When managed strategically. Poorly run campaigns waste budget on irrelevant clicks. We build and manage campaigns that target readers with intent.</p>
+          <div class="svc-includes-label">What's Included</div>
+          <div class="svc-includes">
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Amazon Ads account setup</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Sponsored Products campaigns</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Sponsored Brands campaigns</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Keyword targeting strategy</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Bid management and optimization</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Regular performance reporting</div>
+          </div>
+          <div class="svc-meta">
+            <div class="svc-meta-item"><i class="fas fa-clock"></i><span><strong>Timeline:</strong> Ongoing monthly management</span></div>
+            <div class="svc-meta-item"><i class="fas fa-user"></i><span><strong>Best for:</strong> Authors on KDP and Amazon</span></div>
+            <div class="svc-meta-item"><i class="fas fa-rotate"></i><span><strong>Type:</strong> Ongoing management</span></div>
+          </div>
+        </div>
+
+        <div class="svc-card reveal reveal-delay-3">
+          <div class="svc-card-icon"><i class="fas fa-trophy"></i></div>
+          <h3>Amazon Bestseller Campaign</h3>
+          <p>A strategic, coordinated push to achieve Amazon bestseller status in relevant categories. Improving the book's long-term visibility on the platform and providing a powerful marketing credential.</p>
+          <div class="svc-includes-label">What's Included</div>
+          <div class="svc-includes">
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Category research and selection</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Launch timing optimization</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Concentrated promotional push</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Amazon Ads activation</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Reader outreach coordination</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Performance monitoring and reporting</div>
+          </div>
+          <div class="svc-meta">
+            <div class="svc-meta-item"><i class="fas fa-clock"></i><span><strong>Timeline:</strong> 2-4 weeks</span></div>
+            <div class="svc-meta-item"><i class="fas fa-user"></i><span><strong>Best for:</strong> Authors launching new titles</span></div>
+            <div class="svc-meta-item"><i class="fas fa-rotate"></i><span><strong>Type:</strong> One-time campaign</span></div>
+          </div>
+        </div>
+
+        <div class="svc-card reveal reveal-delay-1">
+          <div class="svc-card-icon"><i class="fas fa-book-bookmark"></i></div>
+          <h3>Goodreads Promotion</h3>
+          <p>Goodreads is the world's largest community of readers. A strong Goodreads presence builds social proof, drives discovery, and connects your book with the communities that read in your genre.</p>
+          <div class="svc-includes-label">What's Included</div>
+          <div class="svc-includes">
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Goodreads author profile setup</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Book listing optimization</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Reader shelving campaigns</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Genre community engagement</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Goodreads Giveaway management</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Review generation support</div>
+          </div>
+          <div class="svc-meta">
+            <div class="svc-meta-item"><i class="fas fa-clock"></i><span><strong>Timeline:</strong> 4-8 weeks</span></div>
+            <div class="svc-meta-item"><i class="fas fa-user"></i><span><strong>Best for:</strong> Fiction and literary authors</span></div>
+            <div class="svc-meta-item"><i class="fas fa-rotate"></i><span><strong>Type:</strong> Campaign-based</span></div>
+          </div>
+        </div>
+
+        <div class="svc-card reveal reveal-delay-2">
+          <div class="svc-card-icon"><i class="fas fa-tags"></i></div>
+          <h3>Book Metadata and SEO</h3>
+          <p>The way your book is described, categorized, and keyworded across retail platforms determines whether readers find it organically. We optimize all metadata for maximum discoverability.</p>
+          <div class="svc-includes-label">What's Included</div>
+          <div class="svc-includes">
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Keyword research for book retail</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Amazon metadata optimization</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> BISAC category strategy</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Book description SEO</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Multi-platform metadata review</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Discoverability audit report</div>
+          </div>
+          <div class="svc-meta">
+            <div class="svc-meta-item"><i class="fas fa-clock"></i><span><strong>Timeline:</strong> 1-2 weeks</span></div>
+            <div class="svc-meta-item"><i class="fas fa-user"></i><span><strong>Best for:</strong> All published authors</span></div>
+            <div class="svc-meta-item"><i class="fas fa-rotate"></i><span><strong>Type:</strong> One-time service</span></div>
+          </div>
+        </div>
+
+        <div class="svc-card reveal reveal-delay-3">
+          <div class="svc-card-icon"><i class="fas fa-magnifying-glass-chart"></i></div>
+          <h3>Book Discoverability Audit</h3>
+          <p>A comprehensive review of your book's current discoverability across all major retail and reader platforms. Identifying gaps, opportunities, and a clear action plan to improve visibility.</p>
+          <div class="svc-includes-label">What's Included</div>
+          <div class="svc-includes">
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Amazon listing full audit</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Goodreads presence review</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Keyword and category analysis</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Competitor comparison</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Social presence review</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Written audit report and action plan</div>
+          </div>
+          <div class="svc-meta">
+            <div class="svc-meta-item"><i class="fas fa-clock"></i><span><strong>Timeline:</strong> 1 week</span></div>
+            <div class="svc-meta-item"><i class="fas fa-user"></i><span><strong>Best for:</strong> Authors reviewing existing performance</span></div>
+            <div class="svc-meta-item"><i class="fas fa-rotate"></i><span><strong>Type:</strong> One-time audit</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SERVICE CATEGORY 03 - AUTHOR BRAND AND DIGITAL PRESENCE
+  ============================================================ -->
+  <section id="service-03" class="cat-bg-dark" aria-labelledby="cat03-heading">
+    <div class="container">
+
+      <div class="cat-header reveal">
+        <div class="cat-header-inner">
+          <div class="cat-number">03</div>
+          <div class="cat-header-text">
+            <span class="label-tag">Category Three</span>
+            <h2 id="cat03-heading">Author Brand and Digital Presence</h2>
+            <p>
+              Readers do not just buy books. They buy into authors. A professional author brand
+              builds the trust, recognition, and reader connection that makes every book easier
+              to market than the last. Albert Nathan Agency builds author brands that create
+              lasting commercial platforms, not just a social media presence.
+            </p>
+          </div>
+          <div class="cat-icon"><i class="fas fa-user-circle"></i></div>
+        </div>
+      </div>
+
+      <div class="service-detail-grid">
+
+        <div class="svc-card reveal reveal-delay-1">
+          <div class="svc-card-icon"><i class="fas fa-id-badge"></i></div>
+          <h3>Author Brand Strategy</h3>
+          <p>Define who you are as an author, how you want to be positioned in the market, and what your brand communicates to readers. Consistently, across every platform and touchpoint.</p>
+          <div class="svc-includes-label">What's Included</div>
+          <div class="svc-includes">
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Author positioning analysis</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Brand voice and tone development</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Visual identity direction</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Audience persona development</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Platform strategy</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Written brand strategy document</div>
+          </div>
+          <div class="svc-meta">
+            <div class="svc-meta-item"><i class="fas fa-clock"></i><span><strong>Timeline:</strong> 2-3 weeks</span></div>
+            <div class="svc-meta-item"><i class="fas fa-user"></i><span><strong>Best for:</strong> All authors building long-term careers</span></div>
+            <div class="svc-meta-item"><i class="fas fa-rotate"></i><span><strong>Type:</strong> One-time strategy</span></div>
+          </div>
+        </div>
+
+        <div class="svc-card reveal reveal-delay-2">
+          <div class="svc-card-icon"><i class="fas fa-laptop-code"></i></div>
+          <h3>Author Website Development</h3>
+          <p>A professional author website is the foundation of every effective online marketing strategy. It is where readers go, where media checks, and where the author's full story is told.</p>
+          <div class="svc-includes-label">What's Included</div>
+          <div class="svc-includes">
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Custom author website design</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Mobile-responsive development</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Book listings and sales pages</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Email list integration</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> On-page SEO setup</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Blog/news section</div>
+          </div>
+          <div class="svc-meta">
+            <div class="svc-meta-item"><i class="fas fa-clock"></i><span><strong>Timeline:</strong> 3-6 weeks</span></div>
+            <div class="svc-meta-item"><i class="fas fa-user"></i><span><strong>Best for:</strong> Authors without a professional web presence</span></div>
+            <div class="svc-meta-item"><i class="fas fa-rotate"></i><span><strong>Type:</strong> One-time project</span></div>
+          </div>
+        </div>
+
+        <div class="svc-card reveal reveal-delay-3">
+          <div class="svc-card-icon"><i class="fas fa-pen-to-square"></i></div>
+          <h3>Content Marketing Strategy</h3>
+          <p>Content that speaks directly to your target readers. Establishing your authority, building your audience, and creating the organic discovery pathways that support long-term book sales.</p>
+          <div class="svc-includes-label">What's Included</div>
+          <div class="svc-includes">
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Content strategy development</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Editorial calendar creation</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Blog content planning</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Social content frameworks</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Email content planning</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Content performance tracking</div>
+          </div>
+          <div class="svc-meta">
+            <div class="svc-meta-item"><i class="fas fa-clock"></i><span><strong>Timeline:</strong> 2-4 weeks plus ongoing</span></div>
+            <div class="svc-meta-item"><i class="fas fa-user"></i><span><strong>Best for:</strong> Authors investing in long-term growth</span></div>
+            <div class="svc-meta-item"><i class="fas fa-rotate"></i><span><strong>Type:</strong> Strategy plus ongoing support</span></div>
+          </div>
+        </div>
+
+        <div class="svc-card reveal reveal-delay-1">
+          <div class="svc-card-icon"><i class="fas fa-share-nodes"></i></div>
+          <h3>Social Media Marketing</h3>
+          <p>A strategic social media presence that builds your author brand, grows your following, and creates consistent touchpoints with readers across the platforms they use most.</p>
+          <div class="svc-includes-label">What's Included</div>
+          <div class="svc-includes">
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Platform strategy (Instagram, TikTok, X, Facebook)</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Profile optimization</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Content creation and scheduling</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Community engagement management</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Hashtag and discoverability strategy</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Monthly analytics reporting</div>
+          </div>
+          <div class="svc-meta">
+            <div class="svc-meta-item"><i class="fas fa-clock"></i><span><strong>Timeline:</strong> Ongoing monthly management</span></div>
+            <div class="svc-meta-item"><i class="fas fa-user"></i><span><strong>Best for:</strong> Authors building a reader community</span></div>
+            <div class="svc-meta-item"><i class="fas fa-rotate"></i><span><strong>Type:</strong> Ongoing management</span></div>
+          </div>
+        </div>
+
+        <div class="svc-card reveal reveal-delay-2">
+          <div class="svc-card-icon"><i class="fas fa-search"></i></div>
+          <h3>Author SEO</h3>
+          <p>Search engine optimization for authors. Ensuring that when readers search for books in your genre, your name, your titles, and your website appear in the results they find.</p>
+          <div class="svc-includes-label">What's Included</div>
+          <div class="svc-includes">
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Author keyword research</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Website on-page SEO</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Technical SEO audit</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Genre and book SEO strategy</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Google Search Console setup</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Ongoing ranking monitoring</div>
+          </div>
+          <div class="svc-meta">
+            <div class="svc-meta-item"><i class="fas fa-clock"></i><span><strong>Timeline:</strong> 4-12 weeks plus ongoing</span></div>
+            <div class="svc-meta-item"><i class="fas fa-user"></i><span><strong>Best for:</strong> Authors with a website</span></div>
+            <div class="svc-meta-item"><i class="fas fa-rotate"></i><span><strong>Type:</strong> One-time plus optional ongoing</span></div>
+          </div>
+        </div>
+
+        <div class="svc-card reveal reveal-delay-3">
+          <div class="svc-card-icon"><i class="fas fa-envelope-open-text"></i></div>
+          <h3>Email Marketing for Authors</h3>
+          <p>An author's email list is their most direct, most valuable, and most commercially effective marketing channel. We build and manage email strategies that grow your list and convert subscribers into buyers.</p>
+          <div class="svc-includes-label">What's Included</div>
+          <div class="svc-includes">
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Email platform setup and strategy</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> List growth campaign</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Welcome sequence creation</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Launch email sequences</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Newsletter strategy</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Email analytics and reporting</div>
+          </div>
+          <div class="svc-meta">
+            <div class="svc-meta-item"><i class="fas fa-clock"></i><span><strong>Timeline:</strong> 2-4 weeks setup plus ongoing</span></div>
+            <div class="svc-meta-item"><i class="fas fa-user"></i><span><strong>Best for:</strong> Authors building reader relationships</span></div>
+            <div class="svc-meta-item"><i class="fas fa-rotate"></i><span><strong>Type:</strong> Setup plus optional ongoing</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SERVICE CATEGORY 04 - AUDIENCE AND READER GROWTH
+  ============================================================ -->
+  <section id="service-04" class="cat-bg-white" aria-labelledby="cat04-heading">
+    <div class="container">
+
+      <div class="cat-header reveal">
+        <div class="cat-header-inner">
+          <div class="cat-number">04</div>
+          <div class="cat-header-text">
+            <span class="label-tag">Category Four</span>
+            <h2 id="cat04-heading">Audience and Reader Growth</h2>
+            <p>
+              The most valuable marketing asset any author can have is a direct relationship
+              with their readers. Reader outreach campaigns, influencer partnerships, and
+              community engagement build the audience that makes every future book easier to
+              market and every current book more visible. Albert Nathan Agency identifies where
+              your readers are and puts your book in front of them.
+            </p>
+          </div>
+          <div class="cat-icon"><i class="fas fa-users"></i></div>
+        </div>
+      </div>
+
+      <div class="service-detail-grid">
+
+        <div class="svc-card reveal reveal-delay-1">
+          <div class="svc-card-icon"><i class="fas fa-people-group"></i></div>
+          <h3>Reader Outreach Campaign</h3>
+          <p>Direct outreach to the readers, reading communities, book clubs, and genre fans who are most likely to love your book. Building awareness, interest, and advocacy from the ground up.</p>
+          <div class="svc-includes-label">What's Included</div>
+          <div class="svc-includes">
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Target reader community research</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Book club and community outreach</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Online reader group engagement</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> ARC reader recruitment</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Reader newsletter placement</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Outreach reporting</div>
+          </div>
+          <div class="svc-meta">
+            <div class="svc-meta-item"><i class="fas fa-clock"></i><span><strong>Timeline:</strong> 4-8 weeks</span></div>
+            <div class="svc-meta-item"><i class="fas fa-user"></i><span><strong>Best for:</strong> All authors and genres</span></div>
+            <div class="svc-meta-item"><i class="fas fa-rotate"></i><span><strong>Type:</strong> Campaign-based</span></div>
+          </div>
+        </div>
+
+        <div class="svc-card reveal reveal-delay-2">
+          <div class="svc-card-icon"><i class="fas fa-user-group"></i></div>
+          <h3>Influencer Outreach Campaign</h3>
+          <p>BookTok creators, Bookstagram influencers, and literary YouTubers have direct access to millions of engaged readers. A targeted influencer campaign places your book in front of the audiences that trust these voices most.</p>
+          <div class="svc-includes-label">What's Included</div>
+          <div class="svc-includes">
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Influencer identification and vetting</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Outreach strategy and execution</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> BookTok creator outreach</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Bookstagram outreach</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Campaign coordination</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Results tracking and reporting</div>
+          </div>
+          <div class="svc-meta">
+            <div class="svc-meta-item"><i class="fas fa-clock"></i><span><strong>Timeline:</strong> 4-8 weeks</span></div>
+            <div class="svc-meta-item"><i class="fas fa-user"></i><span><strong>Best for:</strong> Fiction, YA, romance, thriller, literary</span></div>
+            <div class="svc-meta-item"><i class="fas fa-rotate"></i><span><strong>Type:</strong> Campaign-based</span></div>
+          </div>
+        </div>
+
+        <div class="svc-card reveal reveal-delay-3">
+          <div class="svc-card-icon"><i class="fas fa-blog"></i></div>
+          <h3>Book Blogger Outreach</h3>
+          <p>Book bloggers remain one of the most credible and influential voices in book discovery. A coordinated blogger outreach campaign builds reviews, features, and organic word-of-mouth across the book blogging community.</p>
+          <div class="svc-includes-label">What's Included</div>
+          <div class="svc-includes">
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Genre-relevant blogger research</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Personalized blogger outreach</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Book tour coordination</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Guest post and interview pitching</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Review placement tracking</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Coverage report</div>
+          </div>
+          <div class="svc-meta">
+            <div class="svc-meta-item"><i class="fas fa-clock"></i><span><strong>Timeline:</strong> 4-8 weeks</span></div>
+            <div class="svc-meta-item"><i class="fas fa-user"></i><span><strong>Best for:</strong> Fiction, nonfiction, memoir</span></div>
+            <div class="svc-meta-item"><i class="fas fa-rotate"></i><span><strong>Type:</strong> Campaign-based</span></div>
+          </div>
+        </div>
+
+        <div class="svc-card reveal reveal-delay-1">
+          <div class="svc-card-icon"><i class="fas fa-mobile-screen"></i></div>
+          <h3>TikTok Book Marketing</h3>
+          <p>BookTok is the most powerful organic book discovery force of the last decade. A strategic TikTok campaign, whether through creator partnerships or content strategy, can expose your book to millions of readers overnight.</p>
+          <div class="svc-includes-label">What's Included</div>
+          <div class="svc-includes">
+            <div class="svc-include-item"><i class="fas fa-circle"></i> TikTok BookTok strategy</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Creator partnership outreach</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Content concept development</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> TikTok Ads management</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Hashtag strategy</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Performance reporting</div>
+          </div>
+          <div class="svc-meta">
+            <div class="svc-meta-item"><i class="fas fa-clock"></i><span><strong>Timeline:</strong> 4-8 weeks</span></div>
+            <div class="svc-meta-item"><i class="fas fa-user"></i><span><strong>Best for:</strong> Fiction, YA, romance, thriller, fantasy</span></div>
+            <div class="svc-meta-item"><i class="fas fa-rotate"></i><span><strong>Type:</strong> Campaign-based or ongoing</span></div>
+          </div>
+        </div>
+
+        <div class="svc-card reveal reveal-delay-2">
+          <div class="svc-card-icon"><i class="fas fa-newspaper"></i></div>
+          <h3>Reader Newsletter Placement</h3>
+          <p>Placement in established book-focused newsletters puts your title directly into the inboxes of readers who have specifically opted in to receive book recommendations. High-intent, high-conversion audiences.</p>
+          <div class="svc-includes-label">What's Included</div>
+          <div class="svc-includes">
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Newsletter identification and selection</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Genre-appropriate placement</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Ad copy creation</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Placement scheduling</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Results tracking</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Performance report</div>
+          </div>
+          <div class="svc-meta">
+            <div class="svc-meta-item"><i class="fas fa-clock"></i><span><strong>Timeline:</strong> 2-4 weeks</span></div>
+            <div class="svc-meta-item"><i class="fas fa-user"></i><span><strong>Best for:</strong> All genres and publishing paths</span></div>
+            <div class="svc-meta-item"><i class="fas fa-rotate"></i><span><strong>Type:</strong> Campaign-based</span></div>
+          </div>
+        </div>
+
+        <div class="svc-card reveal reveal-delay-3">
+          <div class="svc-card-icon"><i class="fas fa-comment-dots"></i></div>
+          <h3>Online Community Engagement</h3>
+          <p>Strategic participation and promotion across online reading communities. Reddit, Facebook reading groups, Discord servers, and genre-specific forums where your target readers already gather.</p>
+          <div class="svc-includes-label">What's Included</div>
+          <div class="svc-includes">
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Community research and mapping</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Reddit book community strategy</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Facebook group engagement</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Discord community placement</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Forum participation strategy</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Engagement reporting</div>
+          </div>
+          <div class="svc-meta">
+            <div class="svc-meta-item"><i class="fas fa-clock"></i><span><strong>Timeline:</strong> Ongoing</span></div>
+            <div class="svc-meta-item"><i class="fas fa-user"></i><span><strong>Best for:</strong> Genre fiction authors</span></div>
+            <div class="svc-meta-item"><i class="fas fa-rotate"></i><span><strong>Type:</strong> Ongoing management</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SERVICE CATEGORY 05 - PAID ADVERTISING
+  ============================================================ -->
+  <section id="service-05" class="cat-bg-off" aria-labelledby="cat05-heading">
+    <div class="container">
+
+      <div class="cat-header reveal">
+        <div class="cat-header-inner">
+          <div class="cat-number">05</div>
+          <div class="cat-header-text">
+            <span class="label-tag">Category Five</span>
+            <h2 id="cat05-heading">Paid Advertising Campaigns</h2>
+            <p>
+              Paid advertising is the fastest way to put a book in front of large,
+              targeted audiences. But only when it is managed with strategic intent.
+              Poorly managed advertising burns budget without results.
+              Albert Nathan Agency designs and manages data-driven paid campaigns
+              across Amazon, Facebook, Instagram, and TikTok. With the targeting,
+              creative direction, and ongoing optimization that produces meaningful ROI.
+            </p>
+          </div>
+          <div class="cat-icon"><i class="fas fa-ad"></i></div>
+        </div>
+      </div>
+
+      <div class="service-detail-grid">
+
+        <div class="svc-card reveal reveal-delay-1">
+          <div class="svc-card-icon"><i class="fab fa-amazon"></i></div>
+          <h3>Amazon Advertising</h3>
+          <p>Amazon Ads place your book directly in front of shoppers who are actively searching for books in your genre. When managed correctly, they are one of the highest-ROI advertising channels available to authors.</p>
+          <div class="svc-includes-label">What's Included</div>
+          <div class="svc-includes">
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Campaign architecture and setup</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Keyword and ASIN targeting</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Sponsored Products and Brands</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Bid strategy and management</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Negative keyword management</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Weekly performance reporting</div>
+          </div>
+          <div class="svc-meta">
+            <div class="svc-meta-item"><i class="fas fa-clock"></i><span><strong>Timeline:</strong> Ongoing monthly management</span></div>
+            <div class="svc-meta-item"><i class="fas fa-user"></i><span><strong>Best for:</strong> All KDP and Amazon authors</span></div>
+            <div class="svc-meta-item"><i class="fas fa-rotate"></i><span><strong>Type:</strong> Ongoing management</span></div>
+          </div>
+        </div>
+
+        <div class="svc-card reveal reveal-delay-2">
+          <div class="svc-card-icon"><i class="fab fa-meta"></i></div>
+          <h3>Facebook and Instagram Advertising</h3>
+          <p>Meta's advertising platform offers unparalleled audience targeting capability. Demographics, interests, reading behavior, and lookalike audiences. We build and manage campaigns that find your readers with precision.</p>
+          <div class="svc-includes-label">What's Included</div>
+          <div class="svc-includes">
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Campaign strategy and setup</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Audience research and targeting</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Ad creative direction</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> A/B testing and optimization</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Retargeting campaign setup</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Regular performance reporting</div>
+          </div>
+          <div class="svc-meta">
+            <div class="svc-meta-item"><i class="fas fa-clock"></i><span><strong>Timeline:</strong> Ongoing monthly management</span></div>
+            <div class="svc-meta-item"><i class="fas fa-user"></i><span><strong>Best for:</strong> All authors with a target audience</span></div>
+            <div class="svc-meta-item"><i class="fas fa-rotate"></i><span><strong>Type:</strong> Ongoing management</span></div>
+          </div>
+        </div>
+
+        <div class="svc-card reveal reveal-delay-3">
+          <div class="svc-card-icon"><i class="fab fa-tiktok"></i></div>
+          <h3>TikTok Advertising</h3>
+          <p>TikTok's in-feed advertising reaches a younger, highly engaged audience of book readers. Particularly effective for genre fiction, YA, romance, and thriller titles targeting the BookTok community.</p>
+          <div class="svc-includes-label">What's Included</div>
+          <div class="svc-includes">
+            <div class="svc-include-item"><i class="fas fa-circle"></i> TikTok Ads campaign setup</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Audience targeting strategy</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Video ad creative direction</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> In-feed campaign management</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Campaign optimization</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Performance analytics and reporting</div>
+          </div>
+          <div class="svc-meta">
+            <div class="svc-meta-item"><i class="fas fa-clock"></i><span><strong>Timeline:</strong> Ongoing management</span></div>
+            <div class="svc-meta-item"><i class="fas fa-user"></i><span><strong>Best for:</strong> Fiction, YA, romance, thriller, fantasy</span></div>
+            <div class="svc-meta-item"><i class="fas fa-rotate"></i><span><strong>Type:</strong> Ongoing management</span></div>
+          </div>
+        </div>
+
+        <div class="svc-card reveal reveal-delay-1">
+          <div class="svc-card-icon"><i class="fas fa-palette"></i></div>
+          <h3>Ad Creative and Copywriting</h3>
+          <p>The creative quality of an advertisement determines whether it stops a reader scrolling or disappears into the feed. We develop strategic ad concepts, copy, and creative direction that convert attention into clicks.</p>
+          <div class="svc-includes-label">What's Included</div>
+          <div class="svc-includes">
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Ad copy development</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Creative concept and direction</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Multiple ad variations</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> A/B test creative sets</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Platform-specific optimization</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Creative performance analysis</div>
+          </div>
+          <div class="svc-meta">
+            <div class="svc-meta-item"><i class="fas fa-clock"></i><span><strong>Timeline:</strong> 1-2 weeks per set</span></div>
+            <div class="svc-meta-item"><i class="fas fa-user"></i><span><strong>Best for:</strong> All authors running paid ads</span></div>
+            <div class="svc-meta-item"><i class="fas fa-rotate"></i><span><strong>Type:</strong> One-time or ongoing</span></div>
+          </div>
+        </div>
+
+        <div class="svc-card reveal reveal-delay-2">
+          <div class="svc-card-icon"><i class="fas fa-funnel-dollar"></i></div>
+          <h3>Full-Funnel Ad Campaign Management</h3>
+          <p>A coordinated advertising strategy across multiple platforms. Working together to build awareness, drive consideration, and convert readers at different stages of their discovery journey.</p>
+          <div class="svc-includes-label">What's Included</div>
+          <div class="svc-includes">
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Multi-platform campaign strategy</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Awareness campaign (TikTok, Meta)</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Consideration campaign</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Conversion campaign (Amazon)</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Retargeting sequences</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Unified performance reporting</div>
+          </div>
+          <div class="svc-meta">
+            <div class="svc-meta-item"><i class="fas fa-clock"></i><span><strong>Timeline:</strong> Ongoing management</span></div>
+            <div class="svc-meta-item"><i class="fas fa-user"></i><span><strong>Best for:</strong> Authors with growth budgets</span></div>
+            <div class="svc-meta-item"><i class="fas fa-rotate"></i><span><strong>Type:</strong> Ongoing management</span></div>
+          </div>
+        </div>
+
+        <div class="svc-card reveal reveal-delay-3">
+          <div class="svc-card-icon"><i class="fas fa-gauge-high"></i></div>
+          <h3>Advertising Audit and Optimization</h3>
+          <p>For authors already running advertising campaigns that are not producing expected results. A full audit of current performance, identification of waste and opportunity, and a clear optimization plan.</p>
+          <div class="svc-includes-label">What's Included</div>
+          <div class="svc-includes">
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Current campaign performance audit</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Budget efficiency analysis</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Targeting review</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Creative performance review</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Optimization recommendations</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Written audit report</div>
+          </div>
+          <div class="svc-meta">
+            <div class="svc-meta-item"><i class="fas fa-clock"></i><span><strong>Timeline:</strong> 1-2 weeks</span></div>
+            <div class="svc-meta-item"><i class="fas fa-user"></i><span><strong>Best for:</strong> Authors with underperforming campaigns</span></div>
+            <div class="svc-meta-item"><i class="fas fa-rotate"></i><span><strong>Type:</strong> One-time audit</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SERVICE CATEGORY 06 - STRATEGY AND CONSULTING
+  ============================================================ -->
+  <section id="service-06" class="cat-bg-dark" aria-labelledby="cat06-heading">
+    <div class="container">
+
+      <div class="cat-header reveal">
+        <div class="cat-header-inner">
+          <div class="cat-number">06</div>
+          <div class="cat-header-text">
+            <span class="label-tag">Category Six</span>
+            <h2 id="cat06-heading">Strategy, Consulting and Custom Campaigns</h2>
+            <p>
+              Not every author needs a full-service campaign. Some need clarity on their
+              strategy before they invest. Others need expert assessment of what is working
+              and what is not. And some need a completely bespoke, large-scale campaign
+              that does not fit any standard package. Albert Nathan Agency offers
+              expert-level consulting, strategic planning, and the development of
+              fully custom marketing campaigns for any scale of project.
+            </p>
+          </div>
+          <div class="cat-icon"><i class="fas fa-chess"></i></div>
+        </div>
+      </div>
+
+      <div class="service-detail-grid">
+
+        <div class="svc-card reveal reveal-delay-1">
+          <div class="svc-card-icon"><i class="fas fa-comments"></i></div>
+          <h3>Book Marketing Consulting</h3>
+          <p>Direct, expert consultation on your book marketing. Covering strategy, channels, positioning, budgeting, and priorities. Ideal for authors who want expert input before committing to a full campaign.</p>
+          <div class="svc-includes-label">What's Included</div>
+          <div class="svc-includes">
+            <div class="svc-include-item"><i class="fas fa-circle"></i> 30-45 minute strategy session</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Book and market assessment</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Channel recommendations</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Budget guidance</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Priority action plan</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Written summary of recommendations</div>
+          </div>
+          <div class="svc-meta">
+            <div class="svc-meta-item"><i class="fas fa-clock"></i><span><strong>Timeline:</strong> 1 week</span></div>
+            <div class="svc-meta-item"><i class="fas fa-user"></i><span><strong>Best for:</strong> Authors seeking expert direction</span></div>
+            <div class="svc-meta-item"><i class="fas fa-rotate"></i><span><strong>Type:</strong> One-time or retainer</span></div>
+          </div>
+        </div>
+
+        <div class="svc-card reveal reveal-delay-2">
+          <div class="svc-card-icon"><i class="fas fa-clipboard-list"></i></div>
+          <h3>Marketing Audit</h3>
+          <p>A thorough, expert assessment of your current marketing activity. Identifying what is working, what is wasting budget, what is missing, and what should change immediately to improve your book's performance.</p>
+          <div class="svc-includes-label">What's Included</div>
+          <div class="svc-includes">
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Full marketing activity review</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Advertising performance analysis</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Platform presence audit</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Competitive landscape review</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Gap and opportunity identification</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Written audit report and action plan</div>
+          </div>
+          <div class="svc-meta">
+            <div class="svc-meta-item"><i class="fas fa-clock"></i><span><strong>Timeline:</strong> 1-2 weeks</span></div>
+            <div class="svc-meta-item"><i class="fas fa-user"></i><span><strong>Best for:</strong> Authors with existing marketing activity</span></div>
+            <div class="svc-meta-item"><i class="fas fa-rotate"></i><span><strong>Type:</strong> One-time audit</span></div>
+          </div>
+        </div>
+
+        <div class="svc-card reveal reveal-delay-3">
+          <div class="svc-card-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+          <h3>Custom Campaign Development</h3>
+          <p>Fully bespoke marketing campaigns for authors and publishers with unique requirements. Multi-title programs, large-scale launches, publisher campaigns, or campaigns that do not fit standard service categories.</p>
+          <div class="svc-includes-label">What's Included</div>
+          <div class="svc-includes">
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Custom campaign scoping</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Multi-channel strategy development</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Full campaign execution</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Dedicated reporting framework</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Campaign optimization</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> End-of-campaign review</div>
+          </div>
+          <div class="svc-meta">
+            <div class="svc-meta-item"><i class="fas fa-clock"></i><span><strong>Timeline:</strong> Defined per project</span></div>
+            <div class="svc-meta-item"><i class="fas fa-user"></i><span><strong>Best for:</strong> Publishers and established authors</span></div>
+            <div class="svc-meta-item"><i class="fas fa-rotate"></i><span><strong>Type:</strong> Custom</span></div>
+          </div>
+        </div>
+
+        <div class="svc-card reveal reveal-delay-1">
+          <div class="svc-card-icon"><i class="fas fa-timeline"></i></div>
+          <h3>Ongoing Marketing Support</h3>
+          <p>Monthly marketing support retainers for authors who want consistent, sustained marketing activity managed by an expert. Without the cost and complexity of a full campaign commitment every month.</p>
+          <div class="svc-includes-label">What's Included</div>
+          <div class="svc-includes">
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Monthly marketing activity plan</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Campaign execution and management</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Advertising management</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Social media support</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Monthly performance report</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Direct author communication</div>
+          </div>
+          <div class="svc-meta">
+            <div class="svc-meta-item"><i class="fas fa-clock"></i><span><strong>Timeline:</strong> Monthly retainer</span></div>
+            <div class="svc-meta-item"><i class="fas fa-user"></i><span><strong>Best for:</strong> Authors wanting consistent marketing</span></div>
+            <div class="svc-meta-item"><i class="fas fa-rotate"></i><span><strong>Type:</strong> Ongoing retainer</span></div>
+          </div>
+        </div>
+
+        <div class="svc-card reveal reveal-delay-2">
+          <div class="svc-card-icon"><i class="fas fa-building-columns"></i></div>
+          <h3>Publisher Marketing Support</h3>
+          <p>Marketing campaign support for publishers who need specialist book marketing execution for individual titles or across a catalogue. From independent publishers to mid-size publishing houses.</p>
+          <div class="svc-includes-label">What's Included</div>
+          <div class="svc-includes">
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Title-specific campaign strategy</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Multi-title campaign management</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Advertising campaign execution</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Author platform support</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Campaign reporting and analytics</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Ongoing publisher partnership</div>
+          </div>
+          <div class="svc-meta">
+            <div class="svc-meta-item"><i class="fas fa-clock"></i><span><strong>Timeline:</strong> Defined per engagement</span></div>
+            <div class="svc-meta-item"><i class="fas fa-user"></i><span><strong>Best for:</strong> Independent and mid-size publishers</span></div>
+            <div class="svc-meta-item"><i class="fas fa-rotate"></i><span><strong>Type:</strong> Project or retainer</span></div>
+          </div>
+        </div>
+
+        <div class="svc-card reveal reveal-delay-3">
+          <div class="svc-card-icon"><i class="fas fa-file-contract"></i></div>
+          <h3>Campaign Strategy Document</h3>
+          <p>A comprehensive, written marketing strategy document for your book. Covering every channel, every tactic, every timeline, and every priority. That you can implement yourself or hand to a team.</p>
+          <div class="svc-includes-label">What's Included</div>
+          <div class="svc-includes">
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Market and audience analysis</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Recommended channel strategy</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Campaign timeline</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Budget allocation framework</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Platform-specific tactics</div>
+            <div class="svc-include-item"><i class="fas fa-circle"></i> Full written strategy document</div>
+          </div>
+          <div class="svc-meta">
+            <div class="svc-meta-item"><i class="fas fa-clock"></i><span><strong>Timeline:</strong> 1-2 weeks</span></div>
+            <div class="svc-meta-item"><i class="fas fa-user"></i><span><strong>Best for:</strong> Authors who want a DIY roadmap</span></div>
+            <div class="svc-meta-item"><i class="fas fa-rotate"></i><span><strong>Type:</strong> One-time deliverable</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROCESS STRIP
+  ============================================================ -->
+  <section id="services-process" aria-label="How we work">
+    <div class="container">
+      <div class="sp-header reveal">
+        <span class="label-tag">How It Works</span>
+        <h2 class="display-md mt-12">From Enquiry to Campaign Launch</h2>
+        <p class="body-lg mt-20">Every project follows the same disciplined process. From the moment you contact us to the delivery of your campaign results.</p>
+      </div>
+      <div class="sp-steps reveal reveal-delay-1">
+        <div class="sp-step">
+          <div class="sp-step-num">01</div>
+          <div class="sp-step-title">Enquire</div>
+          <div class="sp-step-desc">Submit your book details and marketing goals through our enquiry form or WhatsApp.</div>
+        </div>
+        <div class="sp-step">
+          <div class="sp-step-num">02</div>
+          <div class="sp-step-title">Review</div>
+          <div class="sp-step-desc">Albert personally reviews your book, current position, and marketing objectives.</div>
+        </div>
+        <div class="sp-step">
+          <div class="sp-step-num">03</div>
+          <div class="sp-step-title">Strategy</div>
+          <div class="sp-step-desc">A tailored campaign strategy is built specific to your book and goals.</div>
+        </div>
+        <div class="sp-step">
+          <div class="sp-step-num">04</div>
+          <div class="sp-step-title">Proposal</div>
+          <div class="sp-step-desc">You receive a clear proposal, strategy, services, timeline, and investment.</div>
+        </div>
+        <div class="sp-step">
+          <div class="sp-step-num">05</div>
+          <div class="sp-step-title">Launch and Optimize</div>
+          <div class="sp-step-desc">Campaign execution begins. Performance is monitored and optimized throughout.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       WHO WE SERVE
+  ============================================================ -->
+  <section id="who-we-serve" aria-labelledby="wws-heading">
+    <div class="container">
+      <div class="wws-header reveal">
+        <span class="label-tag">Who We Work With</span>
+        <h2 id="wws-heading" class="display-md mt-12">Services Designed for Every Author</h2>
+        <div class="gold-line"></div>
+        <p class="body-lg mt-12">
+          Whether you are a debut author with your first manuscript or an
+          established author with a growing catalogue, Albert Nathan Agency
+          has the services to match your stage, your genre, and your goals.
+        </p>
+      </div>
+      <div class="wws-grid">
+
+        <div class="wws-card reveal reveal-delay-1">
+          <div class="wws-icon"><i class="fas fa-seedling"></i></div>
+          <h3>Debut Authors</h3>
+          <p>First-time authors entering the market who need a strong, strategic foundation to make their debut book as visible as possible from day one.</p>
+          <div class="wws-tags">
+            <span class="wws-tag">Launch Strategy</span>
+            <span class="wws-tag">Amazon Setup</span>
+            <span class="wws-tag">Author Brand</span>
+            <span class="wws-tag">Reader Outreach</span>
+          </div>
+        </div>
+
+        <div class="wws-card reveal reveal-delay-2">
+          <div class="wws-icon"><i class="fas fa-pen-nib"></i></div>
+          <h3>Self-Published Authors</h3>
+          <p>Independent authors managing their own publishing who need professional marketing support to compete effectively in the commercial marketplace.</p>
+          <div class="wws-tags">
+            <span class="wws-tag">Amazon Ads</span>
+            <span class="wws-tag">Full Campaigns</span>
+            <span class="wws-tag">Social Media</span>
+            <span class="wws-tag">Advertising</span>
+          </div>
+        </div>
+
+        <div class="wws-card reveal reveal-delay-3">
+          <div class="wws-icon"><i class="fas fa-award"></i></div>
+          <h3>Traditionally Published</h3>
+          <p>Authors with traditional publishing deals who need marketing support beyond what their publisher's in-house team is able to provide.</p>
+          <div class="wws-tags">
+            <span class="wws-tag">Campaign Support</span>
+            <span class="wws-tag">Advertising</span>
+            <span class="wws-tag">Reader Outreach</span>
+            <span class="wws-tag">Social Growth</span>
+          </div>
+        </div>
+
+        <div class="wws-card reveal reveal-delay-1">
+          <div class="wws-icon"><i class="fas fa-star"></i></div>
+          <h3>Established Authors</h3>
+          <p>Authors with existing readership and publishing track record who want to grow their audience, market new titles, or sustain visibility across a growing catalogue.</p>
+          <div class="wws-tags">
+            <span class="wws-tag">Multi-Title Campaigns</span>
+            <span class="wws-tag">Brand Growth</span>
+            <span class="wws-tag">Ongoing Support</span>
+          </div>
+        </div>
+
+        <div class="wws-card reveal reveal-delay-2">
+          <div class="wws-icon"><i class="fas fa-building"></i></div>
+          <h3>Publishers</h3>
+          <p>Independent and mid-size publishers who need specialist book marketing support for individual titles or across their publishing catalogue.</p>
+          <div class="wws-tags">
+            <span class="wws-tag">Title Campaigns</span>
+            <span class="wws-tag">Catalogue Marketing</span>
+            <span class="wws-tag">Custom Programs</span>
+          </div>
+        </div>
+
+        <div class="wws-card reveal reveal-delay-3">
+          <div class="wws-icon"><i class="fas fa-globe"></i></div>
+          <h3>International Authors</h3>
+          <p>Authors and publishers based anywhere in the world who want to market their books to English-language and international audiences through professional campaigns.</p>
+          <div class="wws-tags">
+            <span class="wws-tag">Worldwide Campaigns</span>
+            <span class="wws-tag">All Platforms</span>
+            <span class="wws-tag">Remote Service</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CUSTOM CAMPAIGN BAND
+  ============================================================ -->
+  <section id="custom-band" aria-label="Custom campaign information">
+    <div class="container">
+      <div class="custom-band-inner">
+        <div class="custom-band-left reveal">
+          <span class="label-tag">Don't See Exactly What You Need?</span>
+          <h2 class="display-md mt-12">
+            Every Campaign Can Be Built Around Your Specific Requirements.
+          </h2>
+          <p class="body-lg mt-20">
+            No service list covers every possible marketing need. If your book,
+            your situation, or your objective does not fit neatly into one of the
+            categories above, get in touch. Albert Nathan Agency builds
+            custom campaigns for unique projects.
+          </p>
+          <div class="custom-band-cta">
+            <a href="contact.html" class="btn btn-gold">
+              <i class="fas fa-arrow-right"></i> Discuss Your Project
+            </a>
+          </div>
+        </div>
+        <div class="custom-band-right reveal reveal-delay-2">
+          <div class="custom-feature">
+            <div class="custom-feature-icon"><i class="fas fa-sliders"></i></div>
+            <div class="custom-feature-text">
+              <strong>Fully Custom Scope</strong>
+              <span>Built from scratch around your book, audience, timeline, and budget</span>
+            </div>
+          </div>
+          <div class="custom-feature">
+            <div class="custom-feature-icon"><i class="fas fa-layer-group"></i></div>
+            <div class="custom-feature-text">
+              <strong>Any Channel Combination</strong>
+              <span>Every service above can be combined into a bespoke multi-channel campaign</span>
+            </div>
+          </div>
+          <div class="custom-feature">
+            <div class="custom-feature-icon"><i class="fas fa-globe"></i></div>
+            <div class="custom-feature-text">
+              <strong>International Delivery</strong>
+              <span>Custom campaigns available to authors and publishers worldwide</span>
+            </div>
+          </div>
+          <div class="custom-feature">
+            <div class="custom-feature-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+            <div class="custom-feature-text">
+              <strong>Clear Proposal Every Time</strong>
+              <span>Every custom project receives a written proposal before any work begins</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FINAL CTA
+  ============================================================ -->
+  <section id="services-cta" aria-labelledby="services-cta-heading">
+    <div class="container">
+      <div class="services-cta-inner reveal">
+        <span class="label-tag">Ready to Start?</span>
+        <h2 id="services-cta-heading" class="display-lg mt-20">
+          Let's Build the Right Campaign for Your Book.
+        </h2>
+        <p class="body-lg mt-24">
+          Submit your project details and Albert Nathan will personally review
+          your book, your goals, and your options. Then respond within 24 to 48 hours
+          with a clear assessment and recommended next steps.
+        </p>
+        <div class="btn-group mt-40">
+          <a href="book-a-call.html" class="btn btn-gold btn-lg">
+            <i class="fas fa-arrow-right"></i> Start Your Book Marketing Project
+          </a>
+          <a href="pricing.html" class="btn btn-outline-white">
+            View Pricing
+          </a>
+        </div>
+        <p class="cta-disclaimer mt-32">
+          Marketing results vary. No specific sales or ranking outcome is guaranteed.
+          All campaigns are executed professionally and reported transparently.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer id="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="css/js/Albert Nathan.png" alt="Albert Nathan Agency" />
+          <p>Strategic book marketing for authors ready to be discovered. Turning great books into discoverable brands worldwide.</p>
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/albertnathanagency/" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61592884918168" target="_blank" rel="noopener" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/albertnathan001" target="_blank" rel="noopener" class="social-btn" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://tiktok.com/@claire.caldwell22" target="_blank" rel="noopener" class="social-btn" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://wa.me/WHATSAPP_NUMBER_HERE" target="_blank" rel="noopener" class="social-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="process.html">Process</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#service-01">Book Launch Campaigns</a></li>
+            <li><a href="#service-02">Amazon Marketing</a></li>
+            <li><a href="#service-03">Author Branding</a></li>
+            <li><a href="#service-04">Reader Outreach</a></li>
+            <li><a href="#service-05">Paid Advertising</a></li>
+            <li><a href="#service-06">Strategy and Consulting</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get In Touch</h4>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <span><a href="mailto:albertnathan@bookpromotionuk.com">albertnathan@bookpromotionuk.com</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fab fa-whatsapp"></i>
+            <span><a href="https://wa.me/WHATSAPP_NUMBER_HERE">Chat on WhatsApp</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-globe"></i>
+            <span>Available Worldwide, All Days</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Based in USA, Texas<br />Serving authors globally</span>
+          </div>
+          <div class="mt-24">
+            <a href="book-a-call.html" class="btn btn-gold btn-sm">Start a Project <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Albert Nathan Agency. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms.html">Terms and Conditions</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="footer-disclaimer">
+        <p>Marketing results vary based on factors including book quality, market demand, audience size, budget, timing, competitive environment, and campaign execution. Albert Nathan Agency does not guarantee specific book sales, revenue, Amazon rankings, or any other quantifiable outcome. Testimonials, where displayed, represent individual experiences and are not a guarantee of future results.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/WHATSAPP_NUMBER_HERE?text=Hi%20Albert%2C%20I%27d%20like%20to%20discuss%20marketing%20for%20my%20book."
+     class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="wa-label">Chat About Your Book</span>
+  </a>
+
+  <!-- ============================================================
+       JAVASCRIPT
+  ============================================================ -->
+  <script>
+    /* NAVBAR */
+    const navbar = document.getElementById('navbar');
+    function handleScroll() { navbar.classList.toggle('scrolled', window.scrollY > 50); }
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
+
+    /* MOBILE NAV */
+    const hamburger = document.getElementById('hamburger');
+    const navMobile = document.getElementById('navMobile');
+    function openMobileNav()  { hamburger.classList.add('open'); navMobile.classList.add('active'); hamburger.setAttribute('aria-expanded','true'); document.body.style.overflow='hidden'; }
+    function closeMobileNav() { hamburger.classList.remove('open'); navMobile.classList.remove('active'); hamburger.setAttribute('aria-expanded','false'); document.body.style.overflow=''; }
+    hamburger.addEventListener('click', () => navMobile.classList.contains('active') ? closeMobileNav() : openMobileNav());
+    document.addEventListener('keydown', e => { if (e.key === 'Escape' && navMobile.classList.contains('active')) closeMobileNav(); });
+
+    /* SCROLL REVEAL */
+    const revealEls = document.querySelectorAll('.reveal');
+    const ro = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); ro.unobserve(e.target); } });
+    }, { threshold: 0.10, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach(el => ro.observe(el));
+
+    /* SERVICE TAB ACTIVE STATE ON SCROLL */
+    const sections  = document.querySelectorAll('section[id^="service-0"]');
+    const tabs      = document.querySelectorAll('.service-tab[data-section]');
+
+    const tabObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          tabs.forEach(t => t.classList.remove('active'));
+          const active = document.querySelector(`.service-tab[data-section="${entry.target.id}"]`);
+          if (active) {
+            active.classList.add('active');
+            active.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+          }
+        }
+      });
+    }, { threshold: 0.35 });
+
+    sections.forEach(s => tabObserver.observe(s));
+
+    /* COOKIE CONSENT */
+    const cookieBanner  = document.getElementById('cookie-banner');
+    const cookieAccept  = document.getElementById('cookieAccept');
+    const cookieDecline = document.getElementById('cookieDecline');
+    if (!localStorage.getItem('ana_cookie_consent')) setTimeout(() => cookieBanner.classList.add('show'), 1200);
+    cookieAccept.addEventListener('click',  () => { localStorage.setItem('ana_cookie_consent','accepted'); cookieBanner.classList.remove('show'); });
+    cookieDecline.addEventListener('click', () => { localStorage.setItem('ana_cookie_consent','declined'); cookieBanner.classList.remove('show'); });
+
+    /* SMOOTH SCROLL FOR ANCHOR LINKS */
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+      });
+    });
+  </script>
+
+</body>
+</html>
