@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
   <meta name="description" content="Albert Nathan Agency: Strategic book marketing for authors ready to be discovered. Book launch campaigns, Amazon marketing, author branding, advertising and more." />
   <meta name="keywords" content="book marketer, book marketing, book marketing services, book promotion, book launch marketing, author marketing, Amazon book marketing, book advertising, author branding, book marketing agency, book marketing strategist, self-published book marketing" />
   <meta name="author" content="Albert Nathan" />
@@ -15,9 +15,9 @@
   <meta name="twitter:description" content="Strategic book marketing that puts your story in front of the readers who matter." />
   <title>Albert Nathan Agency | Strategic Book Marketing for Authors</title>
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="logo.png" />
-  <link rel="apple-touch-icon" href="logo.png" />
+  <!-- Favicon - using your logo -->
+  <link rel="icon" type="Albert Nathan.png" href="Albert Nathan.png" />
+  <link rel="apple-touch-icon" href="Albert Nathan.png" />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -1386,6 +1386,7 @@
       display: flex;
       gap: 24px;
       align-items: center;
+      flex-wrap: wrap;
     }
 
     .case-card-header::before {
@@ -1395,6 +1396,41 @@
       width: 150px; height: 150px;
       border-radius: 50%;
       background: radial-gradient(circle, rgba(201,168,76,0.12) 0%, transparent 70%);
+    }
+
+    /* Author Profile Image - Left side */
+    .case-author-avatar {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      border: 3px solid var(--gold);
+      overflow: hidden;
+      flex-shrink: 0;
+      position: relative;
+      z-index: 1;
+      background: var(--charcoal-mid);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .case-author-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .case-author-avatar .avatar-fallback {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-heading);
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--gold-light);
+      background: rgba(201,168,76,0.10);
     }
 
     .case-book-cover-slot {
@@ -1627,7 +1663,7 @@
     }
 
     /* ============================================================
-       PRICING SECTION
+       PRICING SECTION - CENTERED
     ============================================================ */
     #pricing {
       background: var(--off-white);
@@ -1648,6 +1684,7 @@
       grid-template-columns: repeat(4, 1fr);
       gap: 24px;
       align-items: start;
+      justify-content: center;
     }
 
     .pricing-card {
@@ -1658,6 +1695,7 @@
       box-shadow: var(--shadow-sm);
       transition: var(--transition);
       position: relative;
+      text-align: center;
     }
 
     .pricing-card:hover {
@@ -1748,6 +1786,8 @@
       flex-direction: column;
       gap: 12px;
       margin-bottom: 32px;
+      text-align: left;
+      padding-left: 0;
     }
 
     .pricing-feature {
@@ -1876,6 +1916,14 @@
       font-weight: 700;
       color: var(--gold-dark);
       border: 2px solid var(--border);
+      overflow: hidden;
+    }
+
+    .testimonial-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
     }
 
     .testimonial-card.featured .testimonial-avatar {
@@ -2584,6 +2632,7 @@
 
       .case-metrics { grid-template-columns: 1fr; }
       .case-book-cover-slot { width: 60px; height: 90px; }
+      .case-author-avatar { width: 50px; height: 50px; }
 
       .btn-group { flex-direction: column; align-items: flex-start; }
       .cta-final-inner .btn-group { align-items: center; }
@@ -2595,6 +2644,7 @@
       .process-steps-row2 { grid-template-columns: 1fr; }
       .metrics-grid { grid-template-columns: 1fr; }
       .case-card-header { flex-direction: column; align-items: flex-start; }
+      .case-author-avatar { width: 45px; height: 45px; }
     }
   </style>
 </head>
@@ -3199,6 +3249,10 @@
         <!-- Case Study 1 - Kate Cullen -->
         <div class="case-card reveal reveal-delay-1">
           <div class="case-card-header">
+            <!-- Author Profile Image - left side -->
+            <div class="case-author-avatar">
+              <img src="kate-cullen.jpg" alt="Kate Cullen" />
+            </div>
             <div class="case-book-cover-slot">
               <img src="Game on boys.png" alt="Game On Boys! The PlayStation Play-offs book cover" />
             </div>
@@ -3246,6 +3300,10 @@
         <!-- Case Study 2 - Diana Setterfield -->
         <div class="case-card reveal reveal-delay-2">
           <div class="case-card-header">
+            <!-- Author Profile Image - left side -->
+            <div class="case-author-avatar">
+              <img src="diana-setterfield.jpg" alt="Diana Setterfield" />
+            </div>
             <div class="case-book-cover-slot">
               <img src="Once upon.png" alt="Once Upon a River book cover" />
             </div>
@@ -3368,7 +3426,7 @@
   </section>
 
   <!-- ============================================================
-       PRICING SECTION
+       PRICING SECTION - CENTERED
   ============================================================ -->
   <section id="pricing" aria-labelledby="pricing-heading">
     <div class="container">
