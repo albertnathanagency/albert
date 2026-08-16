@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
   <meta name="description" content="Book marketing case studies by Albert Nathan Agency - real campaigns, real strategies, real results for authors across genres worldwide." />
   <meta name="keywords" content="book marketing case studies, book promotion results, author marketing campaigns, book launch results, Amazon marketing results, book marketing agency results" />
   <meta name="author" content="Albert Nathan" />
@@ -15,17 +15,22 @@
   <meta name="twitter:description" content="Real campaigns. Real results. Book marketing case studies from Albert Nathan Agency." />
   <title>Book Marketing Case Studies | Albert Nathan Agency</title>
 
+  <!-- Favicon - using your logo -->
+  <link rel="icon" type="Albert Nathan.png" href="Albert Nathan.png" />
+  <link rel="apple-touch-icon" href="Albert Nathan.png" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-317S3LQHLQ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'GA_MEASUREMENT_ID');
+    gtag('config', 'G-317S3LQHLQ');
   </script>
 
   <style>
@@ -236,13 +241,16 @@
       border:1px solid var(--grey-200);
     }
 
-    /* Case study header band */
+    /* Case study header band with author image */
     .cs-full-header {
       background:var(--charcoal);
       padding:52px 56px;
-      display:grid; grid-template-columns:1fr auto;
-      gap:40px; align-items:center;
-      position:relative; overflow:hidden;
+      display:flex;
+      gap:24px;
+      align-items:center;
+      position:relative;
+      overflow:hidden;
+      flex-wrap:wrap;
     }
     .cs-full-header::before {
       content:''; position:absolute; top:-60px; right:-60px;
@@ -254,7 +262,43 @@
       height:3px; background:linear-gradient(90deg,var(--gold-dark),var(--gold-light));
     }
 
-    .cs-full-header-left { position:relative; z-index:1; }
+    /* Author Profile Image */
+    .cs-author-avatar {
+      width:80px;
+      height:80px;
+      border-radius:50%;
+      border:3px solid var(--gold);
+      overflow:hidden;
+      flex-shrink:0;
+      position:relative;
+      z-index:1;
+      background:var(--charcoal-mid);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .cs-author-avatar img {
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+    .cs-author-avatar .avatar-fallback {
+      font-family:var(--font-heading);
+      font-size:1.8rem;
+      font-weight:700;
+      color:var(--gold-light);
+      background:rgba(201,168,76,0.10);
+      width:100%;
+      height:100%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .cs-full-header-left {
+      position:relative; z-index:1;
+      flex:1;
+    }
     .cs-genre-tag {
       display:inline-block; padding:5px 14px;
       background:rgba(201,168,76,0.15); border:1px solid rgba(201,168,76,0.30);
@@ -271,7 +315,7 @@
       color:rgba(255,255,255,0.55);
     }
 
-    .cs-full-header-right { position:relative; z-index:1; text-align:right; }
+    .cs-full-header-right { position:relative; z-index:1; text-align:right; flex-shrink:0; }
     .cs-campaign-badge {
       background:rgba(201,168,76,0.12); border:1px solid rgba(201,168,76,0.25);
       border-radius:var(--radius-md); padding:20px 24px;
@@ -514,9 +558,9 @@
       .csm-grid { grid-template-columns:repeat(2,1fr); }
     }
     @media (max-width:900px) {
-      .cs-full-header { grid-template-columns:1fr; }
-      .cs-full-header-right { text-align:left; }
-      .cs-campaign-badge { align-items:flex-start; }
+      .cs-full-header { flex-wrap:wrap; gap:20px; }
+      .cs-full-header-right { text-align:left; width:100%; }
+      .cs-campaign-badge { align-items:flex-start; width:100%; }
       .cs-body-grid { grid-template-columns:1fr; gap:32px; }
       .cs-add-grid { grid-template-columns:repeat(2,1fr); }
       .csm-grid { grid-template-columns:1fr; }
@@ -542,6 +586,7 @@
       .whatsapp-float { padding:14px; border-radius:50%; }
       .btn-group { flex-direction:column; align-items:flex-start; }
       .cs-cta-inner .btn-group { align-items:center; }
+      .cs-author-avatar { width:60px; height:60px; }
     }
     @media (max-width:480px) {
       .cs-results-row { grid-template-columns:1fr; }
@@ -703,8 +748,12 @@
 
       <div class="cs-full reveal">
 
-        <!-- Header -->
+        <!-- Header with Author Image -->
         <div class="cs-full-header">
+          <!-- Author Profile Image - left side -->
+          <div class="cs-author-avatar">
+            <img src="kate-cullen.jpg" alt="Kate Cullen" />
+          </div>
           <div class="cs-full-header-left">
             <span class="cs-genre-tag">Children's Fiction</span>
             <h2 id="cs-kate-heading">Kate Cullen</h2>
@@ -858,6 +907,13 @@
             </div>
           </div>
 
+          <!-- Amazon Link -->
+          <div style="margin-top:24px;">
+            <a href="https://www.amazon.com/Game-Boys-PlayStation-Play-offs-Childrens-ebook/dp/B00K3W0KNM?ref_=ast_author_mpb" target="_blank" class="btn btn-gold btn-sm" style="font-size:0.75rem; padding:10px 20px;">
+              <i class="fab fa-amazon"></i> Buy on Amazon
+            </a>
+          </div>
+
           <!-- Takeaway -->
           <div class="cs-takeaway">
             <div class="cs-takeaway-icon"><i class="fas fa-lightbulb"></i></div>
@@ -889,8 +945,12 @@
 
       <div class="cs-full reveal">
 
-        <!-- Header -->
+        <!-- Header with Author Image -->
         <div class="cs-full-header">
+          <!-- Author Profile Image - left side -->
+          <div class="cs-author-avatar">
+            <img src="diana-setterfield.jpg" alt="Diana Setterfield" />
+          </div>
           <div class="cs-full-header-left">
             <span class="cs-genre-tag">Literary Fiction</span>
             <h2 id="cs-diana-heading">Diana Setterfield</h2>
@@ -1041,6 +1101,13 @@
               <div class="cs-result-value">18+</div>
               <div class="cs-result-label">Media Placements</div>
             </div>
+          </div>
+
+          <!-- Amazon Link -->
+          <div style="margin-top:24px;">
+            <a href="https://www.amazon.com/Once-Upon-River-Diane-Setterfield-ebook/dp/B07D2ZZK6N/ref=tmm_kin_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.QI6LBn4bgXdG57KzYj63ctQibvDX6rpxZoT1A-ahQsd6Oospua-XOoeusVgcb-F7wkjWnQDi4wEaFod6THhegICB0iV5WfAyAB1Zcj6TNWWU5LXaDEnYY_oudlGTnvyLwNp8UJofe5RiFOe9u9gLACTvcjXkKSl0iX01PW1OMo80qSrGpa4MeEuThP4MXcm6OJHPWvBeXnidbdDh-bbCs0pXm1CV9ePozXYOst9p5As.j-BomfIvMcU7YQwq19e0vEeu4gE04jPrqsGfu_c5dpw&qid=1786891257&sr=1-1" target="_blank" class="btn btn-gold btn-sm" style="font-size:0.75rem; padding:10px 20px;">
+              <i class="fab fa-amazon"></i> Buy on Amazon
+            </a>
           </div>
 
           <!-- Takeaway -->
