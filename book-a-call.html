@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
   <meta name="description" content="Book a strategy consultation with Albert Nathan Agency. Discuss your book marketing campaign, goals, and investment options." />
   <meta name="keywords" content="book marketing consultation, book strategy call, author consultation, book marketing advice, Albert Nathan consultation" />
   <meta name="author" content="Albert Nathan" />
@@ -15,17 +15,22 @@
   <meta name="twitter:description" content="Schedule your book marketing strategy consultation with Albert Nathan." />
   <title>Book a Consultation | Albert Nathan Agency</title>
 
+  <!-- Favicon - using your logo -->
+  <link rel="icon" type="Albert Nathan.png" href="Albert Nathan.png" />
+  <link rel="apple-touch-icon" href="Albert Nathan.png" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-317S3LQHLQ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'GA_MEASUREMENT_ID');
+    gtag('config', 'G-317S3LQHLQ');
   </script>
 
   <style>
@@ -191,8 +196,13 @@
     /* Main */
     #bc-main {
       background:var(--off-white);
-      padding:100px 0 80px;
+      padding:80px 0 100px;
     }
+
+    .bc-header { text-align:center; max-width:700px; margin:0 auto 48px; }
+    .bc-header .label-tag { margin-bottom:16px; }
+    .bc-header .gold-line { margin:20px auto; }
+
     .bc-grid {
       display:grid;
       grid-template-columns:1fr 1.4fr;
@@ -209,7 +219,7 @@
       display:flex;
       flex-direction:column;
       gap:16px;
-      margin-bottom:40px;
+      margin-bottom:32px;
     }
     .bc-detail {
       display:flex;
@@ -244,12 +254,33 @@
       line-height:1.5;
     }
 
+    /* What We Will Cover Box WITH BOOKING BOX ON THE RIGHT */
     .bc-what-happens {
       background:var(--charcoal);
       border-radius:var(--radius-lg);
       padding:28px 32px;
       border-left:3px solid var(--gold);
+      position:relative;
+      display:flex;
+      flex-wrap:wrap;
+      gap:32px;
+      align-items:flex-start;
     }
+    .bc-what-happens .what-left {
+      flex:2;
+      min-width:200px;
+    }
+    .bc-what-happens .what-right {
+      flex:1;
+      min-width:160px;
+      background:rgba(255,255,255,0.06);
+      border-radius:var(--radius-md);
+      padding:24px 20px;
+      border:1px solid rgba(201,168,76,0.25);
+      text-align:center;
+      align-self:center;
+    }
+
     .bc-what-happens h4 {
       font-family:var(--font-heading);
       font-size:1.05rem;
@@ -277,17 +308,44 @@
       flex-shrink:0;
     }
 
+    /* Small booking box on the right */
+    .bc-what-happens .what-right .book-icon {
+      font-size:2rem;
+      color:var(--gold);
+      margin-bottom:8px;
+      display:block;
+    }
+    .bc-what-happens .what-right h5 {
+      font-family:var(--font-heading);
+      font-size:1.05rem;
+      font-weight:600;
+      color:var(--white);
+      margin-bottom:8px;
+    }
+    .bc-what-happens .what-right p {
+      font-size:0.8rem;
+      color:rgba(255,255,255,0.50);
+      margin-bottom:16px;
+      line-height:1.5;
+    }
+    .bc-what-happens .what-right .btn {
+      font-size:0.82rem;
+      padding:12px 24px;
+      width:100%;
+      justify-content:center;
+    }
+
     /* Right: Form */
     .bc-form-wrap {
       background:var(--white);
       border-radius:var(--radius-xl);
-      padding:48px 44px;
+      padding:44px 40px;
       border:1px solid var(--grey-200);
       box-shadow:var(--shadow-md);
     }
     .bc-form-wrap h3 {
       font-family:var(--font-heading);
-      font-size:1.5rem;
+      font-size:1.4rem;
       font-weight:700;
       color:var(--text-primary);
       margin-bottom:8px;
@@ -295,38 +353,38 @@
     .bc-form-wrap p {
       font-size:0.88rem;
       color:var(--text-muted);
-      margin-bottom:28px;
+      margin-bottom:24px;
       line-height:1.65;
     }
 
     .bc-form {
       display:flex;
       flex-direction:column;
-      gap:16px;
+      gap:14px;
     }
     .bc-form .form-row {
       display:grid;
       grid-template-columns:1fr 1fr;
-      gap:16px;
+      gap:14px;
     }
     .bc-form label {
-      font-size:0.78rem;
+      font-size:0.72rem;
       font-weight:600;
       letter-spacing:0.06em;
       text-transform:uppercase;
       color:var(--text-muted);
-      margin-bottom:4px;
+      margin-bottom:3px;
       display:block;
     }
     .bc-form input,
     .bc-form select,
     .bc-form textarea {
       width:100%;
-      padding:14px 18px;
+      padding:12px 16px;
       background:var(--grey-100);
       border:1px solid var(--grey-200);
       border-radius:var(--radius-sm);
-      font-size:0.92rem;
+      font-size:0.88rem;
       color:var(--text-primary);
       transition:var(--transition);
       outline:none;
@@ -342,18 +400,18 @@
       min-height:120px;
       resize:vertical;
     }
-    .bc-form .btn { width:100%; justify-content:center; margin-top:8px; }
+    .bc-form .btn { width:100%; justify-content:center; margin-top:4px; }
 
     .form-disclaimer {
-      margin-top:16px;
-      font-size:0.75rem;
+      margin-top:12px;
+      font-size:0.72rem;
       color:var(--text-muted);
-      line-height:1.6;
+      line-height:1.5;
       text-align:center;
     }
     .form-disclaimer a { color:var(--gold); text-decoration:underline; }
 
-    /* Alternative Options - CENTERED HEADER */
+    /* Alternative Options */
     #bc-alternatives {
       background:var(--white);
       padding:80px 0 100px;
@@ -455,19 +513,20 @@
     .reveal-delay-3 { transition-delay:0.3s; }
 
     @media (max-width:1100px) {
+      .bc-grid { grid-template-columns:1fr 1fr; }
       .alt-grid { grid-template-columns:repeat(3,1fr); }
       .footer-top { grid-template-columns:1fr 1fr; }
     }
     @media (max-width:900px) {
       .bc-grid { grid-template-columns:1fr; gap:48px; }
       .alt-grid { grid-template-columns:repeat(2,1fr); }
+      .bc-form-wrap { padding:32px 28px; }
     }
     @media (max-width:768px) {
       .container { padding:0 20px; }
       #navbar { padding:0 20px; height:68px; }
       .nav-links { display:none; }
       .hamburger { display:flex; }
-      .bc-form-wrap { padding:32px 24px; }
       .bc-form .form-row { grid-template-columns:1fr; }
       .alt-grid { grid-template-columns:1fr; }
       .footer-top { grid-template-columns:1fr; gap:40px; }
@@ -476,6 +535,9 @@
       .whatsapp-float .wa-label { display:none; }
       .whatsapp-float { padding:14px; border-radius:50%; }
       .btn-group { flex-direction:column; align-items:flex-start; }
+      .bc-what-happens { flex-direction:column; }
+      .bc-what-happens .what-right { width:100%; }
+      .bc-what-happens .what-right .btn { width:100%; justify-content:center; }
     }
   </style>
 </head>
@@ -494,8 +556,7 @@
   <!-- NAVIGATION -->
   <nav id="navbar" role="navigation" aria-label="Main navigation">
     <a href="index.html" class="nav-logo" aria-label="Albert Nathan Agency Home">
-      <img src="Albert Nathan.png
-      " alt="Albert Nathan Agency Logo" />
+      <img src="Albert Nathan.png" alt="Albert Nathan Agency Logo" />
       <div class="nav-logo-text">
         <span class="nav-logo-name">Albert Nathan</span>
         <span class="nav-logo-sub">Book Marketing Agency</span>
@@ -564,38 +625,41 @@
   <section id="bc-main" aria-labelledby="bc-heading">
     <div class="container">
 
+      <div class="bc-header reveal">
+        <span class="label-tag">What to Expect</span>
+        <h2 id="bc-heading" class="display-md mt-12">A Conversation That Gets You Clarity.</h2>
+        <div class="gold-line"></div>
+        <p class="body-lg mt-8">
+          The consultation is designed to give you a clear understanding of what
+          is possible for your book. You will walk away with a realistic assessment
+          of your marketing situation and a clear sense of what to do next.
+        </p>
+      </div>
+
       <div class="bc-grid">
 
         <!-- Left: Info -->
         <div class="bc-info reveal">
-          <span class="label-tag">What to Expect</span>
-          <h2 id="bc-heading" class="display-md mt-12">A Conversation That Gets You Clarity.</h2>
-          <p class="body-lg mt-16">
-            The consultation is designed to give you a clear understanding of what
-            is possible for your book. You will walk away with a realistic assessment
-            of your marketing situation and a clear sense of what to do next.
-          </p>
-
-          <div class="bc-details mt-32">
+          <div class="bc-details">
             <div class="bc-detail">
               <div class="bc-detail-icon"><i class="fas fa-clock"></i></div>
               <div class="bc-detail-text">
                 <strong>Duration</strong>
-                <span>30 to 45 minutes. Enough time to cover everything without being rushed.</span>
+                <span>30 to 45 minutes, depending on how much time you have available.</span>
               </div>
             </div>
             <div class="bc-detail">
               <div class="bc-detail-icon"><i class="fas fa-user-tie"></i></div>
               <div class="bc-detail-text">
                 <strong>Who You Speak With</strong>
-                <span>Albert Nathan directly. No account managers, no junior staff.</span>
+                <span>A team member who can help you get started.</span>
               </div>
             </div>
             <div class="bc-detail">
               <div class="bc-detail-icon"><i class="fas fa-handshake"></i></div>
               <div class="bc-detail-text">
                 <strong>No Obligation</strong>
-                <span>The consultation is about getting clarity. There is no pressure to commit to anything.</span>
+                <span>No obligation to buy anything. There is no pressure to commit to anything.</span>
               </div>
             </div>
             <div class="bc-detail">
@@ -607,16 +671,27 @@
             </div>
           </div>
 
+          <!-- What We Will Cover Box WITH BOOKING BOX ON THE RIGHT -->
           <div class="bc-what-happens">
-            <h4>What We Will Cover</h4>
-            <ul>
-              <li><i class="fas fa-circle"></i> Your book and its current marketing position</li>
-              <li><i class="fas fa-circle"></i> Your audience, genre, and competitive landscape</li>
-              <li><i class="fas fa-circle"></i> Your marketing objectives and what success looks like for you</li>
-              <li><i class="fas fa-circle"></i> Recommended campaign strategies and channels</li>
-              <li><i class="fas fa-circle"></i> Investment options and what is realistic for your budget</li>
-              <li><i class="fas fa-circle"></i> Next steps and what to expect if you decide to proceed</li>
-            </ul>
+            <div class="what-left">
+              <h4>What We Will Cover</h4>
+              <ul>
+                <li><i class="fas fa-circle"></i> Your book and its current marketing position</li>
+                <li><i class="fas fa-circle"></i> Your audience, genre, and competitive landscape</li>
+                <li><i class="fas fa-circle"></i> Your marketing objectives and what success looks like for you</li>
+                <li><i class="fas fa-circle"></i> Recommended campaign strategies and channels</li>
+                <li><i class="fas fa-circle"></i> Investment options and what is realistic for your budget</li>
+                <li><i class="fas fa-circle"></i> Next steps and what to expect if you decide to proceed</li>
+              </ul>
+            </div>
+            <div class="what-right">
+              <span class="book-icon"><i class="fas fa-calendar-check"></i></span>
+              <h5>Book Your Call Instantly</h5>
+              <p>View my availability and book a time that works for you.</p>
+              <a href="https://calendar.app.google/3PBUas7ciA9ig5uY6" target="_blank" rel="noopener" class="btn btn-gold">
+                <i class="fas fa-calendar-alt"></i> Book Now
+              </a>
+            </div>
           </div>
         </div>
 
@@ -625,7 +700,6 @@
           <h3>Book Your Consultation</h3>
           <p>Fill in your details and Albert Nathan will personally reach out to schedule your call.</p>
 
-          <!-- REPLACE action WITH YOUR ACTUAL FORMSPREE ENDPOINT -->
           <form class="bc-form" action="https://formspree.io/f/xwleewrd" method="POST">
 
             <input type="hidden" name="_subject" value="Consultation Booking - Albert Nathan Agency" />
@@ -675,7 +749,7 @@
 
             <div>
               <label for="message">Tell Me About Your Book and What You Want to Discuss</label>
-              <textarea id="message" name="message" placeholder="Tell me about your book, what you have tried so far, what you are hoping to achieve, and any questions you have for the consultation..." required></textarea>
+              <textarea id="message" name="message" placeholder="Tell me about your book, what you have tried so far, what you hope to achieve, and any questions you have for the consultation..." required></textarea>
             </div>
 
             <button type="submit" class="btn btn-gold btn-full">
@@ -684,7 +758,7 @@
           </form>
 
           <p class="form-disclaimer">
-            By submitting this form, you are requesting a consultation with Albert Nathan Agency.
+            By submitting this form, you are consenting with Albert Nathan Agency.
             Your details will not be shared with third parties. You will be contacted personally
             to schedule your call. View our <a href="privacy-policy.html">Privacy Policy</a>.
           </p>
@@ -695,7 +769,7 @@
     </div>
   </section>
 
-  <!-- ALTERNATIVE OPTIONS - CENTERED HEADER -->
+  <!-- ALTERNATIVE OPTIONS -->
   <section id="bc-alternatives" aria-labelledby="alt-heading">
     <div class="container">
 
