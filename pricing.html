@@ -138,7 +138,7 @@
     .gold-line-left { margin: 16px 0; }
 
     /* ============================================================
-       NAVIGATION
+       NAVIGATION - FIXED
     ============================================================ */
     #navbar {
       position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
@@ -172,9 +172,40 @@
     .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
     .hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
     .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-    .nav-mobile { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(10,10,10,0.98); z-index: 999; flex-direction: column; align-items: center; justify-content: center; gap: 8px; opacity: 0; pointer-events: none; transition: opacity 0.3s ease; padding: 20px; }
-    .nav-mobile.active { display: flex; opacity: 1; pointer-events: all; }
-    .nav-mobile a { font-family: var(--font-heading); font-size: 1.5rem; font-weight: 600; color: var(--white); transition: var(--transition); text-align: center; padding: 8px 0; }
+
+    /* MOBILE NAV - FIXED WITH !IMPORTANT */
+    .nav-mobile { 
+      display: none !important; 
+      position: fixed; 
+      top: 0; 
+      left: 0; 
+      right: 0; 
+      bottom: 0; 
+      background: rgba(10,10,10,0.98); 
+      z-index: 999; 
+      flex-direction: column; 
+      align-items: center; 
+      justify-content: center; 
+      gap: 8px; 
+      opacity: 0; 
+      pointer-events: none; 
+      transition: opacity 0.3s ease; 
+      padding: 20px; 
+    }
+    .nav-mobile.active { 
+      display: flex !important; 
+      opacity: 1; 
+      pointer-events: all; 
+    }
+    .nav-mobile a { 
+      font-family: var(--font-heading); 
+      font-size: 1.5rem; 
+      font-weight: 600; 
+      color: var(--white); 
+      transition: var(--transition); 
+      text-align: center; 
+      padding: 8px 0; 
+    }
     .nav-mobile a:hover { color: var(--gold); }
     .nav-mobile .nav-mobile-cta { margin-top: 20px; }
     .nav-mobile .nav-mobile-cta .btn { font-size: 0.85rem; padding: 14px 32px; }
@@ -848,7 +879,7 @@
   </section>
 
   <!-- ============================================================
-       PROMISE STRIP
+       PRICING PROMISE STRIP
   ============================================================ -->
   <section id="pricing-promise" aria-label="Pricing commitments">
     <div class="container">
@@ -913,7 +944,7 @@
   </section>
 
   <!-- ============================================================
-       MAIN PRICING CARDS (SHORTENED FOR BREVITY - SAME AS BEFORE)
+       MAIN PRICING CARDS
   ============================================================ -->
   <section id="pricing-cards" aria-labelledby="pricing-heading">
     <div class="container">
@@ -1114,7 +1145,7 @@
   </section>
 
   <!-- ============================================================
-       WHAT'S ALWAYS INCLUDED (SHORTENED FOR BREVITY)
+       WHAT'S ALWAYS INCLUDED
   ============================================================ -->
   <section id="always-included" aria-labelledby="ai-heading">
     <div class="container">
@@ -1163,7 +1194,7 @@
   </section>
 
   <!-- ============================================================
-       HOW PRICING IS DETERMINED (SHORTENED FOR BREVITY)
+       HOW PRICING IS DETERMINED
   ============================================================ -->
   <section id="how-pricing" aria-labelledby="hp-heading">
     <div class="container">
@@ -1225,7 +1256,7 @@
   </section>
 
   <!-- ============================================================
-       INVESTMENT FACTORS (SHORTENED FOR BREVITY)
+       INVESTMENT FACTORS
   ============================================================ -->
   <section id="investment-factors" aria-labelledby="if-heading">
     <div class="container">
@@ -1288,7 +1319,7 @@
   </section>
 
   <!-- ============================================================
-       FAQ - PRICING (SHORTENED FOR BREVITY)
+       FAQ - PRICING
   ============================================================ -->
   <section id="pricing-faq" aria-labelledby="pfaq-heading">
     <div class="container">
@@ -1563,13 +1594,38 @@
     window.addEventListener('scroll', handleScroll, { passive: true });
     handleScroll();
 
-    /* MOBILE NAV */
+    /* MOBILE NAV - FIXED */
     const hamburger = document.getElementById('hamburger');
     const navMobile = document.getElementById('navMobile');
-    function openMobileNav()  { hamburger.classList.add('open'); navMobile.classList.add('active'); hamburger.setAttribute('aria-expanded','true'); document.body.style.overflow='hidden'; }
-    function closeMobileNav() { hamburger.classList.remove('open'); navMobile.classList.remove('active'); hamburger.setAttribute('aria-expanded','false'); document.body.style.overflow=''; }
-    hamburger.addEventListener('click', () => navMobile.classList.contains('active') ? closeMobileNav() : openMobileNav());
-    document.addEventListener('keydown', e => { if (e.key==='Escape' && navMobile.classList.contains('active')) closeMobileNav(); });
+    
+    function openMobileNav() {
+      hamburger.classList.add('open');
+      navMobile.classList.add('active');
+      hamburger.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+    
+    function closeMobileNav() {
+      hamburger.classList.remove('open');
+      navMobile.classList.remove('active');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+    
+    hamburger.addEventListener('click', function(e) {
+      e.stopPropagation();
+      if (navMobile.classList.contains('active')) {
+        closeMobileNav();
+      } else {
+        openMobileNav();
+      }
+    });
+    
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && navMobile.classList.contains('active')) {
+        closeMobileNav();
+      }
+    });
 
     /* SCROLL REVEAL */
     const revealEls = document.querySelectorAll('.reveal');
