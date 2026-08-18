@@ -321,7 +321,11 @@ p {
   min-height: 42px;
 }
 
-/* --- NAVIGATION --- */
+/* ============================================================
+   NAVIGATION - FIXED
+   ============================================================ */
+
+/* --- DESKTOP NAVIGATION --- */
 .nav {
   position: fixed;
   top: 0;
@@ -426,76 +430,88 @@ p {
   gap: 16px;
 }
 
-/* --- HAMBURGER MENU - FIXED --- */
-.nav-hamburger {
-  display: none;
+/* --- HAMBURGER MENU - FIXED (matches HTML #hamburger) --- */
+.hamburger {
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
   gap: 5px;
   cursor: pointer;
-  padding: 6px;
-  background: none;
-  border: none;
+  border-radius: var(--radius-sm);
   transition: var(--transition);
+  flex-shrink: 0;
   z-index: 1001;
+  padding: 8px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
 }
 
-.nav-hamburger span {
+.hamburger:hover {
+  background: rgba(255,255,255,0.12);
+}
+
+.hamburger span {
   display: block;
   width: 24px;
   height: 2px;
-  background: var(--charcoal);
+  background: var(--white);
   border-radius: 2px;
-  transition: all var(--transition);
+  transition: all 0.3s ease;
   transform-origin: center;
 }
 
-.nav-hamburger.open span:nth-child(1) {
+.hamburger.open span:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
 }
 
-.nav-hamburger.open span:nth-child(2) {
+.hamburger.open span:nth-child(2) {
   opacity: 0;
   transform: scaleX(0);
 }
 
-.nav-hamburger.open span:nth-child(3) {
+.hamburger.open span:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
 }
 
-/* --- MOBILE NAV - FIXED WITH !IMPORTANT --- */
+/* --- MOBILE NAV - FIXED (matches HTML #navMobile) --- */
 .nav-mobile {
   display: none !important;
   position: fixed;
-  top: var(--nav-height);
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: var(--white);
+  background: rgba(10, 10, 10, 0.98);
   z-index: 999;
   flex-direction: column;
-  padding: 32px 40px;
-  gap: 16px;
-  overflow-y: auto;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.3s ease;
-  box-shadow: var(--shadow-lg);
+  transition: opacity 0.4s ease;
+  padding: 80px 30px 40px;
 }
 
-.nav-mobile.open {
+.nav-mobile.active {
   display: flex !important;
   opacity: 1;
   pointer-events: all;
 }
 
 .nav-mobile a {
-  font-size: 0.95rem;
-  font-weight: 500;
-  color: var(--mid);
-  letter-spacing: 0.04em;
-  padding: 12px 0;
-  border-bottom: 1px solid var(--border-light);
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--white);
   transition: var(--transition);
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .nav-mobile a:hover {
@@ -503,15 +519,43 @@ p {
 }
 
 .nav-mobile .nav-mobile-cta {
-  margin-top: 12px;
-  padding-top: 12px;
-  border-top: 1px solid var(--border-light);
+  margin-top: 24px;
+  width: 100%;
 }
 
 .nav-mobile .nav-mobile-cta .btn {
+  font-size: 0.85rem;
+  padding: 14px 32px;
   width: 100%;
   justify-content: center;
 }
+
+/* --- DESKTOP: HIDE HAMBURGER, SHOW NAV LINKS --- */
+@media (min-width: 769px) {
+  .nav-links {
+    display: flex;
+  }
+  .hamburger {
+    display: none !important;
+  }
+  .nav-mobile {
+    display: none !important;
+  }
+}
+
+/* --- MOBILE: SHOW HAMBURGER, HIDE NAV LINKS --- */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none !important;
+  }
+  .hamburger {
+    display: flex !important;
+  }
+}
+
+/* ============================================================
+   END NAVIGATION
+   ============================================================ */
 
 /* --- PAGE HERO (INTERNAL PAGES) --- */
 .page-hero {
@@ -3583,9 +3627,6 @@ p {
     --nav-height: 70px;
     --section-padding: 60px 0;
   }
-
-  .nav-links, .nav-cta { display: none; }
-  .nav-hamburger { display: flex; }
 
   .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
   .services-grid { grid-template-columns: 1fr; }
