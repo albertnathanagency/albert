@@ -4,7 +4,8 @@
    ============================================================ */
 
 /* --- GOOGLE FONTS --- */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap');
+/* Note: Move this to HTML <head> instead of using @import for better performance */
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap'); */
 
 /* --- CSS CUSTOM PROPERTIES --- */
 :root {
@@ -244,6 +245,7 @@ p {
 .btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   padding: 16px 36px;
   font-family: var(--font-body);
@@ -255,6 +257,8 @@ p {
   white-space: nowrap;
   text-decoration: none;
   border: 2px solid transparent;
+  min-height: 52px;
+  text-align: center;
 }
 
 .btn-primary {
@@ -308,11 +312,13 @@ p {
 .btn-lg {
   padding: 20px 48px;
   font-size: 1rem;
+  min-height: 60px;
 }
 
 .btn-sm {
   padding: 10px 24px;
   font-size: 0.8rem;
+  min-height: 42px;
 }
 
 /* --- NAVIGATION --- */
@@ -420,52 +426,91 @@ p {
   gap: 16px;
 }
 
+/* --- HAMBURGER MENU - FIXED --- */
 .nav-hamburger {
   display: none;
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
-  padding: 4px;
+  padding: 6px;
+  background: none;
+  border: none;
+  transition: var(--transition);
+  z-index: 1001;
 }
 
 .nav-hamburger span {
   display: block;
   width: 24px;
-  height: 1.5px;
+  height: 2px;
   background: var(--charcoal);
-  transition: var(--transition);
+  border-radius: 2px;
+  transition: all var(--transition);
+  transform-origin: center;
 }
 
+.nav-hamburger.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.nav-hamburger.open span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.nav-hamburger.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* --- MOBILE NAV - FIXED WITH !IMPORTANT --- */
 .nav-mobile {
-  display: none;
+  display: none !important;
   position: fixed;
   top: var(--nav-height);
   left: 0;
   right: 0;
+  bottom: 0;
   background: var(--white);
-  border-bottom: 1px solid var(--border);
-  padding: 32px 40px;
   z-index: 999;
-  box-shadow: var(--shadow-lg);
   flex-direction: column;
-  gap: 24px;
+  padding: 32px 40px;
+  gap: 16px;
+  overflow-y: auto;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  box-shadow: var(--shadow-lg);
 }
 
 .nav-mobile.open {
-  display: flex;
+  display: flex !important;
+  opacity: 1;
+  pointer-events: all;
 }
 
 .nav-mobile a {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 500;
   color: var(--mid);
   letter-spacing: 0.04em;
-  padding: 8px 0;
+  padding: 12px 0;
   border-bottom: 1px solid var(--border-light);
+  transition: var(--transition);
 }
 
 .nav-mobile a:hover {
   color: var(--gold);
+}
+
+.nav-mobile .nav-mobile-cta {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border-light);
+}
+
+.nav-mobile .nav-mobile-cta .btn {
+  width: 100%;
+  justify-content: center;
 }
 
 /* --- PAGE HERO (INTERNAL PAGES) --- */
@@ -624,6 +669,7 @@ p {
   display: flex;
   align-items: center;
   gap: 32px;
+  flex-wrap: wrap;
 }
 
 .hero-trust-item {
@@ -3567,6 +3613,15 @@ p {
   .case-study-body { padding: 32px; }
   .contact-form-box { padding: 32px 24px; }
   .call-form-box { padding: 32px 24px; }
+  
+  /* Mobile nav adjustments */
+  .nav-mobile {
+    padding: 24px 24px;
+  }
+  .nav-mobile a {
+    font-size: 0.9rem;
+    padding: 10px 0;
+  }
 }
 
 @media (max-width: 480px) {
@@ -3576,12 +3631,28 @@ p {
   h2 { font-size: 1.7rem; }
   h3 { font-size: 1.35rem; }
 
-  .btn { padding: 14px 28px; }
-  .btn-lg { padding: 16px 36px; font-size: 0.9rem; }
+  .btn { 
+    padding: 14px 28px; 
+    min-height: 48px;
+    font-size: 0.82rem;
+  }
+  .btn-lg { 
+    padding: 16px 36px; 
+    font-size: 0.9rem;
+    min-height: 56px;
+  }
 
   .stat-item { padding: 32px 20px; }
   .stat-number { font-size: 2rem; }
   .pricing-card { padding: 32px 24px; }
   .lead-form-box { padding: 32px 24px; }
   .hero-actions { flex-direction: column; align-items: flex-start; }
+  
+  .nav-mobile {
+    padding: 20px 20px;
+  }
+  .nav-mobile a {
+    font-size: 0.85rem;
+    padding: 10px 0;
+  }
 }
