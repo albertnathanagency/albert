@@ -157,6 +157,8 @@
     .nav-logo-text  { display: flex; flex-direction: column; line-height: 1; }
     .nav-logo-name  { font-family: var(--font-heading); font-size: 1rem; font-weight: 700; color: var(--white); letter-spacing: 0.01em; }
     .nav-logo-sub   { font-size: 0.55rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-top: 2px; }
+    
+    /* Desktop Navigation */
     .nav-links { display: none; align-items: center; gap: 6px; list-style: none; }
     .nav-links a { font-size: 0.75rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: rgba(255,255,255,0.82); padding: 6px 10px; border-radius: var(--radius-sm); transition: var(--transition); position: relative; }
     .nav-links a::after { content: ''; position: absolute; bottom: 2px; left: 10px; width: 0; height: 1.5px; background: var(--gold); transition: width 0.3s ease; }
@@ -166,14 +168,40 @@
     .nav-cta { background: linear-gradient(135deg, var(--gold), var(--gold-dark)) !important; color: var(--white) !important; padding: 8px 16px !important; border-radius: var(--radius-sm) !important; font-weight: 600 !important; box-shadow: 0 4px 14px rgba(201,168,76,0.3); border: none !important; font-size: 0.7rem !important; }
     .nav-cta:hover  { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(201,168,76,0.45) !important; }
     .nav-cta::after { display: none !important; }
-    .hamburger { display: flex; flex-direction: column; justify-content: center; align-items: center; width: 40px; height: 40px; gap: 5px; cursor: pointer; border-radius: var(--radius-sm); transition: var(--transition); flex-shrink: 0; }
-    .hamburger:hover { background: rgba(255,255,255,0.08); }
-    .hamburger span { display: block; width: 22px; height: 2px; background: var(--white); border-radius: 2px; transition: var(--transition); }
+
+    /* HAMBURGER MENU - Always visible on mobile, hidden on desktop */
+    .hamburger { 
+      display: flex; 
+      flex-direction: column; 
+      justify-content: center; 
+      align-items: center; 
+      width: 44px; 
+      height: 44px; 
+      gap: 5px; 
+      cursor: pointer; 
+      border-radius: var(--radius-sm); 
+      transition: var(--transition); 
+      flex-shrink: 0;
+      z-index: 1001;
+      padding: 8px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    .hamburger:hover { background: rgba(255,255,255,0.12); }
+    .hamburger span { 
+      display: block; 
+      width: 24px; 
+      height: 2px; 
+      background: var(--white); 
+      border-radius: 2px; 
+      transition: all 0.3s ease; 
+      transform-origin: center;
+    }
     .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
     .hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
     .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-    /* MOBILE NAV - FIXED WITH !IMPORTANT */
+    /* MOBILE NAV - Full screen overlay */
     .nav-mobile { 
       display: none !important; 
       position: fixed; 
@@ -189,8 +217,8 @@
       gap: 8px; 
       opacity: 0; 
       pointer-events: none; 
-      transition: opacity 0.3s ease; 
-      padding: 20px; 
+      transition: opacity 0.4s ease; 
+      padding: 80px 30px 40px;
     }
     .nav-mobile.active { 
       display: flex !important; 
@@ -199,16 +227,29 @@
     }
     .nav-mobile a { 
       font-family: var(--font-heading); 
-      font-size: 1.5rem; 
+      font-size: 1.6rem; 
       font-weight: 600; 
       color: var(--white); 
       transition: var(--transition); 
       text-align: center; 
-      padding: 8px 0; 
+      padding: 10px 0; 
+      width: 100%;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
     }
     .nav-mobile a:hover { color: var(--gold); }
-    .nav-mobile .nav-mobile-cta { margin-top: 20px; }
-    .nav-mobile .nav-mobile-cta .btn { font-size: 0.85rem; padding: 14px 32px; }
+    .nav-mobile .nav-mobile-cta { margin-top: 24px; width: 100%; }
+    .nav-mobile .nav-mobile-cta .btn { font-size: 0.85rem; padding: 14px 32px; width: 100%; justify-content: center; }
+
+    /* Desktop - hide hamburger, show nav links */
+    @media (min-width: 768px) {
+      #navbar { padding: 0 32px; height: 80px; }
+      .nav-links { display: flex; }
+      .hamburger { display: none; }
+      .nav-logo img { height: 48px; }
+      #navbar.scrolled .nav-logo img { height: 40px; }
+      .nav-logo-name { font-size: 1.15rem; }
+      .nav-logo-sub { font-size: 0.65rem; }
+    }
 
     /* ============================================================
        PAGE HERO - LEFT ALIGNED
@@ -944,7 +985,7 @@
   </section>
 
   <!-- ============================================================
-       MAIN PRICING CARDS
+       MAIN PRICING CARDS - CONTENT KEPT THE SAME
   ============================================================ -->
   <section id="pricing-cards" aria-labelledby="pricing-heading">
     <div class="container">
@@ -1585,12 +1626,14 @@
   </a>
 
   <!-- ============================================================
-       JAVASCRIPT
+       JAVASCRIPT - FIXED
   ============================================================ -->
   <script>
-    /* NAVBAR */
+    /* NAVBAR SCROLL */
     const navbar = document.getElementById('navbar');
-    function handleScroll() { navbar.classList.toggle('scrolled', window.scrollY > 50); }
+    function handleScroll() { 
+      navbar.classList.toggle('scrolled', window.scrollY > 50); 
+    }
     window.addEventListener('scroll', handleScroll, { passive: true });
     handleScroll();
 
@@ -1618,6 +1661,13 @@
         closeMobileNav();
       } else {
         openMobileNav();
+      }
+    });
+    
+    // Close mobile nav when clicking outside (on backdrop)
+    navMobile.addEventListener('click', function(e) {
+      if (e.target === navMobile) {
+        closeMobileNav();
       }
     });
     
